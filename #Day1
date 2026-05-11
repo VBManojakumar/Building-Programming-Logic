@@ -1,0 +1,33 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice using Python.
+
+My main focus is:
+- Improving logical thinking
+- Building problem-solving skills
+- Understanding programming step-by-step
+- Maintaining coding consistency daily
+
+---
+
+# 📚 Concepts Learned
+
+## Day 1 – Python Basics
+- Variables
+- print() function
+- Arithmetic operators
+- Operator precedence
+- Comparison operators
+- Boolean values (`True` / `False`)
+
+---
+
+# 💻 Practice Programs
+
+## Basic Addition
+
+```python
+a = 10
+b = 5
+
+print(a + b)
