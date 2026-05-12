@@ -1,0 +1,53 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice using Python.
+
+My main focus is:
+- Improving logical thinking
+- Building problem-solving skills
+- Understanding programming step-by-step
+- Maintaining coding consistency daily
+
+---
+
+# 📚 Concepts Learned
+
+## Day 2 – if-else Statements
+- if statement
+- if-else statement
+- if-elif-else statement
+- Boolean conditions
+- Decision making in Python
+- Execution flow of conditions
+
+---
+
+# 🧠 Problems Practiced
+
+## Problem 1 – Adult or Minor
+
+```python
+age = 15
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+
+## Problem 2 – Pass or Fail
+marks = 20
+
+if marks >= 35:
+    print("Pass")
+
+## Problem 3 – Grade Checking
+marks = 70
+
+if marks >= 90:
+    print("A")
+
+elif marks >= 75:
+    print("B")
+
+else:
+    print("C")
