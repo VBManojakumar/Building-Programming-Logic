@@ -1,0 +1,55 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice using Python.
+
+My main focus is:
+- Improving logical thinking
+- Building problem-solving skills
+- Understanding programming step-by-step
+- Maintaining coding consistency daily
+
+---
+
+# 📚 Concepts Learned
+
+## Day 3 – Comparison Operators & Boolean Logic
+- Greater than (`>`)
+- Less than (`<`)
+- Equal to (`==`)
+- Boolean values (`True` / `False`)
+- Understanding condition checking
+- Logical thinking using comparisons
+
+---
+
+# 🧠 Problems Practiced
+
+## Problem 1 – Greater Than Comparison
+
+```python
+a = 10
+b = 5
+
+print(a > b)
+Output:
+
+True
+
+## Problem 2 – Less Than Comparison
+a = 9
+b = 4
+
+print(a < b)
+
+Output:
+
+False
+
+## Problem 3 – Equality Check
+x = 10
+
+print(x == 5)
+
+Output:
+
+False
