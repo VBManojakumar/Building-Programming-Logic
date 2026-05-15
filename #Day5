@@ -1,0 +1,67 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice using Python.
+
+My main focus is:
+- Improving logical thinking
+- Building problem-solving skills
+- Understanding programming step-by-step
+- Maintaining coding consistency daily
+
+---
+
+# 📚 Concepts Learned
+
+## Day 5 – while Loop & Execution Flow
+- while loop
+- Loop condition
+- Variable updating
+- Execution flow inside loops
+- Sum calculation using loops
+- Understanding when loops stop
+
+---
+
+# 🧠 Problems Practiced
+
+## Problem 1 – Sum of Numbers from 1 to 5
+
+```python
+i = 1
+total = 0
+
+while i <= 5:
+    total = total + i
+    i = i + 1
+
+print(total)
+Output:
+
+15
+
+## Problem 2 – Print Numbers from 1 to 3
+i = 1
+
+while i <= 3:
+    print(i)
+    i = i + 1
+
+Output:
+
+1
+2
+3
+
+## Problem 3 – Sum of Even Numbers
+i = 2
+total = 0
+
+while i <= 6:
+    total = total + i
+    i = i + 2
+
+print(total)
+
+Output:
+
+12
