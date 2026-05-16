@@ -1,0 +1,65 @@
+1. Print Even Numbers from 1 to 100
+Problem : Print all even numbers between 1 and 100 using loops.
+
+for i in range(1, 101):
+    if i % 2 == 0:
+        print(i)
+
+2. Sum of First N Numbers
+Problem : Take a number N from user and find the sum from 1 to N.
+n = int(input("Enter a number: "))
+
+total = 0
+
+for i in range(1, n + 1):
+    total += i
+
+print("Sum =", total)
+
+
+
+3. Factorial of a Number
+Problem : Find factorial of a number using loops.
+n = int(input("Enter a number: "))
+
+fact = 1
+
+for i in range(1, n + 1):
+    fact *= i
+
+print("Factorial =", fact)
+
+
+
+4. Palindrome Number
+Problem: Check whether a number is palindrome or not.
+num = int(input("Enter a number: "))
+
+original = num
+reverse = 0
+
+while num > 0:
+    digit = num % 10
+    reverse = reverse * 10 + digit
+    num = num // 10
+
+if original == reverse:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+5. Fibonacci Series
+Problem : Print first N Fibonacci numbers.
+
+Solution
+n = int(input("Enter number of terms: "))
+
+a = 0
+b = 1
+
+for i in range(n):
+    print(a, end=" ")
+
+    c = a + b
+    a = b
+    b = c
