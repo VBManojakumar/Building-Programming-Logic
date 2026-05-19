@@ -1,0 +1,78 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice using Python.
+
+My main focus is:
+- Improving logical thinking
+- Building problem-solving skills
+- Understanding programming step-by-step
+- Maintaining coding consistency daily
+
+---
+
+# 📚 Concepts Learned
+
+## Day 8 – Loop Logic Practice
+- while loop
+- Modulo operator (`%`)
+- Divisibility checking
+- Odd and even number logic
+- Sum calculation using loops
+- Difference between counting and printing
+
+---
+
+# 🧠 Problems Practiced
+
+## Problem 1 – Print Multiples of 3
+
+```python
+i = 1
+
+while i <= 10:
+
+    if i % 3 == 0:
+        print(i)
+
+    i = i + 1
+
+Output:
+
+3
+6
+9
+
+## Problem 2 – Print Odd Numbers from 1 to 10
+i = 1
+n = 10
+
+while i <= n:
+
+    if i % 2 != 0:
+        print(i)
+
+    i = i + 1
+
+Output:
+
+1
+3
+5
+7
+9
+
+## Problem 3 – Sum of Numbers from 1 to 5
+i = 1
+n = 5
+sum = 0
+
+while i <= n:
+
+    sum = sum + i
+    i = i + 1
+
+print(sum)
+
+Output:
+
+15
