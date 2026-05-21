@@ -1,0 +1,82 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice using Python.
+
+My main focus is:
+- Improving logical thinking
+- Building problem-solving skills
+- Understanding programming step-by-step
+- Maintaining coding consistency daily
+
+---
+
+# 📚 Concepts Learned
+
+## Day 10 – While Loop Revision (Level 2)
+- Revising while loops
+- Even and odd number logic
+- Counting vs Summation
+- Multiples checking using modulo (`%`)
+- Execution tracing
+- Condition-based problem solving
+
+---
+
+# 🧠 Problems Practiced
+
+## Problem 1 – Sum of Even Numbers from 1 to 10
+
+```python
+i = 1
+n = 10
+sum = 0
+
+while i <= n:
+
+    if i % 2 == 0:
+        sum = sum + i
+
+    i = i + 1
+
+print(sum)
+
+Output:
+
+30
+
+## Problem 2 – Count Odd Numbers from 1 to 15
+i = 1
+n = 15
+count = 0
+
+while i <= n:
+
+    if i % 2 != 0:
+        count = count + 1
+
+    i = i + 1
+
+print(count)
+
+Output:
+
+8
+
+## Problem 3 – Print Multiples of 5 from 1 to 25
+i = 1
+n = 25
+
+while i <= n:
+
+    if i % 5 == 0:
+        print(i)
+
+    i = i + 1
+
+Output:
+
+5
+10
+15
+20
+25
