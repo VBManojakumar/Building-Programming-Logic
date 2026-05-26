@@ -1,0 +1,92 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice using Python.
+
+My main focus is:
+- Improving logical thinking
+- Building problem-solving skills
+- Understanding programming step-by-step
+- Maintaining coding consistency daily
+
+---
+
+# 📚 Concepts Learned
+
+## Day 14 – Advanced For Loop Logic
+- Sum using loops
+- Count using loops
+- Multiples checking with modulo operator (`%`)
+- Square calculations
+- Cube calculations
+- Multiple conditions using AND logic
+- Execution tracing and logical reasoning
+
+---
+
+# 🧠 Problems Practiced
+
+## Problem 1 – Sum of Multiples of 3 from 1 to 15
+
+```python
+sum = 0
+
+for i in range(1, 16):
+    if i % 3 == 0:
+        sum = sum + i
+
+print(sum)
+
+Output:
+
+45
+
+## Problem 2 – Count Multiples of 5 from 1 to 30
+count = 0
+
+for i in range(1, 31):
+    if i % 5 == 0:
+        count = count + 1
+
+print(count)
+
+Output:
+
+6
+
+## Problem 3 – Print Cubes of Numbers from 1 to 5
+for i in range(1, 6):
+    cube = i ** 3
+    print(cube)
+
+Output:
+
+1
+8
+27
+64
+125
+
+## Problem 4 – Sum of Squares from 1 to 5
+sum = 0
+
+for i in range(1, 6):
+    square = i ** 2
+    sum = sum + square
+
+print(sum)
+
+Output:
+
+55
+
+## Problem 5 – Print Numbers Divisible by Both 2 and 3
+for i in range(1, 21):
+
+    if i % 2 == 0 and i % 3 == 0:
+        print(i)
+
+Output:
+
+6
+12
+18
