@@ -1,0 +1,81 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+My main focus is:
+- Improving logical thinking
+- Building problem-solving skills
+- Understanding program execution step-by-step
+- Developing a developer mindset
+- Maintaining coding consistency daily
+
+---
+
+# 📚 Concepts Learned
+
+## Day 17 – Logic Building with Functions
+
+Today I learned the core concept behind functions and how reusable logic helps in organizing programs efficiently.
+
+Instead of focusing only on Python syntax, I focused more on:
+- logical thinking
+- reusable logic
+- execution flow
+- structured programming mindset
+
+---
+
+# 🧠 What I Understood
+
+## What is a Function?
+
+A function is a reusable block of logic used to perform a specific task.
+
+Functions help to:
+- reduce repeated code
+- organize programs
+- reuse logic multiple times
+- improve program structure
+
+---
+
+# 📚 Function Structure
+
+```python
+def function_name():
+    code
+code
+📚 Function Calling
+function_name()
+
+A function executes only when it is called.
+
+💻 Example 1 – Reusing Logic
+def greet():
+    print("Hello")
+
+greet()
+greet()
+greet()
+
+Output:
+
+Hello
+Hello
+Hello
+
+This example helped me understand how the same logic can be reused multiple times without rewriting code.
+
+💻 Example 2 – Function with Calculation
+def add():
+
+    a = 10
+    b = 5
+
+    print(a + b)
+
+add()
+
+Output:
+
+15
