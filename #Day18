@@ -1,0 +1,135 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+My main focus is:
+- Improving logical thinking
+- Building problem-solving skills
+- Understanding execution flow
+- Developing a developer mindset
+- Maintaining coding consistency daily
+
+---
+
+# 📚 Concepts Revised
+
+## Day 16 & Day 17 – Loops + Functions Revision
+- while loop revision
+- for loop revision
+- reusable logic using functions
+- counting logic
+- summation logic
+- reverse logic
+- square calculations
+- execution tracing
+- logical structuring of programs
+
+---
+
+# 🧠 Problems Practiced
+
+## Problem 1 – Print Even Numbers using Function and For Loop
+
+```python
+def even_numbers():
+
+    for i in range(1, 21):
+
+        if i % 2 == 0:
+            print(i)
+
+even_numbers()
+
+Output:
+
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+
+## Problem 2 – Find Sum of Odd Numbers using Function
+def odd_sum():
+
+    sum = 0
+
+    for i in range(1, 16):
+
+        if i % 2 != 0:
+            sum = sum + i
+
+    print(sum)
+
+odd_sum()
+
+Output:
+
+64
+
+## Problem 3 – Reverse Counting using Function and While Loop
+def reverse():
+
+    i = 10
+
+    while i >= 1:
+
+        print(i)
+
+        i = i - 1
+
+reverse()
+
+Output:
+
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+## Problem 4 – Count Multiples using Function
+def count_multiples():
+
+    count = 0
+
+    for i in range(1, 31):
+
+        if i % 3 == 0:
+            count = count + 1
+
+    print(count)
+
+count_multiples()
+
+Output:
+
+10
+
+## Problem 5 – Print Squares using Function
+def squares():
+
+    for i in range(1, 6):
+
+        square = i * i
+
+        print(square)
+
+squares()
+
+Output:
+
+1
+4
+9
+16
+25
