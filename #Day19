@@ -1,0 +1,103 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+My main focus is:
+- Improving logical thinking
+- Building problem-solving skills
+- Understanding execution flow
+- Developing a developer mindset
+- Maintaining coding consistency daily
+
+---
+
+# 📚 Concepts Learned
+
+## Day 19 – Functions with Parameters
+
+Today I learned how functions become reusable and dynamic using parameters.
+
+Instead of using fixed values inside functions, parameters allow values to come from outside the function.
+
+This improves:
+- reusable logic
+- flexibility
+- execution understanding
+- program organization
+
+---
+
+# 🧠 What I Understood
+
+## Parameters
+
+Parameters are variables written inside the function definition.
+
+## Example:
+
+```python
+def add(a, b):
+
+Here:
+
+a
+b
+
+are parameters.
+
+📚 Arguments
+
+Arguments are actual values passed during function call.
+
+## Example:
+
+add(10, 20)
+
+Here:
+
+10
+20
+
+are arguments.
+
+## Example 1 – Greeting Function
+def show(name):
+
+    print("Hello", name)
+
+show("Manoj")
+
+Output:
+
+Hello Manoj
+
+This example helped me understand how values can be passed dynamically into functions.
+
+## Example 2 – Square Function
+def square(n):
+
+    print(n * n)
+
+square(5)
+
+Output:
+
+25
+
+This demonstrated reusable calculation logic using parameters.
+
+## Example 3 – Even Number Check
+def even(n):
+
+    if n % 2 == 0:
+
+        print("Even")
+
+    print(n)
+
+even(8)
+
+Output:
+
+Even
+8
