@@ -1,0 +1,174 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+My main focus is:
+- Improving logical thinking
+- Building problem-solving skills
+- Understanding execution flow
+- Developing a developer mindset
+- Maintaining coding consistency daily
+
+---
+
+# 📚 Concepts Learned
+
+## Day 20 – Functions with Return Values
+
+Today I learned how functions can return values instead of only printing them.
+
+This helped me understand:
+- reusable outputs
+- storing function results
+- decision-making logic
+- returning text and calculations
+- execution flow inside functions
+
+---
+
+# 🧠 What I Understood
+
+## `print()` vs `return`
+
+### `print()`
+- only displays output
+- temporary result
+
+### `return`
+- sends value back from function
+- result can be stored and reused
+
+---
+
+## Problem 1 – Addition Function
+
+def add(a, b):
+
+    return a + b
+
+sum = add(5, 5)
+
+print(sum)
+
+Output:
+
+10
+
+## Problem 2 – Cube Function
+
+def cube(n):
+
+    return n ** 3
+
+x = cube(2)
+
+print(x)
+
+Output:
+
+8
+
+## Problem 3 – Largest Number
+
+def largest(a, b):
+
+    if a > b:
+        return a
+
+    else:
+        return b
+
+x = largest(20, 10)
+
+print(x)
+
+Output:
+
+20
+
+## Problem 4 – Positive / Negative / Zero Check
+def check(n):
+
+    if n > 0:
+        return "Positive"
+
+    elif n < 0:
+        return "Negative"
+
+    elif n == 0:
+        return "Zero"
+
+x = check(-5)
+
+print(x)
+
+Output:
+
+Negative
+
+## Problem 5 – Smallest Number
+def smallest(a, b):
+
+    if a < b:
+        return a
+
+    else:
+        return b
+
+x = smallest(2, 5)
+
+print(x)
+
+Output:
+
+2
+
+## Problem 6 – String Length
+def length(name):
+
+    return len(name)
+
+x = length("Manoj")
+
+print(x)
+
+Output:
+
+5
+
+## Problem 7 – Divisible Check
+def divide(n):
+
+    if n % 5 == 0:
+        return "Divisible"
+
+    else:
+        return "Not Divisible"
+
+x = divide(5)
+
+print(x)
+
+Output:
+
+Divisible
+
+## Problem 8 – Compare Function
+def compare(a, b):
+
+    if a == b:
+        return "Equal"
+
+    elif a > b:
+        return "A is Greater"
+
+    elif a < b:
+        return "B is Greater"
+
+x = compare(3, 1)
+
+print(x)
+
+Output:
+
+A is Greater
