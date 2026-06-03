@@ -1,0 +1,101 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+My main focus is:
+- Improving logical thinking
+- Building problem-solving skills
+- Understanding execution flow
+- Developing a developer mindset
+- Maintaining coding consistency daily
+
+---
+
+# 📚 Concepts Learned
+
+## Day 21 – Multiple Functions
+
+Today I learned how multiple functions work together inside a program.
+
+This helped me understand:
+- modular programming
+- reusable logic
+- function interaction
+- execution flow between functions
+- structured program organization
+
+---
+
+# 🧠 What I Understood
+
+Instead of writing all logic in one place, developers divide programs into multiple small functions.
+
+Each function performs one specific task.
+
+This makes programs:
+- clean
+- reusable
+- manageable
+- easier to understand
+
+---
+
+# 📚 Example 1 – Multiple Functions
+
+```python
+def hello():
+
+    print("Hello")
+
+def welcome():
+
+    hello()
+
+    print("Welcome")
+
+welcome()
+
+Output:
+
+Hello
+Welcome
+
+This example helped me understand how one function can call another function.
+
+📚 Example 2 – Function Returning Value to Another Function
+def square(n):
+
+    return n * n
+
+def show():
+
+    a = square(5)
+
+    print(a)
+
+show()
+
+Output:
+
+25
+
+📚 Example 3 – Even or Odd using Multiple Functions
+def even(n):
+
+    if n % 2 == 0:
+        return "Even"
+
+    else:
+        return "Odd"
+
+def check():
+
+    a = even(8)
+
+    return a
+
+print(check())
+
+Output:
+
+Even
