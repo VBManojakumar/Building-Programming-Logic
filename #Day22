@@ -1,0 +1,144 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+My main focus is:
+- Improving logical thinking
+- Building problem-solving skills
+- Understanding execution flow
+- Developing a developer mindset
+- Maintaining coding consistency daily
+
+---
+
+# 📚 Concepts Learned
+
+## Day 22 – Advanced Function Problems
+
+Today I practiced advanced function-based logic problems.
+
+These problems helped me improve:
+- condition chaining
+- decision-making logic
+- reverse thinking
+- continuous multiplication logic
+- reusable calculations
+- execution tracing
+
+---
+
+# 🧠 What I Understood
+
+Functions can be used not only for calculations but also for:
+- decision making
+- comparison logic
+- operator handling
+- reverse-building logic
+- advanced problem solving
+
+---
+
+## Problem 1 – Grade Calculator
+
+def grade(marks):
+
+    if marks >= 90:
+        return "A"
+
+    elif marks >= 75:
+        return "B"
+
+    elif marks >= 50:
+        return "C"
+
+    else:
+        return "Fail"
+
+print(grade(85))
+
+Output:
+
+B
+
+## Problem 2 – Vowel or Consonant
+def letter(ch):
+
+    if ch in "aeiou":
+        return "Vowel"
+
+    else:
+        return "Consonant"
+
+print(letter("a"))
+
+Output:
+
+Vowel
+
+## Problem 3 – Calculator Function
+def cal(a, b, op):
+
+    if op == "+":
+        return a + b
+
+    elif op == "-":
+        return a - b
+
+    elif op == "*":
+        return a * b
+
+    elif op == "/":
+        return a / b
+
+    else:
+        return "Enter valid operator"
+
+print(cal(4, 2, "+"))
+
+Output:
+
+6
+
+## Problem 4 – Palindrome Check
+def palindrome(word):
+
+    rev = ""
+
+    for ch in word:
+
+        rev = ch + rev
+
+    print(rev)
+
+    if rev == word:
+        return "Palindrome"
+
+    else:
+        return "Not a palindrome"
+
+print(palindrome("madam"))
+
+Output:
+
+madam
+Palindrome
+
+## Problem 5 – Factorial Function
+def factorial(n):
+
+    fact = 1
+    i = 1
+
+    while i <= n:
+
+        fact = fact * i
+
+        i = i + 1
+
+    return fact
+
+print(factorial(5))
+
+Output:
+
+120
