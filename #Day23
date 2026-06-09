@@ -1,0 +1,139 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 23 – Different Advanced Function Problems
+
+Today I practiced different types of function problems to improve:
+- logical thinking
+- execution tracing
+- comparison logic
+- reusable calculations
+- string handling
+- condition-based problem solving
+
+My main focus was understanding logic instead of only focusing on syntax.
+
+---
+
+## Problem 1 – Number Sign Checker
+
+def check(n):
+
+    if n > 0:
+        return "Positive"
+
+    elif n < 0:
+        return "Negative"
+
+    else:
+        return "Zero"
+
+print(check(-10))
+
+Output:
+
+Negative
+
+## Problem 2 – Largest Among Three Numbers
+def largest(a, b, c):
+
+    if a > b and a > c:
+        return a
+
+    elif b > a and b > c:
+        return b
+
+    else:
+        return c
+
+print(largest(10, 25, 15))
+
+Output:
+
+25
+
+## Problem 3 – Reverse a Word
+def reverse(word):
+
+    rev = ""
+
+    for ch in word:
+
+        rev = ch + rev
+
+    return rev
+
+print(reverse("python"))
+
+Output:
+
+nohtyp
+
+## Problem 4 – Count Total Digits
+def count_digits(n):
+
+    count = 0
+
+    while n > 0:
+
+        n = n // 10
+
+        count = count + 1
+
+    return count
+
+print(count_digits(12345))
+
+Output:
+
+5
+
+## Problem 5 – Sum of Digits
+def digit_sum(n):
+
+    total = 0
+
+    while n > 0:
+
+        digit = n % 10
+
+        total = total + digit
+
+        n = n // 10
+
+    return total
+
+print(digit_sum(123))
+
+Output:
+
+6
+
+## Problem 6 – Armstrong Number Check
+def armstrong(n):
+
+    temp = n
+    total = 0
+
+    while temp > 0:
+
+        digit = temp % 10
+
+        total = total + digit ** 3
+
+        temp = temp // 10
+
+    if total == n:
+        return "Armstrong"
+
+    else:
+        return "Not Armstrong"
+
+print(armstrong(153))
+
+Output:
+
+Armstrong
