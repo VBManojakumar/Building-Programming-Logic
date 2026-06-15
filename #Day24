@@ -1,0 +1,231 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 24 Revision – Functions and Logic Building
+
+Today I revised the concepts learned in Day 22 and Day 23.
+
+My focus was:
+- logical thinking
+- function usage
+- return values
+- reverse logic
+- digit-processing logic
+- condition-based problem solving
+
+---
+
+# 📚 Problems Revised
+
+## 1. Grade Calculator
+
+Concept:
+- Multiple conditions
+- Decision making
+
+Learning:
+- Using if-elif-else to classify marks into grades.
+
+---
+
+## 2. Calculator Function
+
+Concept:
+- Operator-based logic
+
+Learning:
+- Performing different operations based on user input.
+
+Operations:
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Modulus
+
+---
+
+## 3. Palindrome Check
+
+Concept:
+- Reverse building
+- Comparison logic
+
+Learning:
+- Store original value.
+- Create reverse.
+- Compare original and reverse.
+
+Examples:
+- level → Palindrome
+- madam → Palindrome
+- hello → Not Palindrome
+
+---
+
+## 4. Factorial
+
+Concept:
+- Continuous multiplication
+
+Learning:
+
+5! = 1 × 2 × 3 × 4 × 5
+
+Output:
+
+120
+
+---
+
+## 5. Largest Among Three Numbers
+
+Concept:
+- Multiple comparisons
+
+Learning:
+- Compare all three values.
+- Return the largest value.
+
+---
+
+## 6. Reverse Word
+
+Concept:
+- String reverse logic
+
+Learning:
+- Build reverse character by character.
+
+Example:
+
+python
+
+Output:
+
+nohtyp
+
+---
+
+## 7. Sum of Digits
+
+Concept:
+- Digit extraction
+
+Learning:
+
+1234
+
+↓
+
+1 + 2 + 3 + 4
+
+↓
+
+10
+
+---
+
+## 8. Count Digits
+
+Concept:
+- Number processing
+
+Learning:
+- Remove one digit at a time.
+- Increase count until number becomes zero.
+
+Example:
+
+12345
+
+Output:
+
+5
+
+---
+
+## 9. Vowel or Consonant
+
+Concept:
+- Membership checking
+
+Learning:
+- Check whether character belongs to vowel group.
+- Return Vowel or Consonant.
+
+---
+
+## 10. Armstrong Number
+
+Concept:
+- Digit extraction
+- Power calculation
+- Comparison logic
+
+Example:
+
+153
+
+↓
+
+1³ + 5³ + 3³
+
+↓
+
+1 + 125 + 27
+
+↓
+
+153
+
+Output:
+
+Armstrong
+
+Learning:
+- Process all digits.
+- Calculate cube of every digit.
+- Compare total with original number.
+
+---
+
+# 🎯 Key Learnings
+
+Today I revised:
+
+✅ Grade Logic
+
+✅ Calculator Logic
+
+✅ Palindrome Logic
+
+✅ Factorial Logic
+
+✅ Largest Number Logic
+
+✅ Reverse String Logic
+
+✅ Sum of Digits Logic
+
+✅ Count Digits Logic
+
+✅ Vowel Checking Logic
+
+✅ Armstrong Number Logic
+
+---
+
+# 🎯 Goal
+
+To improve:
+
+- Logical Thinking
+- Problem Solving
+- Execution Flow Understanding
+- Function-Based Programming
+- String Manipulation Logic
+- Developer Mindset
