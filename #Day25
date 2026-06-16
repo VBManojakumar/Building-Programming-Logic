@@ -1,0 +1,221 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 25 – Strings (Part 1)
+
+Today I started learning Strings.
+
+My focus was:
+- Understanding what a string is
+- Traversing a string
+- Counting characters
+- Reverse string logic
+- Palindrome string logic
+- Vowel and consonant logic
+- Character classification
+
+---
+
+# 🧠 What I Understood
+
+A string is a collection of characters.
+
+Example:
+
+HELLO
+
+Characters:
+
+H
+E
+L
+L
+O
+
+To solve most string problems:
+
+Take one character
+⬇️
+Process it
+⬇️
+Move to next character
+⬇️
+Repeat
+
+This process is called string traversal.
+
+---
+
+# 📚 Problem 1 – Print Each Character
+
+Input:
+
+HELLO
+
+Output:
+
+H
+E
+L
+L
+O
+
+Learning:
+- Traversing a string character by character.
+
+---
+
+# 📚 Problem 2 – Count Characters
+
+Input:
+
+MANOJ
+
+Output:
+
+5
+
+Learning:
+- Count every character while traversing.
+
+---
+
+# 📚 Problem 3 – Reverse a String
+
+Input:
+
+PYTHON
+
+Output:
+
+NOHTYP
+
+Learning:
+- Build reverse string using reverse-building logic.
+
+---
+
+# 📚 Problem 4 – Palindrome String
+
+Input:
+
+MADAM
+
+Output:
+
+Palindrome
+
+Learning:
+- Create reverse string.
+- Compare original and reverse.
+
+---
+
+# 📚 Problem 5 – Count Vowels
+
+Input:
+
+EDUCATION
+
+Vowels:
+
+E
+U
+A
+I
+O
+
+Output:
+
+5
+
+Learning:
+- Membership checking.
+- Identifying vowels inside a string.
+
+---
+
+# 📚 Problem 6 – Count Consonants
+
+Input:
+
+PROGRAMMING
+
+Output:
+
+8
+
+Learning:
+- If character is not a vowel, count it as a consonant.
+
+---
+
+# 📚 New Concept Learned
+
+## Uppercase and Lowercase Logic
+
+Uppercase Letters:
+
+A to Z
+
+Lowercase Letters:
+
+a to z
+
+Example:
+
+PyThOn
+
+Uppercase:
+
+P
+T
+O
+
+Count = 3
+
+Lowercase:
+
+y
+h
+n
+
+Count = 3
+
+Learning:
+- Character classification logic.
+
+---
+
+# 🎯 Key Learnings
+
+Today I learned:
+
+✅ String Traversal
+
+✅ Character Counting
+
+✅ Reverse String Logic
+
+✅ Palindrome Logic
+
+✅ Vowel Counting
+
+✅ Consonant Counting
+
+✅ Uppercase and Lowercase Identification
+
+---
+
+# 🎯 Goal
+
+To improve:
+
+- Logical Thinking
+- String Manipulation Logic
+- Problem Solving Skills
+- Execution Flow Understanding
+- Developer Mindset
