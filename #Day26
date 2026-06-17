@@ -1,0 +1,158 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 25 – Strings (Part 2)
+
+Today I continued learning String concepts.
+
+My focus was:
+- String indexing
+- Space handling
+- Word counting
+- Character filtering
+- String modification
+- Word reversal logic
+
+---
+
+# 📚 Problem 1 – Last Character
+
+Input:
+
+PYTHON
+
+Output:
+
+N
+
+Learning:
+- Every character has a position.
+- Last character can be accessed using its last index.
+
+---
+
+# 📚 Problem 2 – Count Spaces
+
+Input:
+
+I LOVE PYTHON
+
+Output:
+
+2
+
+Learning:
+- Traverse the string.
+- Check every character.
+- Count spaces.
+
+---
+
+# 📚 Problem 3 – Count Words
+
+Input:
+
+I LOVE PYTHON
+
+Output:
+
+3
+
+Learning:
+- Words can be calculated using spaces.
+- Number of words = Number of spaces + 1.
+
+---
+
+# 📚 Problem 4 – Remove Vowels
+
+Input:
+
+EDUCATION
+
+Output:
+
+DCTN
+
+Learning:
+- Check every character.
+- Skip vowels.
+- Add remaining characters to a new string.
+
+---
+
+# 📚 Problem 5 – Remove Spaces
+
+Input:
+
+I LOVE PYTHON
+
+Output:
+
+ILOVEPYTHON
+
+Learning:
+- Ignore spaces.
+- Join all remaining characters.
+
+---
+
+# 📚 Problem 6 – Reverse Each Word
+
+Input:
+
+I LOVE PYTHON
+
+Output:
+
+I EVOL NOHTYP
+
+Learning:
+- Reverse every word individually.
+- Maintain word order.
+
+---
+
+# 🎯 Key Learnings
+
+Today I learned:
+
+✅ Last Character Access
+
+✅ Space Counting
+
+✅ Word Counting
+
+✅ Removing Vowels
+
+✅ Removing Spaces
+
+✅ Reversing Individual Words
+
+✅ String Traversal Practice
+
+---
+
+# 🚀 Next Topics in Strings
+
+- Duplicate Characters
+- Character Frequency Table
+- First Non-Repeating Character
+- Anagram Check
+- String Compression
+- Interview-Level String Problems
+
+---
+
+# 🎯 Goal
+
+To improve:
+
+- String Manipulation Logic
+- Character Processing Skills
+- Problem Solving Ability
+- Logical Thinking
+- Interview Preparation
