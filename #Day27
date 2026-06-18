@@ -1,0 +1,173 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 27 – Strings (Part 3)
+
+Today I practiced intermediate-level string problems that are commonly asked in coding interviews.
+
+My focus was:
+- Character frequency
+- Duplicate characters
+- Unique characters
+- Digit counting
+- Special character identification
+- Anagram checking
+
+---
+
+# 📚 Problem 1 – Frequency of a Character
+
+Input:
+
+BANANA
+
+Target Character:
+
+A
+
+Output:
+
+3
+
+Learning:
+- Traverse the string.
+- Compare each character with the target.
+- Count occurrences.
+
+---
+
+# 📚 Problem 2 – Duplicate Characters
+
+Input:
+
+PROGRAM
+
+Output:
+
+R
+
+Learning:
+- A duplicate character appears more than once.
+- Check character frequency.
+- Identify repeated characters.
+
+---
+
+# 📚 Problem 3 – Unique Characters
+
+Input:
+
+LEVEL
+
+Output:
+
+V
+
+Learning:
+- Unique characters appear exactly once.
+- Count occurrences of each character.
+- Print characters whose count is 1.
+
+---
+
+# 📚 Problem 4 – Count Digits in a String
+
+Input:
+
+abc123xyz45
+
+Output:
+
+5
+
+Learning:
+- Check whether a character is between 0 and 9.
+- Count all numeric characters.
+
+Digits:
+
+1
+2
+3
+4
+5
+
+---
+
+# 📚 Problem 5 – Count Special Characters
+
+Input:
+
+Hello@123#
+
+Output:
+
+2
+
+Special Characters:
+
+@
+#
+
+Learning:
+- Special characters are neither letters nor digits.
+- Count all such characters.
+
+---
+
+# 📚 Problem 6 – Anagram Check
+
+Input:
+
+LISTEN
+SILENT
+
+Output:
+
+Anagram
+
+Learning:
+- Two strings are anagrams if they contain the same letters.
+- Order does not matter.
+- Compare the sorted versions of both strings.
+
+Examples:
+
+LISTEN → SILENT ✅
+
+HEART → EARTH ✅
+
+HELLO → WORLD ❌
+
+---
+
+# 🎯 Key Learnings
+
+Today I learned:
+
+✅ Character Frequency Logic
+
+✅ Duplicate Character Detection
+
+✅ Unique Character Detection
+
+✅ Digit Identification
+
+✅ Special Character Detection
+
+✅ Anagram Logic
+
+---
+
+# 🎯 Goal
+
+To improve:
+
+- Logical Thinking
+- String Manipulation Skills
+- Interview Problem Solving
+- Character Processing Logic
+- Coding Confidence
