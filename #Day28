@@ -1,0 +1,226 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 28 – Strings Revision
+
+Today was a revision day.
+
+I revised all the important string concepts learned so far and practiced the most common string problems.
+
+---
+
+# 📚 Problem 1 – Frequency of Character
+
+Input:
+
+BANANA
+
+Target Character:
+
+A
+
+Output:
+
+3
+
+Learning:
+- Count occurrences of a specific character.
+- Frequency is the foundation for duplicate and unique character problems.
+
+---
+
+# 📚 Problem 2 – Duplicate Character
+
+Input:
+
+PROGRAM
+
+Output:
+
+R
+
+Learning:
+- A duplicate character appears more than once.
+- Frequency greater than 1 indicates a duplicate.
+
+---
+
+# 📚 Problem 3 – Unique Character
+
+Input:
+
+LEVEL
+
+Output:
+
+V
+
+Learning:
+- A unique character appears exactly once.
+- Frequency equal to 1 indicates a unique character.
+
+---
+
+# 📚 Problem 4 – Count Digits
+
+Input:
+
+abc123xyz45
+
+Output:
+
+5
+
+Learning:
+- Identify characters between 0 and 9.
+- Count all numeric characters.
+
+---
+
+# 📚 Problem 5 – Count Special Characters
+
+Input:
+
+Hello@123#
+
+Output:
+
+2
+
+Special Characters:
+
+@
+#
+
+Learning:
+- Special characters are neither letters nor digits.
+
+---
+
+# 📚 Problem 6 – Anagram Check
+
+Input:
+
+LISTEN
+SILENT
+
+Output:
+
+Anagram
+
+Learning:
+- Two strings are anagrams if they contain the same letters with the same frequency.
+
+---
+
+# 📚 Problem 7 – Reverse String
+
+Input:
+
+PYTHON
+
+Output:
+
+NOHTYP
+
+Learning:
+- Build a new string in reverse order.
+
+---
+
+# 📚 Problem 8 – Palindrome Check
+
+Input:
+
+MADAM
+
+Output:
+
+Palindrome
+
+Learning:
+- Reverse the string.
+- Compare original and reversed strings.
+
+---
+
+# 📚 Problem 9 – Count Vowels
+
+Input:
+
+EDUCATION
+
+Output:
+
+5
+
+Vowels:
+
+E
+U
+A
+I
+O
+
+Learning:
+- Identify vowels using membership checking.
+
+---
+
+# 📚 Problem 10 – Count Uppercase Letters
+
+Input:
+
+PyThOn
+
+Output:
+
+3
+
+Uppercase Letters:
+
+P
+T
+O
+
+Learning:
+- Character range checking.
+- Understanding AND vs OR logic.
+
+---
+
+# 🎯 Key Learnings Revised
+
+✅ Frequency of Character
+
+✅ Duplicate Characters
+
+✅ Unique Characters
+
+✅ Reverse String
+
+✅ Palindrome Check
+
+✅ Vowel Counting
+
+✅ Digit Counting
+
+✅ Special Character Counting
+
+✅ Uppercase / Lowercase Logic
+
+✅ Anagram Check
+
+---
+# 🎯 Goal
+
+To strengthen:
+
+- String Manipulation Logic
+- Character Processing Skills
+- Logical Thinking
+- Interview Problem Solving
+- Coding Confidence
