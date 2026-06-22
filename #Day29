@@ -1,0 +1,245 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 29 – Intermediate String Problems
+
+Today I practiced more string-based problems focusing on vowels, digits, character frequency, and string modification.
+
+---
+
+## Problem 1 – Check String Starts with a Vowel
+
+### Code
+a = "APPLE"
+
+if a[0] in "AEIOUaeiou":
+    print("Starts with Vowel")
+else:
+    print("Does Not Start with Vowel")
+
+Output
+
+Starts with Vowel
+
+Logic
+Access the first character.
+Check whether it is a vowel.
+Print the result.
+
+## Problem 2 – Check String Ends with a Digit
+Code
+a = "HELLO5"
+
+if a[-1] >= "0" and a[-1] <= "9":
+    print("Ends with Digit")
+else:
+    print("Does Not End with Digit")
+
+Output
+
+Ends with Digit
+
+Logic
+Access the last character.
+Check whether it is a digit.
+Print the result.
+
+## Problem 3 – Frequency of a Given Character
+Code
+a = "BANANA"
+
+count = 0
+
+for i in a:
+    if i == "N":
+        count = count + 1
+
+print(count)
+
+Output
+
+2
+
+Logic
+Traverse the string.
+Count every occurrence of 'N'.
+Print the count.
+
+## Problem 4 – Find the First Vowel
+Code
+a = "PROGRAM"
+
+for i in a:
+    if i in "AEIOUaeiou":
+        print(i)
+        break
+
+Output
+
+O
+
+Logic
+Traverse from left to right.
+Find the first vowel.
+Print it and stop.
+
+## Problem 5 – Find the Last Vowel
+Code
+a = "EDUCATION"
+
+rev = ""
+
+for i in a:
+    rev = i + rev
+
+for ch in rev:
+    if ch in "AEIOUaeiou":
+        print(ch)
+        break
+
+Output
+
+O
+
+Logic
+Reverse the string.
+Find the first vowel in the reversed string.
+That becomes the last vowel of the original string.
+
+## Problem 6 – Replace Spaces with '-'
+Code
+a = "I LOVE PYTHON"
+
+a = a.replace(" ", "-")
+
+print(a)
+
+Output
+
+I-LOVE-PYTHON
+
+Logic
+Find spaces.
+Replace each space with '-'.
+Print the modified string.
+
+## Problem 7 – Count Even Digits
+Code
+a = "A123456B"
+
+count = 0
+
+for i in a:
+    if i >= "0" and i <= "9":
+        if int(i) % 2 == 0:
+            count = count + 1
+
+print(count)
+
+Output
+
+3
+
+Logic
+Extract digits.
+Convert digit character to number.
+Count digits divisible by 2.
+
+## Problem 8 – Count Odd Digits
+Code
+a = "A123456B"
+
+count = 0
+
+for i in a:
+    if i >= "0" and i <= "9":
+        if int(i) % 2 != 0:
+            count = count + 1
+
+print(count)
+
+Output
+
+3
+
+Logic
+Extract digits.
+Convert digit character to number.
+Count digits not divisible by 2.
+
+## Problem 9 – Remove Digits
+Code
+a = "AB12CD34"
+
+result = ""
+
+for i in a:
+    if (i >= "A" and i <= "Z") or (i >= "a" and i <= "z"):
+        result = result + i
+
+print(result)
+
+Output
+
+ABCD
+
+Logic
+Keep only alphabet characters.
+Ignore digits.
+Build a new string.
+
+## Problem 10 – Reverse Digits
+Code
+a = "A12B34"
+
+digits = ""
+
+for i in a:
+    if i >= "0" and i <= "9":
+        digits = i + digits
+
+print(digits)
+
+Output
+
+4321
+
+Logic
+Extract only digits.
+Reverse them while storing.
+Print the reversed digit sequence.
+
+🎯 Key Concepts Practiced
+
+✅ First Character Logic
+
+✅ Last Character Logic
+
+✅ First Vowel
+
+✅ Last Vowel
+
+✅ Character Frequency
+
+✅ Replace Characters
+
+✅ Digit Processing
+
+✅ Even/Odd Digit Logic
+
+✅ Remove Digits
+
+✅ Reverse Digits
+
+🎯 Goal
+
+To improve:
+
+String Manipulation Skills
+Character Processing Logic
+Interview Problem Solving
+Logical Thinking
+Coding Confidence
