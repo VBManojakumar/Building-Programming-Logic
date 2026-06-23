@@ -1,0 +1,369 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 30 – Advanced String Logic Problems
+
+Today I practiced advanced string problems based on character frequency, word processing, duplicate handling, and string comparison.
+
+---
+
+# Problem 1 – Frequency of Every Character
+
+### Code
+
+```python
+a = "MISSISSIPPI"
+seen = ""
+
+for i in a:
+    if i not in seen:
+        print(i, "=", a.count(i))
+        seen = seen + i
+```
+
+### Output
+
+```text
+M = 1
+I = 4
+S = 4
+P = 2
+```
+
+### Logic
+
+- Traverse the string.
+- Print frequency only once.
+- Use a seen variable to avoid duplicate printing.
+
+---
+
+# Problem 2 – Most Frequent Character
+
+### Code
+
+```python
+a = "MISSISSIPPI"
+
+max_char = ""
+max_count = 0
+seen = ""
+
+for i in a:
+    if i not in seen:
+        if a.count(i) > max_count:
+            max_count = a.count(i)
+            max_char = i
+
+        seen = seen + i
+
+print(max_char)
+```
+
+### Output
+
+```text
+I
+```
+
+### Logic
+
+- Track maximum frequency.
+- Update character whenever a larger frequency is found.
+
+---
+
+# Problem 3 – Least Frequent Character
+
+### Code
+
+```python
+a = "MISSISSIPPI"
+
+min_char = a[0]
+min_count = a.count(a[0])
+seen = ""
+
+for i in a:
+    if i not in seen:
+        if a.count(i) < min_count:
+            min_count = a.count(i)
+            min_char = i
+
+        seen = seen + i
+
+print(min_char)
+```
+
+### Output
+
+```text
+M
+```
+
+### Logic
+
+- Track minimum frequency.
+- Update whenever a smaller frequency appears.
+
+---
+
+# Problem 4 – Count Words
+
+### Code
+
+```python
+a = "I LOVE LEARNING PYTHON"
+
+count = 0
+
+for i in a:
+    if i == " ":
+        count = count + 1
+
+print(count + 1)
+```
+
+### Output
+
+```text
+4
+```
+
+### Logic
+
+- Count spaces.
+- Words = Spaces + 1.
+
+---
+
+# Problem 5 – Longest Word
+
+### Code
+
+```python
+a = "I LOVE LEARNING PYTHON"
+
+words = a.split()
+
+longest = words[0]
+
+for word in words:
+    if len(word) > len(longest):
+        longest = word
+
+print(longest)
+```
+
+### Output
+
+```text
+LEARNING
+```
+
+### Logic
+
+- Split sentence into words.
+- Compare word lengths.
+- Store longest word.
+
+---
+
+# Problem 6 – Smallest Word
+
+### Code
+
+```python
+a = "I LOVE LEARNING PYTHON"
+
+words = a.split()
+
+smallest = words[0]
+
+for word in words:
+    if len(word) < len(smallest):
+        smallest = word
+
+print(smallest)
+```
+
+### Output
+
+```text
+I
+```
+
+### Logic
+
+- Split sentence into words.
+- Compare lengths.
+- Store smallest word.
+
+---
+
+# Problem 7 – Rotation Check
+
+### Code
+
+```python
+a = "ABCD"
+b = "CDAB"
+
+if b in (a + a):
+    print("Rotation")
+else:
+    print("Not Rotation")
+```
+
+### Output
+
+```text
+Rotation
+```
+
+### Logic
+
+- Concatenate first string with itself.
+- Check whether second string exists inside it.
+
+---
+
+# Problem 8 – Remove Duplicate Characters
+
+### Code
+
+```python
+a = "PROGRAMMING"
+
+result = ""
+
+for i in a:
+    if i not in result:
+        result = result + i
+
+print(result)
+```
+
+### Output
+
+```text
+PROGAMIN
+```
+
+### Logic
+
+- Keep only first occurrence.
+- Ignore repeated characters.
+
+---
+
+# Problem 9 – Second Most Frequent Character
+
+### Code
+
+```python
+a = "BANANA"
+
+seen = ""
+first = 0
+second = 0
+first_char = ""
+second_char = ""
+
+for i in a:
+    if i not in seen:
+        freq = a.count(i)
+
+        if freq > first:
+            second = first
+            second_char = first_char
+
+            first = freq
+            first_char = i
+
+        elif freq > second:
+            second = freq
+            second_char = i
+
+        seen += i
+
+print(second_char)
+```
+
+### Output
+
+```text
+N
+```
+
+### Logic
+
+- Track highest and second highest frequencies.
+- Update both when necessary.
+
+---
+
+# Problem 10 – Check Same Characters
+
+### Code
+
+```python
+a = "ABC"
+b = "BCA"
+
+if sorted(a) == sorted(b):
+    print("Yes")
+else:
+    print("No")
+```
+
+### Output
+
+```text
+Yes
+```
+
+### Logic
+
+- Sort both strings.
+- Compare sorted results.
+- Equal means same characters.
+
+---
+
+# 🎯 Key Concepts Practiced
+
+✅ Character Frequency
+
+✅ Maximum Frequency
+
+✅ Minimum Frequency
+
+✅ Word Counting
+
+✅ Longest Word
+
+✅ Smallest Word
+
+✅ Rotation Check
+
+✅ Remove Duplicates
+
+✅ Second Most Frequent Character
+
+✅ String Comparison
+
+---
+
+# 🎯 Goal
+
+To improve:
+
+- Frequency-Based Problem Solving
+- String Analysis
+- Interview Coding Skills
+- Logical Thinking
+- Advanced String Manipulation
