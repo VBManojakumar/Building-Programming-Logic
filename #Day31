@@ -1,0 +1,363 @@
+
+
+# Problem 1 – Sum of Digits
+
+### Code
+
+```python
+n = 5432
+
+total = 0
+
+while n > 0:
+
+    digit = n % 10
+
+    total = total + digit
+
+    n = n // 10
+
+print(total)
+```
+
+### Output
+
+```text
+14
+```
+
+### Logic
+
+* Extract the last digit.
+* Add it to total.
+* Remove the last digit.
+
+---
+
+# Problem 2 – Reverse a Number
+
+### Code
+
+```python
+n = 5432
+
+reverse = 0
+
+while n > 0:
+
+    digit = n % 10
+
+    reverse = reverse * 10 + digit
+
+    n = n // 10
+
+print(reverse)
+```
+
+### Output
+
+```text
+2345
+```
+
+### Logic
+
+* Extract digits one by one.
+* Build reverse number.
+* Remove processed digits.
+
+---
+
+# Problem 3 – Palindrome Number
+
+### Code
+
+```python
+n = 121
+
+temp = n
+
+reverse = 0
+
+while n > 0:
+
+    digit = n % 10
+
+    reverse = reverse * 10 + digit
+
+    n = n // 10
+
+if temp == reverse:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+```
+
+### Output
+
+```text
+Palindrome
+```
+
+### Logic
+
+* Reverse the number.
+* Compare with original number.
+
+---
+
+# Problem 4 – Armstrong Number
+
+### Code
+
+```python
+n = 153
+
+temp = n
+
+total = 0
+
+while n > 0:
+
+    digit = n % 10
+
+    total = total + digit ** 3
+
+    n = n // 10
+
+if temp == total:
+    print("Armstrong")
+else:
+    print("Not Armstrong")
+```
+
+### Output
+
+```text
+Armstrong
+```
+
+### Logic
+
+* Cube every digit.
+* Add all cubes.
+* Compare with original number.
+
+---
+
+# Problem 5 – Count Digits
+
+### Code
+
+```python
+n = 98765
+
+count = 0
+
+while n > 0:
+
+    count = count + 1
+
+    n = n // 10
+
+print(count)
+```
+
+### Output
+
+```text
+5
+```
+
+### Logic
+
+* Remove one digit each iteration.
+* Count total iterations.
+
+---
+
+# Problem 6 – Largest Digit
+
+### Code
+
+```python
+n = 58342
+
+largest = 0
+
+while n > 0:
+
+    digit = n % 10
+
+    if digit > largest:
+
+        largest = digit
+
+    n = n // 10
+
+print(largest)
+```
+
+### Output
+
+```text
+8
+```
+
+### Logic
+
+* Extract every digit.
+* Compare with largest value.
+
+---
+
+# Problem 7 – Smallest Digit
+
+### Code
+
+```python
+n = 58342
+
+smallest = 9
+
+while n > 0:
+
+    digit = n % 10
+
+    if digit < smallest:
+
+        smallest = digit
+
+    n = n // 10
+
+print(smallest)
+```
+
+### Output
+
+```text
+2
+```
+
+### Logic
+
+* Extract every digit.
+* Compare with smallest value.
+
+---
+
+# Problem 8 – Strong Number
+
+### Code
+
+```python
+n = 145
+
+temp = n
+
+total = 0
+
+while n > 0:
+
+    digit = n % 10
+
+    fact = 1
+
+    for i in range(1, digit + 1):
+
+        fact = fact * i
+
+    total = total + fact
+
+    n = n // 10
+
+if temp == total:
+
+    print("Strong Number")
+
+else:
+
+    print("Not Strong Number")
+```
+
+### Output
+
+```text
+Strong Number
+```
+
+### Logic
+
+* Find factorial of every digit.
+* Add all factorials.
+* Compare with original number.
+
+---
+
+# Problem 9 – Decimal to Binary
+
+### Code
+
+```python
+n = 13
+
+binary = ""
+
+while n > 0:
+
+    binary = str(n % 2) + binary
+
+    n = n // 2
+
+print(binary)
+```
+
+### Output
+
+```text
+1101
+```
+
+### Logic
+
+* Divide by 2 repeatedly.
+* Store remainders.
+* Read from bottom to top.
+
+---
+
+# Problem 10 – Fibonacci Series
+
+### Code
+
+```python
+n = 10
+
+a = 0
+
+b = 1
+
+for i in range(n):
+
+    print(a)
+
+    c = a + b
+
+    a = b
+
+    b = c
+```
+
+### Output
+
+```text
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
