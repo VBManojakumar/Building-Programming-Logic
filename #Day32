@@ -1,0 +1,502 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 32 – String Revision and Interview Problems
+
+Today I revised important string concepts and solved commonly asked interview problems.
+
+---
+
+# Problem 1 – String Palindrome
+
+### Code
+
+```python
+a = "MADAM"
+
+rev = ""
+
+for ch in a:
+    rev = ch + rev
+
+if rev == a:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+```
+
+### Output
+
+```text
+Palindrome
+```
+
+### Logic
+
+- Reverse the string.
+- Compare reversed string with original string.
+- If both are equal, it is a palindrome.
+
+---
+
+# Problem 2 – Reverse Each Word
+
+### Code
+
+```python
+a = "I LOVE PYTHON"
+
+words = a.split()
+
+for word in words:
+    rev = ""
+
+    for ch in word:
+        rev = ch + rev
+
+    print(rev, end=" ")
+```
+
+### Output
+
+```text
+I EVOL NOHTYP
+```
+
+### Logic
+
+- Split the sentence into words.
+- Reverse each word individually.
+- Print the reversed words.
+
+---
+
+# Problem 3 – Count Uppercase Letters
+
+### Code
+
+```python
+a = "PyThOn"
+
+count = 0
+
+for ch in a:
+    if ch >= "A" and ch <= "Z":
+        count += 1
+
+print(count)
+```
+
+### Output
+
+```text
+3
+```
+
+### Logic
+
+- Check whether a character lies between A and Z.
+- Count all uppercase letters.
+
+---
+
+# Problem 4 – Count Lowercase Letters
+
+### Code
+
+```python
+a = "PyThOn"
+
+count = 0
+
+for ch in a:
+    if ch >= "a" and ch <= "z":
+        count += 1
+
+print(count)
+```
+
+### Output
+
+```text
+3
+```
+
+### Logic
+
+- Check whether a character lies between a and z.
+- Count all lowercase letters.
+
+---
+
+# Problem 5 – First Non-Repeating Character
+
+### Code
+
+```python
+a = "SWISS"
+
+for ch in a:
+    if a.count(ch) == 1:
+        print(ch)
+        break
+```
+
+### Output
+
+```text
+W
+```
+
+### Logic
+
+- Traverse the string.
+- Find the first character whose frequency is 1.
+- Print it and stop.
+
+---
+
+# Problem 6 – Count Digits
+
+### Code
+
+```python
+a = "abc123xyz45"
+
+count = 0
+
+for ch in a:
+    if ch >= "0" and ch <= "9":
+        count += 1
+
+print(count)
+```
+
+### Output
+
+```text
+5
+```
+
+### Logic
+
+- Identify numeric characters.
+- Count total digits.
+
+---
+
+# Problem 7 – Count Special Characters
+
+### Code
+
+```python
+a = "Hello@123#"
+
+count = 0
+
+for ch in a:
+    if not ((ch >= "A" and ch <= "Z") or
+            (ch >= "a" and ch <= "z") or
+            (ch >= "0" and ch <= "9")):
+        count += 1
+
+print(count)
+```
+
+### Output
+
+```text
+2
+```
+
+### Logic
+
+- Ignore letters and digits.
+- Count remaining special characters.
+
+---
+
+# Problem 8 – Anagram Check
+
+### Code
+
+```python
+a = "LISTEN"
+b = "SILENT"
+
+if sorted(a) == sorted(b):
+    print("Anagram")
+else:
+    print("Not Anagram")
+```
+
+### Output
+
+```text
+Anagram
+```
+
+### Logic
+
+- Sort both strings.
+- Compare sorted results.
+- Equal means anagram.
+
+---
+
+# Problem 9 – Remove Vowels
+
+### Code
+
+```python
+a = "EDUCATION"
+
+result = ""
+
+for ch in a:
+    if ch not in "AEIOUaeiou":
+        result += ch
+
+print(result)
+```
+
+### Output
+
+```text
+DCTN
+```
+
+### Logic
+
+- Check each character.
+- Skip vowels.
+- Store only consonants.
+
+---
+
+# Problem 10 – Frequency of Every Character
+
+### Code
+
+```python
+a = "BANANA"
+
+seen = ""
+
+for ch in a:
+    if ch not in seen:
+        print(ch, "=", a.count(ch))
+        seen += ch
+```
+
+### Output
+
+```text
+B = 1
+A = 3
+N = 2
+```
+
+### Logic
+
+- Print frequency only once.
+- Use seen to avoid duplicates.
+
+---
+
+# Problem 11 – Remove Duplicate Characters
+
+### Code
+
+```python
+a = "PROGRAMMING"
+
+result = ""
+
+for ch in a:
+    if ch not in result:
+        result += ch
+
+print(result)
+```
+
+### Output
+
+```text
+PROGAMIN
+```
+
+### Logic
+
+- Store only first occurrence.
+- Ignore repeated characters.
+
+---
+
+# Problem 12 – Most Frequent Character
+
+### Code
+
+```python
+a = "MISSISSIPPI"
+
+max_char = ""
+max_count = 0
+seen = ""
+
+for ch in a:
+    if ch not in seen:
+        if a.count(ch) > max_count:
+            max_count = a.count(ch)
+            max_char = ch
+
+        seen += ch
+
+print(max_char)
+```
+
+### Output
+
+```text
+I
+```
+
+### Logic
+
+- Find frequency of each unique character.
+- Track maximum frequency.
+
+---
+
+# Problem 13 – Longest Word
+
+### Code
+
+```python
+a = "I LOVE LEARNING PYTHON"
+
+words = a.split()
+
+longest = words[0]
+
+for word in words:
+    if len(word) > len(longest):
+        longest = word
+
+print(longest)
+```
+
+### Output
+
+```text
+LEARNING
+```
+
+### Logic
+
+- Compare lengths of all words.
+- Store the longest word.
+
+---
+
+# Problem 14 – String Compression
+
+### Code
+
+```python
+a = "AAABBC"
+
+seen = ""
+
+for ch in a:
+    if ch not in seen:
+        print(ch, a.count(ch), sep="", end="")
+        seen += ch
+```
+
+### Output
+
+```text
+A3B2C1
+```
+
+### Logic
+
+- Print character and its frequency.
+- Print each character only once.
+
+---
+
+# Problem 15 – Rotation Check
+
+### Code
+
+```python
+a = "ABCD"
+b = "CDAB"
+
+if b in (a + a):
+    print("Rotation")
+else:
+    print("Not Rotation")
+```
+
+### Output
+
+```text
+Rotation
+```
+
+### Logic
+
+- Concatenate first string with itself.
+- Check whether second string exists inside it.
+
+---
+
+# 🎯 Key Concepts Practiced
+
+✅ Palindrome Check
+
+✅ Reverse Each Word
+
+✅ Uppercase Count
+
+✅ Lowercase Count
+
+✅ First Non-Repeating Character
+
+✅ Digit Count
+
+✅ Special Character Count
+
+✅ Anagram Check
+
+✅ Remove Vowels
+
+✅ Frequency Count
+
+✅ Remove Duplicates
+
+✅ Most Frequent Character
+
+✅ Longest Word
+
+✅ String Compression
+
+✅ Rotation Check
+
+---
+
+# 🎯 Goal
+
+To improve:
+
+- String Manipulation Skills
+- Frequency-Based Logic
+- Interview Coding Skills
+- Logical Thinking
+- Problem Solving Ability
