@@ -1,0 +1,310 @@
+
+# 📚 Day 32 – Basic Pattern Programming
+
+Today I practiced basic pattern programming using nested loops. These problems help improve logical thinking, loop control, and visualization skills.
+
+# Problem 1 – Square Pattern
+
+### Code
+
+```python
+rows = 5
+
+for i in range(rows):
+    for j in range(rows):
+        print("*", end=" ")
+    print()
+```
+
+### Output
+
+```text
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+```
+
+### Logic
+
+* Outer loop controls rows.
+* Inner loop prints stars in each row.
+
+---
+
+# Problem 2 – Left Triangle
+
+### Code
+
+```python
+rows = 5
+
+for i in range(1, rows + 1):
+    for j in range(i):
+        print("*", end=" ")
+    print()
+```
+
+### Output
+
+```text
+*
+* *
+* * *
+* * * *
+* * * * *
+```
+
+### Logic
+
+* Outer loop controls rows.
+* Inner loop prints stars equal to the row number.
+
+---
+
+# Problem 3 – Inverted Left Triangle
+
+### Code
+
+```python
+rows = 5
+
+for i in range(rows, 0, -1):
+    for j in range(i):
+        print("*", end=" ")
+    print()
+```
+
+### Output
+
+```text
+* * * * *
+* * * *
+* * *
+* *
+*
+```
+
+### Logic
+
+* Start from the maximum number of stars.
+* Reduce one star in each row.
+
+---
+
+# Problem 4 – Right Triangle
+
+### Code
+
+```python
+rows = 5
+
+for i in range(1, rows + 1):
+    for j in range(rows - i):
+        print(" ", end=" ")
+    for k in range(i):
+        print("*", end=" ")
+    print()
+```
+
+### Output
+
+```text
+        *
+      * *
+    * * *
+  * * * *
+* * * * *
+```
+
+### Logic
+
+* Print spaces first.
+* Then print stars.
+
+---
+
+# Problem 5 – Number Triangle
+
+### Code
+
+```python
+rows = 5
+
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
+```
+
+### Output
+
+```text
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+```
+
+### Logic
+
+* Print numbers from 1 to the current row number.
+
+---
+
+# Problem 6 – Repeated Number Triangle
+
+### Code
+
+```python
+rows = 5
+
+for i in range(1, rows + 1):
+    for j in range(i):
+        print(i, end=" ")
+    print()
+```
+
+### Output
+
+```text
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+```
+
+### Logic
+
+* Print the current row number repeatedly.
+
+---
+
+# Problem 7 – Alphabet Triangle
+
+### Code
+
+```python
+rows = 5
+
+for i in range(1, rows + 1):
+    ch = 65
+
+    for j in range(i):
+        print(chr(ch), end=" ")
+        ch += 1
+
+    print()
+```
+
+### Output
+
+```text
+A
+A B
+A B C
+A B C D
+A B C D E
+```
+
+### Logic
+
+* Start from ASCII value 65 ('A').
+* Increase the character after every print.
+
+---
+
+# Problem 8 – Continuous Number Pattern
+
+### Code
+
+```python
+rows = 5
+
+num = 1
+
+for i in range(1, rows + 1):
+    for j in range(i):
+        print(num, end=" ")
+        num += 1
+    print()
+```
+
+### Output
+
+```text
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+```
+
+### Logic
+
+* Maintain a single variable.
+* Increase it after every print.
+
+---
+
+# Problem 9 – Hollow Square
+
+### Code
+
+```python
+rows = 5
+
+for i in range(rows):
+    for j in range(rows):
+        if i == 0 or i == rows - 1 or j == 0 or j == rows - 1:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+```
+
+### Output
+
+```text
+* * * * *
+*       *
+*       *
+*       *
+* * * * *
+```
+
+### Logic
+
+* Print stars on the border.
+* Print spaces inside.
+
+---
+
+# Problem 10 – Floyd's Triangle
+
+### Code
+
+```python
+rows = 5
+
+num = 1
+
+for i in range(1, rows + 1):
+    for j in range(i):
+        print(num, end=" ")
+        num += 1
+    print()
+```
+
+### Output
+
+```text
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+```
