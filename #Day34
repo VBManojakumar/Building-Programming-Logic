@@ -1,0 +1,204 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 34 – Pattern Printing (Basics)
+
+Today I started learning Pattern Printing using nested loops. I practiced the most fundamental patterns that are commonly asked in coding interviews.
+
+---
+
+# Problem 1 – Square Star Pattern
+
+### Code
+
+```python
+for i in range(4):
+    for j in range(4):
+        print("*", end=" ")
+    print()
+```
+
+### Output
+
+```text
+* * * *
+* * * *
+* * * *
+* * * *
+```
+
+### Logic
+
+- Outer loop controls the number of rows.
+- Inner loop prints 4 stars in every row.
+- Since both loops run 4 times, a 4×4 square is printed.
+
+---
+
+# Problem 2 – Left Triangle Pattern
+
+### Code
+
+```python
+for i in range(4):
+    for j in range(i + 1):
+        print("*", end=" ")
+    print()
+```
+
+### Output
+
+```text
+*
+* *
+* * *
+* * * *
+```
+
+### Logic
+
+- Outer loop controls the rows.
+- Inner loop prints `i + 1` stars.
+- Number of stars increases by one in each row.
+
+---
+
+# Problem 3 – Reverse Triangle Pattern
+
+### Code
+
+```python
+for i in range(4):
+    for j in range(4 - i):
+        print("*", end=" ")
+    print()
+```
+
+### Output
+
+```text
+* * * *
+* * *
+* *
+*
+```
+
+### Logic
+
+- Outer loop controls the rows.
+- Inner loop prints `4 - i` stars.
+- Number of stars decreases by one in each row.
+
+---
+
+# Problem 4 – Number Triangle
+
+### Code
+
+```python
+for i in range(1, 5):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
+```
+
+### Output
+
+```text
+1
+1 2
+1 2 3
+1 2 3 4
+```
+
+### Logic
+
+- Outer loop controls rows.
+- Inner loop prints numbers from 1 to the current row number.
+
+---
+
+# Problem 5 – Same Number Triangle
+
+### Code
+
+```python
+for i in range(1, 5):
+    for j in range(1, i + 1):
+        print(i, end=" ")
+    print()
+```
+
+### Output
+
+```text
+1
+2 2
+3 3 3
+4 4 4 4
+```
+
+### Logic
+
+- Outer loop controls rows.
+- Instead of printing `j`, print `i`.
+- Each row contains the same number.
+
+---
+
+# Problem 6 – Alphabet Triangle
+
+### Code
+
+```python
+for i in range(65, 69):
+    for j in range(65, i + 1):
+        print(chr(j), end=" ")
+    print()
+```
+
+### Output
+
+```text
+A
+A B
+A B C
+A B C D
+```
+
+### Logic
+
+- ASCII value 65 represents 'A'.
+- `chr()` converts ASCII values into characters.
+- Inner loop prints alphabets from A up to the current row.
+
+---
+
+# 🎯 Key Concepts Practiced
+
+✅ Nested Loops
+
+✅ Outer Loop (Rows)
+
+✅ Inner Loop (Columns)
+
+✅ Star Patterns
+
+✅ Number Patterns
+
+✅ Alphabet Patterns
+
+---
+
+# 🎯 Goal
+
+To improve:
+
+- Nested Loop Understanding
+- Pattern Printing Logic
+- Logical Thinking
+- Coding Confidence
+- Problem Solving Skills
