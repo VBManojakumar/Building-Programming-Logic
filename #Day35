@@ -1,0 +1,182 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 35 – Advanced Pattern Printing
+
+Today I learned how to print advanced patterns using **nested loops**, **spaces**, and **stars/numbers/alphabets**.
+
+---
+
+# Problem 1 – Right Triangle Pattern
+
+### Code
+
+```python
+for i in range(1,5):
+    for j in range(1,5-i):
+        print(" ", end=" ")
+    for k in range(1,i+1):
+        print("*", end=" ")
+    print()
+```
+
+### Output
+
+```text
+      *
+    * *
+  * * *
+* * * *
+```
+
+### Logic
+
+- Print decreasing spaces.
+- Print increasing stars.
+- Spaces decrease by 1 in every row.
+- Stars increase by 1 in every row.
+
+---
+
+# Problem 2 – Inverted Right Triangle
+
+### Code
+
+```python
+for i in range(1,5):
+    for j in range(1,i):
+        print(" ", end=" ")
+    for k in range(1,6-i):
+        print("*", end=" ")
+    print()
+```
+
+### Output
+
+```text
+* * * *
+  * * *
+    * *
+      *
+```
+
+### Logic
+
+- Print increasing spaces.
+- Print decreasing stars.
+- Reverse of the right triangle.
+
+---
+
+# Problem 3 – Number Right Triangle
+
+### Code
+
+```python
+for i in range(1,5):
+    for j in range(1,5-i):
+        print(" ", end=" ")
+    for k in range(1,i+1):
+        print(k, end=" ")
+    print()
+```
+
+### Output
+
+```text
+      1
+    1 2
+  1 2 3
+1 2 3 4
+```
+
+### Logic
+
+- Print spaces first.
+- Print numbers from 1 to the current row.
+
+---
+
+# Problem 4 – Alphabet Right Triangle
+
+### Code
+
+```python
+for i in range(65,69):
+    for j in range(68,i,-1):
+        print(" ", end=" ")
+    for k in range(65,i+1):
+        print(chr(k), end=" ")
+    print()
+```
+
+### Output
+
+```text
+      A
+    A B
+  A B C
+A B C D
+```
+
+### Logic
+
+- Print decreasing spaces.
+- Print alphabets using `chr()`.
+- Characters increase row by row.
+
+---
+
+# Problem 5 – Center Pyramid
+
+### Code
+
+```python
+for i in range(1,5):
+    for j in range(1,5-i):
+        print(" ", end=" ")
+    for k in range(1,2*i):
+        print("*", end="")
+    print()
+```
+
+### Output
+
+```text
+   *
+  ***
+ *****
+*******
+```
+
+### Logic
+
+- Print decreasing spaces.
+- Print odd number of stars.
+- Stars follow the series 1, 3, 5, 7.
+
+---
+
+# 🎯 Key Concepts Practiced
+
+- ✅ Nested Loops
+- ✅ Space Printing
+- ✅ Right-Aligned Patterns
+- ✅ Number Patterns
+- ✅ Alphabet Patterns
+- ✅ Pyramid Patterns
+
+---
+
+# 🎯 Goal
+
+To improve:
+
+- Pattern Printing Skills
+- Nested Loop Understanding
+- Logical Thinking
+- Coding Confidence
+- Problem Solving Skills
