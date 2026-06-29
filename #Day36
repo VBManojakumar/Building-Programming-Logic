@@ -1,0 +1,318 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 36 – Intermediate Pattern Printing
+
+Today I practiced intermediate pattern printing using nested loops, running variables, ASCII values, and conditional statements.
+
+---
+
+# Problem 1 – Inverted Number Triangle
+
+### Code
+
+```python
+for i in range(1,5):
+    for j in range(1,6-i):
+        print(j,end="")
+    print()
+```
+
+### Output
+
+```
+1234
+123
+12
+1
+```
+
+### Logic
+
+- Outer loop controls rows.
+- Inner loop prints numbers from 1.
+- Numbers decrease in every row.
+
+---
+
+# Problem 2 – Reverse Number Triangle
+
+### Code
+
+```python
+for i in range(1,5):
+    for j in range(4,4-i,-1):
+        print(j,end="")
+    print()
+```
+
+### Output
+
+```
+4
+43
+432
+4321
+```
+
+### Logic
+
+- Start printing from 4.
+- Numbers decrease.
+- One extra number is printed in every row.
+
+---
+
+# Problem 3 – Continuous Number Pattern
+
+### Code
+
+```python
+number=1
+
+for i in range(1,5):
+    for j in range(1,i+1):
+        print(number,end="")
+        number=number+1
+    print()
+```
+
+### Output
+
+```
+1
+23
+456
+78910
+```
+
+### Logic
+
+- Use a running variable.
+- Print the number.
+- Increment after every print.
+
+---
+
+# Problem 4 – Floyd's Triangle
+
+### Code
+
+```python
+number=1
+
+for i in range(1,5):
+    for j in range(1,i+1):
+        print(number,end="")
+        number=number+1
+    print()
+```
+
+### Output
+
+```
+1
+23
+456
+78910
+```
+
+### Logic
+
+- Same logic as Continuous Number Pattern.
+- Running variable never resets.
+
+---
+
+# Problem 5 – Continuous Alphabet Pattern
+
+### Code
+
+```python
+ch=65
+
+for i in range(1,5):
+    for j in range(1,i+1):
+        print(chr(ch),end="")
+        ch=ch+1
+    print()
+```
+
+### Output
+
+```
+A
+BC
+DEF
+GHIJ
+```
+
+### Logic
+
+- Start from ASCII value 65.
+- Convert to character using `chr()`.
+- Increase ASCII value after every print.
+
+---
+
+# Problem 6 – Character Repeat Pattern
+
+### Code
+
+```python
+for i in range(65,69):
+    for j in range(65,i+1):
+        print(chr(i),end="")
+    print()
+```
+
+### Output
+
+```
+A
+BB
+CCC
+DDDD
+```
+
+### Logic
+
+- Outer loop changes the alphabet.
+- Inner loop repeats the same alphabet.
+
+---
+
+# Problem 7 – Reverse Alphabet Triangle
+
+### Code
+
+```python
+for i in range(65,69):
+    for j in range(65,69-(i-65)):
+        print(chr(j),end="")
+    print()
+```
+
+### Output
+
+```
+ABCD
+ABC
+AB
+A
+```
+
+### Logic
+
+- Print alphabets from A.
+- Reduce one alphabet in every row.
+
+---
+
+# Problem 8 – Right-Aligned Number Triangle
+
+### Code
+
+```python
+for i in range(1,5):
+    for j in range(1,5-i):
+        print(" ",end="")
+    for k in range(1,i+1):
+        print(k,end="")
+    print()
+```
+
+### Output
+
+```
+   1
+  12
+ 123
+1234
+```
+
+### Logic
+
+- Print decreasing spaces.
+- Print increasing numbers.
+
+---
+
+# Problem 9 – Right-Aligned Alphabet Triangle
+
+### Code
+
+```python
+for i in range(65,69):
+    for j in range(68,i,-1):
+        print(" ",end="")
+    for k in range(65,i+1):
+        print(chr(k),end="")
+    print()
+```
+
+### Output
+
+```
+   A
+  AB
+ ABC
+ABCD
+```
+
+### Logic
+
+- Print decreasing spaces.
+- Print increasing alphabets.
+
+---
+
+# Problem 10 – Hollow Square Pattern
+
+### Code
+
+```python
+for i in range(1,5):
+    for j in range(1,5):
+        if i==1 or i==4 or j==1 or j==4:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+```
+
+### Output
+
+```
+****
+*  *
+*  *
+****
+```
+
+### Logic
+
+- Print star on:
+  - First row
+  - Last row
+  - First column
+  - Last column
+- Otherwise print space.
+
+---
+
+# 🎯 Key Concepts Practiced
+
+- ✅ Nested Loops
+- ✅ Running Variables
+- ✅ ASCII Values
+- ✅ `chr()` Function
+- ✅ Right-Aligned Patterns
+- ✅ Continuous Number Patterns
+- ✅ Continuous Alphabet Patterns
+- ✅ Hollow Patterns using `if-else`
+
+---
