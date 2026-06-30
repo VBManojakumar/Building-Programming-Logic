@@ -1,0 +1,387 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 37 – Advanced Pattern Printing
+
+Today I practiced advanced pattern printing using nested loops, conditional statements, spaces, stars, and symmetry.
+
+---
+
+# Problem 1 – Hollow Left Triangle
+
+### Code
+
+```python
+for i in range(1,6):
+    for j in range(1,i+1):
+        if i==1 or i==5 or j==1 or j==i:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+```
+
+### Output
+
+```
+*
+**
+* *
+*  *
+*****
+```
+
+### Logic
+
+- Print star on:
+  - First row
+  - Last row
+  - First column
+  - Diagonal (`j==i`)
+- Otherwise print space.
+
+---
+
+# Problem 2 – Hollow Inverted Triangle
+
+### Code
+
+```python
+for i in range(5,0,-1):
+    for j in range(1,i+1):
+        if i==5 or i==1 or j==1 or j==i:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+```
+
+### Output
+
+```
+*****
+*  *
+* *
+**
+*
+```
+
+### Logic
+
+- Reverse of Hollow Left Triangle.
+- Print stars on the boundary only.
+
+---
+
+# Problem 3 – Full Pyramid
+
+### Code
+
+```python
+for i in range(1,6):
+    for j in range(5,i,-1):
+        print(" ",end="")
+    for k in range(1,2*i):
+        print("*",end="")
+    print()
+```
+
+### Output
+
+```
+    *
+   ***
+  *****
+ *******
+*********
+```
+
+### Logic
+
+- Spaces decrease.
+- Stars increase by 2 every row.
+
+---
+
+# Problem 4 – Inverted Pyramid
+
+### Code
+
+```python
+for i in range(1,6):
+    for j in range(1,i):
+        print(" ",end="")
+    for k in range(1,12-2*i):
+        print("*",end="")
+    print()
+```
+
+### Output
+
+```
+*********
+ *******
+  *****
+   ***
+    *
+```
+
+### Logic
+
+- Reverse of Full Pyramid.
+- Spaces increase.
+- Stars decrease by 2.
+
+---
+
+# Problem 5 – Diamond Pattern
+
+### Code
+
+```python
+for i in range(1,6):
+    for j in range(5,i,-1):
+        print(" ",end="")
+    for k in range(1,2*i):
+        print("*",end="")
+    print()
+
+for i in range(4,0,-1):
+    for j in range(5,i,-1):
+        print(" ",end="")
+    for k in range(1,2*i):
+        print("*",end="")
+    print()
+```
+
+### Output
+
+```
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+```
+
+### Logic
+
+- Combine Full Pyramid and Inverted Pyramid.
+
+---
+
+# Problem 6 – Hollow Pyramid
+
+### Code
+
+```python
+for i in range(1,6):
+    for j in range(5,i,-1):
+        print(" ",end="")
+    for k in range(1,2*i):
+        if k==1 or k==2*i-1 or i==5:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+```
+
+### Output
+
+```
+    *
+   * *
+  *   *
+ *     *
+*********
+```
+
+### Logic
+
+- Print stars on:
+  - First position
+  - Last position
+  - Last row
+- Otherwise print spaces.
+
+---
+
+# Problem 7 – Hollow Diamond
+
+### Code
+
+```python
+for i in range(1,6):
+    for j in range(5,i,-1):
+        print(" ",end="")
+    for k in range(1,2*i):
+        if k==1 or k==2*i-1 or i==5:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+
+for i in range(4,0,-1):
+    for j in range(5,i,-1):
+        print(" ",end="")
+    for k in range(1,2*i):
+        if k==1 or k==2*i-1:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+```
+
+### Output
+
+```
+    *
+   * *
+  *   *
+ *     *
+*********
+ *     *
+  *   *
+   * *
+    *
+```
+
+### Logic
+
+- Combine Hollow Pyramid and Hollow Inverted Pyramid.
+
+---
+
+# Problem 8 – Butterfly Pattern
+
+### Code
+
+```python
+for i in range(1,5):
+    for j in range(1,i+1):
+        print("*",end="")
+    for k in range(1,2*(5-i)):
+        print(" ",end="")
+    for l in range(1,i+1):
+        print("*",end="")
+    print()
+
+for i in range(3,0,-1):
+    for j in range(1,i+1):
+        print("*",end="")
+    for k in range(1,2*(5-i)):
+        print(" ",end="")
+    for l in range(1,i+1):
+        print("*",end="")
+    print()
+```
+
+### Output
+
+```
+*      *
+**    **
+***  ***
+********
+***  ***
+**    **
+*      *
+```
+
+### Logic
+
+- Left stars increase.
+- Middle spaces decrease.
+- Right stars increase.
+- Repeat in reverse.
+
+---
+
+# Problem 9 – X Pattern
+
+### Code
+
+```python
+for i in range(1,6):
+    for j in range(1,6):
+        if i==j or i+j==6:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+```
+
+### Output
+
+```
+*   *
+ * *
+  *
+ * *
+*   *
+```
+
+### Logic
+
+- Print star on:
+  - Main diagonal (`i==j`)
+  - Secondary diagonal (`i+j==6`)
+
+---
+
+# Problem 10 – Plus (+) Pattern
+
+### Code
+
+```python
+for i in range(1,6):
+    for j in range(1,6):
+        if i==3 or j==3:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+```
+
+### Output
+
+```
+  *
+  *
+*****
+  *
+  *
+```
+
+### Logic
+
+- Print star on:
+  - Middle row
+  - Middle column
+
+---
+
+# 🎯 Key Concepts Practiced
+
+- ✅ Hollow Triangle
+- ✅ Hollow Inverted Triangle
+- ✅ Full Pyramid
+- ✅ Inverted Pyramid
+- ✅ Diamond Pattern
+- ✅ Hollow Pyramid
+- ✅ Hollow Diamond
+- ✅ Butterfly Pattern
+- ✅ X Pattern
+- ✅ Plus Pattern
+- ✅ Nested Loops
+- ✅ Conditional Statements
+- ✅ Symmetry in Patterns
+
+---
