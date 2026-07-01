@@ -1,0 +1,296 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 38 – Introduction to Lists
+
+Today I started learning **Lists** in Python. I practiced basic list operations such as printing elements, finding length, indexing, calculating the sum, finding maximum and minimum values, counting even and odd numbers, and reversing a list.
+
+---
+
+# Problem 1 – Print List Elements
+
+### Code
+
+```python
+a = [10,20,30,40,50]
+
+for i in a:
+    print(i)
+```
+
+### Output
+
+```
+10
+20
+30
+40
+50
+```
+
+### Logic
+
+- Store multiple values in a list.
+- Use a `for` loop to access each element one by one.
+
+---
+
+# Problem 2 – Find Length of List
+
+### Code
+
+```python
+a = [5,10,15,20,25]
+
+print(len(a))
+```
+
+### Output
+
+```
+5
+```
+
+### Logic
+
+- Use the built-in `len()` function to find the total number of elements.
+
+---
+
+# Problem 3 – Print First Element
+
+### Code
+
+```python
+a = [100,200,300]
+
+print(a[0])
+```
+
+### Output
+
+```
+100
+```
+
+### Logic
+
+- List indexing starts from **0**.
+- The first element is at index `0`.
+
+---
+
+# Problem 4 – Print Last Element
+
+### Code
+
+```python
+a = [100,200,300,400]
+
+print(a[-1])
+```
+
+### Output
+
+```
+400
+```
+
+### Logic
+
+- Negative indexing starts from the end.
+- `-1` represents the last element.
+
+---
+
+# Problem 5 – Sum of All Elements
+
+### Code
+
+```python
+a = [10,20,30,40]
+
+total = 0
+
+for i in a:
+    total = total + i
+
+print(total)
+```
+
+### Output
+
+```
+100
+```
+
+### Logic
+
+- Initialize a variable to `0`.
+- Add every element to it using a loop.
+
+---
+
+# Problem 6 – Find Maximum Element
+
+### Code
+
+```python
+a = [15,8,30,22,10]
+
+max_ele = a[0]
+
+for i in a:
+    if i > max_ele:
+        max_ele = i
+
+print(max_ele)
+```
+
+### Output
+
+```
+30
+```
+
+### Logic
+
+- Assume the first element is the maximum.
+- Compare every element and update when a larger value is found.
+
+---
+
+# Problem 7 – Find Minimum Element
+
+### Code
+
+```python
+a = [15,8,30,22,10]
+
+min_ele = a[0]
+
+for i in a:
+    if i < min_ele:
+        min_ele = i
+
+print(min_ele)
+```
+
+### Output
+
+```
+8
+```
+
+### Logic
+
+- Assume the first element is the minimum.
+- Update it whenever a smaller element is found.
+
+---
+
+# Problem 8 – Count Even Numbers
+
+### Code
+
+```python
+a = [10,15,20,25,30]
+
+count = 0
+
+for i in a:
+    if i % 2 == 0:
+        count = count + 1
+
+print(count)
+```
+
+### Output
+
+```
+3
+```
+
+### Logic
+
+- Check each element using `% 2`.
+- Count elements divisible by `2`.
+
+---
+
+# Problem 9 – Count Odd Numbers
+
+### Code
+
+```python
+a = [10,15,20,25,30]
+
+count = 0
+
+for i in a:
+    if i % 2 != 0:
+        count = count + 1
+
+print(count)
+```
+
+### Output
+
+```
+2
+```
+
+### Logic
+
+- Check each element.
+- Count elements that are **not** divisible by `2`.
+
+---
+
+# Problem 10 – Reverse Print
+
+### Code
+
+```python
+a = [1,2,3,4,5]
+
+for i in reversed(a):
+    print(i)
+```
+
+### Output
+
+```
+5
+4
+3
+2
+1
+```
+
+### Logic
+
+- Use Python's built-in `reversed()` function.
+- Print each element in reverse order.
+
+---
+
+# 🎯 Key Concepts Practiced
+
+- ✅ Introduction to Lists
+- ✅ Creating Lists
+- ✅ List Traversal
+- ✅ Indexing
+- ✅ Negative Indexing
+- ✅ Finding Length
+- ✅ Sum of Elements
+- ✅ Maximum Element
+- ✅ Minimum Element
+- ✅ Counting Even Numbers
+- ✅ Counting Odd Numbers
+- ✅ Reversing a List
+
+---
