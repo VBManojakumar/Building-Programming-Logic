@@ -1,0 +1,324 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 39 – Intermediate List Problems
+
+Today I practiced intermediate list problems using indexing, searching, counting, finding second largest and second smallest elements, reverse traversal, and average calculations.
+
+---
+
+# Problem 1 – Print Elements at Even Indexes
+
+### Code
+
+```python
+a = [10,20,30,40,50,60]
+
+for i in range(0, len(a), 2):
+    print(a[i])
+```
+
+### Output
+
+```
+10
+30
+50
+```
+
+### Logic
+
+- Traverse the list using indexes.
+- Start from index `0`.
+- Increase the index by `2`.
+
+---
+
+# Problem 2 – Print Elements at Odd Indexes
+
+### Code
+
+```python
+a = [10,20,30,40,50]
+
+for i in range(1, len(a), 2):
+    print(a[i])
+```
+
+### Output
+
+```
+20
+40
+```
+
+### Logic
+
+- Start from index `1`.
+- Increase the index by `2`.
+
+---
+
+# Problem 3 – Count Positive Numbers
+
+### Code
+
+```python
+a = [-5,10,-2,8,0,15]
+
+count = 0
+
+for i in a:
+    if i > 0:
+        count = count + 1
+
+print(count)
+```
+
+### Output
+
+```
+3
+```
+
+### Logic
+
+- Traverse every element.
+- Count numbers greater than `0`.
+
+---
+
+# Problem 4 – Count Negative Numbers
+
+### Code
+
+```python
+a = [-5,10,-2,8,0,15]
+
+count = 0
+
+for i in a:
+    if i < 0:
+        count = count + 1
+
+print(count)
+```
+
+### Output
+
+```
+2
+```
+
+### Logic
+
+- Traverse every element.
+- Count numbers less than `0`.
+
+---
+
+# Problem 5 – Find Second Largest Element
+
+### Code
+
+```python
+a = [12,45,7,30,45,18]
+
+largest = a[0]
+second_largest = a[0]
+
+for i in a:
+    if i > largest:
+        second_largest = largest
+        largest = i
+    elif i > second_largest and i != largest:
+        second_largest = i
+
+print(second_largest)
+```
+
+### Output
+
+```
+30
+```
+
+### Logic
+
+- Store the current largest and second largest values.
+- Update both variables while traversing the list.
+
+---
+
+# Problem 6 – Find Second Smallest Element
+
+### Code
+
+```python
+a = [12,45,7,30,18]
+
+smallest = a[0]
+second_smallest = a[0]
+
+for i in a:
+    if i < smallest:
+        second_smallest = smallest
+        smallest = i
+    elif i < second_smallest and i != smallest:
+        second_smallest = i
+
+print(second_smallest)
+```
+
+### Output
+
+```
+12
+```
+
+### Logic
+
+- Store the current smallest and second smallest values.
+- Update them while traversing the list.
+
+---
+
+# Problem 7 – Reverse Print Without Built-in Functions
+
+### Code
+
+```python
+a = [1,2,3,4,5]
+
+for i in range(len(a)-1, -1, -1):
+    print(a[i])
+```
+
+### Output
+
+```
+5
+4
+3
+2
+1
+```
+
+### Logic
+
+- Start from the last index.
+- Decrease the index until `0`.
+
+---
+
+# Problem 8 – Search an Element
+
+### Code
+
+```python
+a = [10,20,30,40,50]
+
+key = 30
+
+for i in a:
+    if i == key:
+        print("Element Found")
+        break
+else:
+    print("Element Not Found")
+```
+
+### Output
+
+```
+Element Found
+```
+
+### Logic
+
+- Compare every element with the search key.
+- Stop the loop if the element is found.
+
+---
+
+# Problem 9 – Count Multiples of 5
+
+### Code
+
+```python
+a = [5,8,10,13,15,20]
+
+count = 0
+
+for i in a:
+    if i % 5 == 0:
+        count = count + 1
+
+print(count)
+```
+
+### Output
+
+```
+4
+```
+
+### Logic
+
+- Traverse the list.
+- Count elements divisible by `5`.
+
+---
+
+# Problem 10 – Print Elements Greater Than Average
+
+### Code
+
+```python
+a = [10,20,30,40,50]
+
+total = 0
+
+for i in a:
+    total = total + i
+
+avg = total / len(a)
+
+for i in a:
+    if i > avg:
+        print(i)
+```
+
+### Output
+
+```
+40
+50
+```
+
+### Logic
+
+- Calculate the total sum.
+- Find the average.
+- Print elements greater than the average.
+
+---
+
+# 🎯 Key Concepts Practiced
+
+- ✅ List Indexing
+- ✅ Even Index Traversal
+- ✅ Odd Index Traversal
+- ✅ Counting Positive Numbers
+- ✅ Counting Negative Numbers
+- ✅ Finding Second Largest Element
+- ✅ Finding Second Smallest Element
+- ✅ Reverse Traversal
+- ✅ Linear Search
+- ✅ Counting Multiples
+- ✅ Average Calculation
+
+---
