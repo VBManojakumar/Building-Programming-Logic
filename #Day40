@@ -1,0 +1,317 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 40 – Advanced List Problems
+
+Today I practiced advanced list problems such as counting occurrences, finding duplicate and unique elements, removing duplicates, merging lists, finding common elements, missing number detection, separating even and odd numbers, and rotating lists.
+
+---
+
+# Problem 1 – Count Occurrences of an Element
+
+### Code
+
+```python
+a = [10,20,30,20,40,20]
+
+key = 20
+count = 0
+
+for i in a:
+    if i == key:
+        count = count + 1
+
+print(count)
+```
+
+### Output
+
+```
+3
+```
+
+### Logic
+
+- Traverse the list.
+- Compare every element with the given key.
+- Increase the counter whenever a match is found.
+
+---
+
+# Problem 2 – Print Duplicate Elements
+
+### Code
+
+```python
+a = [10,20,30,20,40,10,50]
+
+seen = []
+
+for i in a:
+    if a.count(i) > 1 and i not in seen:
+        print(i)
+        seen.append(i)
+```
+
+### Output
+
+```
+10
+20
+```
+
+### Logic
+
+- Check whether an element appears more than once.
+- Print it only if it has not been printed before.
+
+---
+
+# Problem 3 – Print Unique Elements
+
+### Code
+
+```python
+a = [10,20,30,20,40,10,50]
+
+for i in a:
+    if a.count(i) == 1:
+        print(i)
+```
+
+### Output
+
+```
+30
+40
+50
+```
+
+### Logic
+
+- Traverse the list.
+- Print only those elements whose occurrence is exactly one.
+
+---
+
+# Problem 4 – Remove Duplicates
+
+### Code
+
+```python
+a = [10,20,30,20,40,10,50]
+
+seen = []
+
+for i in a:
+    if i not in seen:
+        seen.append(i)
+
+print(seen)
+```
+
+### Output
+
+```
+[10,20,30,40,50]
+```
+
+### Logic
+
+- Create a new list.
+- Add an element only if it is not already present.
+
+---
+
+# Problem 5 – Merge Two Lists
+
+### Code
+
+```python
+a = [10,20,30]
+b = [40,50,60]
+
+c = a + b
+
+print(c)
+```
+
+### Output
+
+```
+[10,20,30,40,50,60]
+```
+
+### Logic
+
+- Merge two lists using the `+` operator.
+
+---
+
+# Problem 6 – Find Common Elements
+
+### Code
+
+```python
+a = [10,20,30,40]
+b = [30,40,50,60]
+
+for i in a:
+    for j in b:
+        if i == j:
+            print(i)
+```
+
+### Output
+
+```
+30
+40
+```
+
+### Logic
+
+- Compare every element of the first list with every element of the second list.
+- Print matching elements.
+
+---
+
+# Problem 7 – Find Missing Number
+
+### Code
+
+```python
+a = [1,2,3,5]
+
+for i in range(1,6):
+    if i not in a:
+        print(i)
+```
+
+### Output
+
+```
+4
+```
+
+### Logic
+
+- Check every number in the expected range.
+- Print the number that is not present in the list.
+
+---
+
+# Problem 8 – Separate Even and Odd Numbers
+
+### Code
+
+```python
+a = [10,15,20,25,30]
+
+even = []
+odd = []
+
+for i in a:
+    if i % 2 == 0:
+        even.append(i)
+    else:
+        odd.append(i)
+
+print("Even =", even)
+print("Odd =", odd)
+```
+
+### Output
+
+```
+Even = [10,20,30]
+Odd = [15,25]
+```
+
+### Logic
+
+- Traverse the list.
+- Store even numbers in one list.
+- Store odd numbers in another list.
+
+---
+
+# Problem 9 – Left Rotate List by One Position
+
+### Code
+
+```python
+a = [10,20,30,40,50]
+
+first = a[0]
+
+for i in range(len(a)-1):
+    a[i] = a[i+1]
+
+a[len(a)-1] = first
+
+print(a)
+```
+
+### Output
+
+```
+[20,30,40,50,10]
+```
+
+### Logic
+
+- Store the first element.
+- Shift every element one position to the left.
+- Place the first element at the end.
+
+---
+
+# Problem 10 – Right Rotate List by One Position
+
+### Code
+
+```python
+a = [10,20,30,40,50]
+
+last = a[-1]
+
+for i in range(len(a)-1,0,-1):
+    a[i] = a[i-1]
+
+a[0] = last
+
+print(a)
+```
+
+### Output
+
+```
+[50,10,20,30,40]
+```
+
+### Logic
+
+- Store the last element.
+- Shift every element one position to the right.
+- Place the last element at the beginning.
+
+---
+
+# 🎯 Key Concepts Practiced
+
+- ✅ Counting Occurrences
+- ✅ Finding Duplicate Elements
+- ✅ Finding Unique Elements
+- ✅ Removing Duplicates
+- ✅ Merging Lists
+- ✅ Finding Common Elements
+- ✅ Missing Number Detection
+- ✅ Separating Even and Odd Numbers
+- ✅ Left Rotation
+- ✅ Right Rotation
+
+---
