@@ -1,0 +1,327 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 41  – Tuple Basics and Practice Problems
+
+Today I learned the fundamentals of Python Tuples and solved beginner-friendly tuple problems. I practiced tuple traversal, indexing, searching, finding largest and smallest elements, calculating sums, and reverse traversal.
+
+---
+
+# What is a Tuple?
+
+A **Tuple** is an ordered collection of elements enclosed in parentheses `()`.
+
+Unlike lists, tuples are **immutable**, which means their elements cannot be modified after creation.
+
+Example:
+
+```python
+a = (10,20,30,40)
+```
+
+---
+
+# Difference Between List and Tuple
+
+| List | Tuple |
+|------|-------|
+| Uses `[]` | Uses `()` |
+| Mutable | Immutable |
+| Can modify elements | Cannot modify elements |
+| More memory | Less memory |
+| Slightly slower | Slightly faster |
+
+---
+
+# Problem 1 – Print All Elements
+
+### Code
+
+```python
+a = (10,20,30,40,50)
+
+for i in a:
+    print(i)
+```
+
+### Output
+
+```
+10
+20
+30
+40
+50
+```
+
+### Logic
+
+- Traverse the tuple using a loop.
+- Print each element.
+
+---
+
+# Problem 2 – Print First and Last Element
+
+### Code
+
+```python
+a = (10,20,30,40,50)
+
+print("First =", a[0])
+print("Last =", a[-1])
+```
+
+### Output
+
+```
+First = 10
+Last = 50
+```
+
+### Logic
+
+- Access the first element using index `0`.
+- Access the last element using index `-1`.
+
+---
+
+# Problem 3 – Find Length of Tuple
+
+### Code
+
+```python
+a = (10,20,30,40,50)
+
+print(len(a))
+```
+
+### Output
+
+```
+5
+```
+
+### Logic
+
+- Use the `len()` function to find the total number of elements.
+
+---
+
+# Problem 4 – Count Even Numbers
+
+### Code
+
+```python
+a = (10,15,20,25,30)
+
+count = 0
+
+for i in a:
+    if i % 2 == 0:
+        count = count + 1
+
+print(count)
+```
+
+### Output
+
+```
+3
+```
+
+### Logic
+
+- Traverse the tuple.
+- Count elements divisible by `2`.
+
+---
+
+# Problem 5 – Count Odd Numbers
+
+### Code
+
+```python
+a = (10,15,20,25,30)
+
+count = 0
+
+for i in a:
+    if i % 2 != 0:
+        count = count + 1
+
+print(count)
+```
+
+### Output
+
+```
+2
+```
+
+### Logic
+
+- Traverse the tuple.
+- Count elements that are not divisible by `2`.
+
+---
+
+# Problem 6 – Find Largest Element
+
+### Code
+
+```python
+a = (10,25,15,40,30)
+
+largest = a[0]
+
+for i in a:
+    if i > largest:
+        largest = i
+
+print(largest)
+```
+
+### Output
+
+```
+40
+```
+
+### Logic
+
+- Assume the first element is the largest.
+- Compare each element and update the largest value.
+
+---
+
+# Problem 7 – Find Smallest Element
+
+### Code
+
+```python
+a = (10,25,15,40,30)
+
+smallest = a[0]
+
+for i in a:
+    if i < smallest:
+        smallest = i
+
+print(smallest)
+```
+
+### Output
+
+```
+10
+```
+
+### Logic
+
+- Assume the first element is the smallest.
+- Compare each element and update the smallest value.
+
+---
+
+# Problem 8 – Find Sum of Elements
+
+### Code
+
+```python
+a = (10,20,30,40,50)
+
+total = 0
+
+for i in a:
+    total = total + i
+
+print(total)
+```
+
+### Output
+
+```
+150
+```
+
+### Logic
+
+- Traverse the tuple.
+- Add every element to the total.
+
+---
+
+# Problem 9 – Search an Element
+
+### Code
+
+```python
+a = (10,20,30,40,50)
+
+key = 50
+
+if key in a:
+    print("Found")
+else:
+    print("Not Found")
+```
+
+### Output
+
+```
+Found
+```
+
+### Logic
+
+- Use the `in` operator to check whether the element exists.
+
+---
+
+# Problem 10 – Reverse Print
+
+### Code
+
+```python
+a = (10,20,30,40,50)
+
+for i in range(len(a)-1,-1,-1):
+    print(a[i])
+```
+
+### Output
+
+```
+50
+40
+30
+20
+10
+```
+
+### Logic
+
+- Start from the last index.
+- Traverse backwards until the first element.
+
+---
+
+# 🎯 Key Concepts Learned
+
+- ✅ Tuple Creation
+- ✅ Tuple Indexing
+- ✅ Tuple Traversal
+- ✅ Finding Length
+- ✅ Counting Even Numbers
+- ✅ Counting Odd Numbers
+- ✅ Finding Largest Element
+- ✅ Finding Smallest Element
+- ✅ Sum of Elements
+- ✅ Searching in Tuple
+- ✅ Reverse Traversal
+
+---
