@@ -1,0 +1,316 @@
+# Day 52 - 
+# Python Built-in Functions
+
+| Function | Use |
+|----------|-----|
+| print() | Displays output on the screen. |
+| input() | Accepts input from the user. |
+| len() | Returns the number of items in an object. |
+| type() | Returns the data type of an object. |
+| id() | Returns the unique identity (memory reference) of an object. |
+| int() | Converts a value to an integer. |
+| float() | Converts a value to a floating-point number. |
+| str() | Converts a value to a string. |
+| bool() | Converts a value to a Boolean (`True` or `False`). |
+| list() | Creates a list or converts an iterable into a list. |
+| tuple() | Creates a tuple or converts an iterable into a tuple. |
+| set() | Creates a set and removes duplicate elements. |
+| dict() | Creates a dictionary. |
+| range() | Generates a sequence of numbers. |
+| enumerate() | Returns both the index and value while iterating. |
+| zip() | Combines elements from multiple iterables into tuples. |
+| sorted() | Returns a new sorted list without modifying the original. |
+| reversed() | Returns an iterator that accesses elements in reverse order. |
+| sum() | Returns the sum of all elements in an iterable. |
+| max() | Returns the largest element. |
+| min() | Returns the smallest element. |
+| abs() | Returns the absolute (positive) value of a number. |
+| round() | Rounds a number to the specified number of decimal places. |
+| pow() | Raises a number to a specified power. |
+| divmod() | Returns the quotient and remainder as a tuple. |
+| any() | Returns `True` if at least one element is `True`. |
+| all() | Returns `True` if all elements are `True`. |
+| chr() | Converts an ASCII/Unicode value to its corresponding character. |
+| ord() | Returns the ASCII/Unicode value of a character. |
+| bin() | Converts an integer to binary representation. |
+| oct() | Converts an integer to octal representation. |
+| hex() | Converts an integer to hexadecimal representation. |
+| format() | Formats a value according to a specified format. |
+| isinstance() | Checks whether an object belongs to a specified data type. |
+| callable() | Checks whether an object can be called like a function. |
+| dir() | Lists all attributes and methods of an object or module. |
+| help() | Displays the documentation for an object, function, or module. |
+| globals() | Returns a dictionary containing global variables. |
+| locals() | Returns a dictionary containing local variables. |
+| eval() | Evaluates a Python expression from a string. |
+| exec() | Executes dynamically generated Python code. |
+
+
+
+# Day 53 - Part 2
+# Python String Methods
+
+
+| String Method    | Use                                                                                     |
+| ---------------- | --------------------------------------------------------------------------------------- |
+| `capitalize()`   | Converts the first character to uppercase and the remaining characters to lowercase.    |
+| `casefold()`     | Converts the entire string to lowercase for case-insensitive comparisons.               |
+| `center()`       | Centers the string within a specified width by adding padding.                          |
+| `count()`        | Counts the number of occurrences of a specified substring.                              |
+| `encode()`       | Converts the string into bytes using the specified encoding.                            |
+| `endswith()`     | Checks whether the string ends with a specified suffix.                                 |
+| `expandtabs()`   | Replaces tab characters (`\t`) with spaces.                                             |
+| `find()`         | Returns the index of the first occurrence of a substring, or `-1` if not found.         |
+| `format()`       | Formats a string by inserting specified values.                                         |
+| `format_map()`   | Formats a string using a mapping (dictionary).                                          |
+| `index()`        | Returns the index of the first occurrence of a substring; raises an error if not found. |
+| `isalnum()`      | Checks whether all characters are alphanumeric.                                         |
+| `isalpha()`      | Checks whether all characters are alphabetic.                                           |
+| `isascii()`      | Checks whether all characters are ASCII characters.                                     |
+| `isdecimal()`    | Checks whether all characters are decimal digits.                                       |
+| `isdigit()`      | Checks whether all characters are digits.                                               |
+| `isidentifier()` | Checks whether the string is a valid Python identifier.                                 |
+| `islower()`      | Checks whether all alphabetic characters are lowercase.                                 |
+| `isnumeric()`    | Checks whether all characters are numeric.                                              |
+| `isprintable()`  | Checks whether all characters are printable.                                            |
+| `isspace()`      | Checks whether the string contains only whitespace characters.                          |
+| `istitle()`      | Checks whether the string follows title case.                                           |
+| `isupper()`      | Checks whether all alphabetic characters are uppercase.                                 |
+| `join()`         | Joins the elements of an iterable into a single string using the specified separator.   |
+| `ljust()`        | Left-aligns the string within a specified width.                                        |
+| `lower()`        | Converts all characters to lowercase.                                                   |
+| `lstrip()`       | Removes leading whitespace or specified characters.                                     |
+| `maketrans()`    | Creates a translation table for use with `translate()`.                                 |
+| `partition()`    | Splits the string into three parts using the first occurrence of a separator.           |
+| `removeprefix()` | Removes the specified prefix if it exists.                                              |
+| `removesuffix()` | Removes the specified suffix if it exists.                                              |
+| `replace()`      | Replaces occurrences of a substring with another substring.                             |
+| `rfind()`        | Returns the index of the last occurrence of a substring, or `-1` if not found.          |
+| `rindex()`       | Returns the index of the last occurrence of a substring; raises an error if not found.  |
+| `rjust()`        | Right-aligns the string within a specified width.                                       |
+| `rpartition()`   | Splits the string into three parts using the last occurrence of a separator.            |
+| `rsplit()`       | Splits the string from the right side.                                                  |
+| `rstrip()`       | Removes trailing whitespace or specified characters.                                    |
+| `split()`        | Splits the string into a list using a separator.                                        |
+| `splitlines()`   | Splits the string into a list of lines.                                                 |
+| `startswith()`   | Checks whether the string starts with a specified prefix.                               |
+| `strip()`        | Removes leading and trailing whitespace or specified characters.                        |
+| `swapcase()`     | Converts uppercase letters to lowercase and lowercase letters to uppercase.             |
+| `title()`        | Converts the first character of each word to uppercase.                                 |
+| `translate()`    | Replaces characters according to a translation table.                                   |
+| `upper()`        | Converts all characters to uppercase.                                                   |
+| `zfill()`        | Pads the string on the left with zeros until it reaches the specified length.           |
+
+# Day 53 - Part 3
+
+# Python Collection Methods (List, Tuple, Set & Dictionary)
+Python provides built-in methods for its collection data types to efficiently add, remove, search, update, and manipulate data.
+
+# 📋 List Methods
+
+| List Method | Use                                                                               |
+| ----------- | --------------------------------------------------------------------------------- |
+| `append()`  | Adds an element to the end of the list.                                           |
+| `extend()`  | Adds all elements from another iterable to the end of the list.                   |
+| `insert()`  | Inserts an element at a specified index.                                          |
+| `remove()`  | Removes the first occurrence of the specified element.                            |
+| `pop()`     | Removes and returns the element at the specified index (last element by default). |
+| `clear()`   | Removes all elements from the list.                                               |
+| `index()`   | Returns the index of the first occurrence of an element.                          |
+| `count()`   | Returns the number of times an element appears in the list.                       |
+| `sort()`    | Sorts the list in ascending order by default.                                     |
+| `reverse()` | Reverses the order of the elements in the list.                                   |
+| `copy()`    | Returns a shallow copy of the list.                                               |
+
+---
+
+# 📋 Tuple Methods
+
+| Tuple Method | Use                                                               |
+| ------------ | ----------------------------------------------------------------- |
+| `count()`    | Returns the number of occurrences of a specified element.         |
+| `index()`    | Returns the index of the first occurrence of a specified element. |
+
+**Note:** Tuples are immutable, so they have only these two built-in methods.
+
+---
+
+# 📋 Set Methods
+
+| Set Method                      | Use                                                                           |
+| ------------------------------- | ----------------------------------------------------------------------------- |
+| `add()`                         | Adds a single element to the set.                                             |
+| `update()`                      | Adds elements from one or more iterables to the set.                          |
+| `remove()`                      | Removes the specified element; raises an error if the element is not present. |
+| `discard()`                     | Removes the specified element if present; does not raise an error if absent.  |
+| `pop()`                         | Removes and returns a random element from the set.                            |
+| `clear()`                       | Removes all elements from the set.                                            |
+| `copy()`                        | Returns a shallow copy of the set.                                            |
+| `union()`                       | Returns a new set containing all unique elements from both sets.              |
+| `intersection()`                | Returns a new set containing common elements.                                 |
+| `difference()`                  | Returns elements that exist in the first set but not in the second.           |
+| `symmetric_difference()`        | Returns elements that are present in either set but not in both.              |
+| `intersection_update()`         | Updates the set with only the common elements.                                |
+| `difference_update()`           | Removes elements found in another set.                                        |
+| `symmetric_difference_update()` | Updates the set with elements present in either set but not both.             |
+| `issubset()`                    | Checks whether the set is a subset of another set.                            |
+| `issuperset()`                  | Checks whether the set is a superset of another set.                          |
+| `isdisjoint()`                  | Checks whether two sets have no common elements.                              |
+
+---
+
+# 📋 Dictionary Methods
+
+| Dictionary Method | Use                                                                                    |
+| ----------------- | -------------------------------------------------------------------------------------- |
+| `keys()`          | Returns a view of all keys in the dictionary.                                          |
+| `values()`        | Returns a view of all values in the dictionary.                                        |
+| `items()`         | Returns a view of all key-value pairs as tuples.                                       |
+| `get()`           | Returns the value for a key without raising an error if the key does not exist.        |
+| `update()`        | Updates the dictionary with key-value pairs from another dictionary or iterable.       |
+| `pop()`           | Removes the specified key and returns its value.                                       |
+| `popitem()`       | Removes and returns the last inserted key-value pair.                                  |
+| `setdefault()`    | Returns the value of a key; inserts the key with a default value if it does not exist. |
+| `fromkeys()`      | Creates a new dictionary using specified keys and a common value.                      |
+| `copy()`          | Returns a shallow copy of the dictionary.                                              |
+| `clear()`         | Removes all key-value pairs from the dictionary.                                       |
+
+# Day 53 - Part 4
+
+# Python Functions, File Handling, OS Module & Miscellaneous
+
+## 📖 Introduction
+
+This section covers the built-in functions, file handling methods, OS module functions, and other important concepts learned throughout the Python course.
+
+---
+
+# 📋 File Handling Methods
+
+| Function / Method | Use                                                         |
+| ----------------- | ----------------------------------------------------------- |
+| `open()`          | Opens a file and returns a file object.                     |
+| `close()`         | Closes an opened file and releases system resources.        |
+| `read()`          | Reads the entire file or a specified number of characters.  |
+| `readline()`      | Reads a single line from a file.                            |
+| `readlines()`     | Reads all lines and returns them as a list.                 |
+| `write()`         | Writes text to a file.                                      |
+| `writelines()`    | Writes multiple lines to a file.                            |
+| `seek()`          | Moves the file pointer to a specified position.             |
+| `tell()`          | Returns the current position of the file pointer.           |
+| `flush()`         | Forces buffered data to be written to the file immediately. |
+| `truncate()`      | Resizes the file to a specified size.                       |
+| `readable()`      | Checks whether the file is readable.                        |
+| `writable()`      | Checks whether the file is writable.                        |
+| `seekable()`      | Checks whether the file supports random access.             |
+| `fileno()`        | Returns the file descriptor used by the operating system.   |
+| `isatty()`        | Checks whether the file is connected to a terminal.         |
+| `readinto()`      | Reads binary data directly into a writable buffer.          |
+| `detach()`        | Separates the underlying binary buffer from a text stream.  |
+
+---
+
+# 📋 Functional Programming
+
+| Function   | Use                                                       |
+| ---------- | --------------------------------------------------------- |
+| `lambda`   | Creates an anonymous function for short operations.       |
+| `map()`    | Applies a function to every element of an iterable.       |
+| `filter()` | Selects elements that satisfy a given condition.          |
+| `reduce()` | Combines all elements of an iterable into a single value. |
+
+---
+
+# 📋 OS Module Functions
+
+| Function             | Use                                                 |
+| -------------------- | --------------------------------------------------- |
+| `os.getcwd()`        | Returns the current working directory.              |
+| `os.chdir()`         | Changes the current working directory.              |
+| `os.listdir()`       | Returns a list of files and folders in a directory. |
+| `os.mkdir()`         | Creates a new directory.                            |
+| `os.makedirs()`      | Creates multiple nested directories.                |
+| `os.rmdir()`         | Removes an empty directory.                         |
+| `os.removedirs()`    | Removes nested empty directories.                   |
+| `os.remove()`        | Deletes a file.                                     |
+| `os.rename()`        | Renames a file or directory.                        |
+| `os.path.exists()`   | Checks whether a file or directory exists.          |
+| `os.path.isfile()`   | Checks whether the path points to a file.           |
+| `os.path.isdir()`    | Checks whether the path points to a directory.      |
+| `os.path.join()`     | Joins multiple path components into a single path.  |
+| `os.path.basename()` | Returns the file name from a path.                  |
+| `os.path.dirname()`  | Returns the directory portion of a path.            |
+| `os.path.abspath()`  | Returns the absolute path of a file or directory.   |
+| `os.system()`        | Executes an operating system command.               |
+
+---
+
+# 📋 Import System
+
+| Keyword / Function          | Use                                               |
+| --------------------------- | ------------------------------------------------- |
+| `import`                    | Imports an entire module.                         |
+| `from ... import`           | Imports specific objects from a module.           |
+| `as`                        | Assigns an alias to a module or imported object.  |
+| `__name__`                  | Stores the name of the current module.            |
+| `if __name__ == "__main__"` | Executes code only when the file is run directly. |
+
+---
+
+# 📋 Exception Handling
+
+| Keyword   | Use                                                 |
+| --------- | --------------------------------------------------- |
+| `try`     | Defines a block of code to monitor for exceptions.  |
+| `except`  | Handles an exception if one occurs.                 |
+| `else`    | Executes if no exception occurs in the `try` block. |
+| `finally` | Executes regardless of whether an exception occurs. |
+| `raise`   | Raises an exception manually.                       |
+
+---
+
+# 📋 Variable Scope
+
+| Keyword     | Use                                                  |
+| ----------- | ---------------------------------------------------- |
+| `global`    | Declares that a variable refers to the global scope. |
+| `locals()`  | Returns a dictionary of local variables.             |
+| `globals()` | Returns a dictionary of global variables.            |
+
+---
+
+# 📋 Identity & Comparison
+
+| Operator / Function | Use                                                              |
+| ------------------- | ---------------------------------------------------------------- |
+| `is`                | Checks whether two variables refer to the same object in memory. |
+| `==`                | Checks whether two values are equal.                             |
+| `id()`              | Returns the unique identity (memory reference) of an object.     |
+
+---
+
+# 📋 Iteration Helpers
+
+| Function      | Use                                                          |
+| ------------- | ------------------------------------------------------------ |
+| `enumerate()` | Returns both the index and value while iterating.            |
+| `range()`     | Generates a sequence of numbers.                             |
+| `zip()`       | Combines elements from multiple iterables into tuples.       |
+| `reversed()`  | Returns an iterator that accesses elements in reverse order. |
+
+
+| Function         | Use                                                                           |
+| ---------------- | ----------------------------------------------------------------------------- |
+| `breakpoint()`   | Starts the Python debugger at the current line.                               |
+| `compile()`      | Compiles source code into a code object.                                      |
+| `memoryview()`   | Creates a memory view object for binary data.                                 |
+| `bytes()`        | Creates an immutable bytes object.                                            |
+| `bytearray()`    | Creates a mutable byte array.                                                 |
+| `slice()`        | Creates a slice object for slicing sequences.                                 |
+| `object()`       | Creates a new base object.                                                    |
+| `super()`        | Provides access to methods of a parent class (used in OOP).                   |
+| `property()`     | Creates managed attributes using getters and setters (used in OOP).           |
+| `classmethod()`  | Defines a method that receives the class as its first argument (used in OOP). |
+| `staticmethod()` | Defines a method that doesn't receive `self` or `cls` (used in OOP).          |
+
+
