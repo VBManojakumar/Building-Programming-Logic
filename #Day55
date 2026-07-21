@@ -1,0 +1,296 @@
+# 📅 Python Revision Journey – Day 2
+## 🗓️ Date: 21 July
+
+## 📖 Overview
+
+Today, I continued my Python revision by focusing on **Strings**. I revised string creation, indexing, slicing, string operators, and all commonly used string methods. I also solved practice problems to strengthen my understanding of string manipulation.
+
+---
+
+# 📚 Topics Revised
+
+- Strings
+- String Indexing
+- Negative Indexing
+- String Slicing
+- String Immutability
+- String Operators
+- Escape Sequences
+- String Formatting
+- f-Strings
+- Common String Methods
+
+---
+
+# 🛠 String Methods Revised
+
+| Method | Use |
+|---------|-----|
+| `upper()` | Converts all characters to uppercase |
+| `lower()` | Converts all characters to lowercase |
+| `capitalize()` | Capitalizes the first character |
+| `title()` | Capitalizes the first letter of every word |
+| `swapcase()` | Swaps uppercase and lowercase letters |
+| `strip()` | Removes leading and trailing spaces |
+| `lstrip()` | Removes leading spaces |
+| `rstrip()` | Removes trailing spaces |
+| `replace()` | Replaces one substring with another |
+| `split()` | Splits a string into a list |
+| `join()` | Joins iterable elements into a string |
+| `find()` | Returns the first occurrence index |
+| `rfind()` | Returns the last occurrence index |
+| `index()` | Returns the index of a substring |
+| `count()` | Counts occurrences of a substring |
+| `startswith()` | Checks if the string starts with a substring |
+| `endswith()` | Checks if the string ends with a substring |
+| `isalpha()` | Checks whether all characters are alphabets |
+| `isdigit()` | Checks whether all characters are digits |
+| `isalnum()` | Checks whether all characters are alphanumeric |
+| `islower()` | Checks if all letters are lowercase |
+| `isupper()` | Checks if all letters are uppercase |
+| `isspace()` | Checks if all characters are whitespace |
+| `center()` | Centers the string with specified width |
+| `zfill()` | Pads zeros to the left of the string |
+
+---
+
+# 💻 Practice Problems & Solutions
+
+## Problem 1
+
+### Print each character of a string.
+
+### Solution
+
+- Traverse the string using indexing or a loop.
+
+---
+
+## Problem 2
+
+### Find the length of a string.
+
+### Solution
+
+- Use the `len()` function.
+
+---
+
+## Problem 3
+
+### Convert a string to uppercase.
+
+### Solution
+
+- Use the `upper()` method.
+
+---
+
+## Problem 4
+
+### Convert a string to lowercase.
+
+### Solution
+
+- Use the `lower()` method.
+
+---
+
+## Problem 5
+
+### Count the number of vowels in a string.
+
+### Solution
+
+- Traverse each character and count vowels.
+
+---
+
+## Problem 6
+
+### Reverse a string.
+
+### Solution
+
+- Use string slicing or a loop.
+
+---
+
+## Problem 7
+
+### Check whether a string is a palindrome.
+
+### Solution
+
+- Reverse the string and compare it with the original.
+
+---
+
+## Problem 8
+
+### Remove extra spaces from a string.
+
+### Solution
+
+- Use the `strip()` method.
+
+---
+
+## Problem 9
+
+### Replace all spaces with hyphens.
+
+### Solution
+
+- Use the `replace()` method.
+
+---
+
+## Problem 10
+
+### Split a sentence into words.
+
+### Solution
+
+- Use the `split()` method.
+
+---
+
+## Problem 11
+
+### Join a list of words into a sentence.
+
+### Solution
+
+- Use the `join()` method.
+
+---
+
+## Problem 12
+
+### Find the first occurrence of a character.
+
+### Solution
+
+- Use the `find()` method.
+
+---
+
+## Problem 13
+
+### Count how many times a character appears.
+
+### Solution
+
+- Use the `count()` method.
+
+---
+
+## Problem 14
+
+### Check whether a string starts with "Py".
+
+### Solution
+
+- Use the `startswith()` method.
+
+---
+
+## Problem 15
+
+### Check whether a string ends with ".py".
+
+### Solution
+
+- Use the `endswith()` method.
+
+---
+
+## Problem 16
+
+### Check whether a string contains only alphabets.
+
+### Solution
+
+- Use the `isalpha()` method.
+
+---
+
+## Problem 17
+
+### Check whether a string contains only digits.
+
+### Solution
+
+- Use the `isdigit()` method.
+
+---
+
+## Problem 18
+
+### Convert the first letter of every word to uppercase.
+
+### Solution
+
+- Use the `title()` method.
+
+---
+
+## Problem 19
+
+### Display a student's name and marks using an f-string.
+
+### Solution
+
+- Format the output using an f-string.
+
+---
+
+## Problem 20
+
+### Swap the case of all letters in a string.
+
+### Solution
+
+- Use the `swapcase()` method.
+
+---
+
+# 🎯 Learning Outcome
+
+Today I revised:
+
+- String creation
+- Indexing and slicing
+- String formatting
+- Escape sequences
+- String methods
+- String manipulation techniques
+
+---
+
+# 📊 Revision Summary
+
+- 📅 Date: **21 July**
+- 📚 Topics Revised: Strings
+- 💻 Practice Problems Solved: **20**
+- 🛠 String Methods Revised: **25**
+- ✅ Revision Status: Completed
+
+---
+
+# 🚀 Next Revision (22 July)
+
+### Topics
+
+- If-Else Statements
+- Match-Case
+- For Loop
+- While Loop
+- Break
+- Continue
+- For-Else Loop
+
+### Practice
+
+- 20 Logic Building Problems
