@@ -1,0 +1,293 @@
+# 📅 Python Revision Journey – Day 3
+## 🗓️ Date: 22 July
+
+## 📖 Overview
+
+Today, I revised Python decision-making and looping concepts. I practiced solving logical problems using conditional statements and loops to strengthen my programming fundamentals and logical thinking.
+
+---
+
+# 📚 Topics Revised
+
+- if Statement
+- if-else Statement
+- if-elif-else Statement
+- Nested if
+- Match-Case Statement
+- For Loop
+- While Loop
+- break Statement
+- continue Statement
+- for-else Loop
+
+---
+
+# 🛠 Keywords & Functions Revised
+
+| Keyword / Function | Use |
+|--------------------|-----|
+| `if` | Executes a block when the condition is True |
+| `elif` | Checks another condition if the previous one is False |
+| `else` | Executes when all previous conditions are False |
+| `match` | Performs pattern matching based on a value |
+| `case` | Defines different cases inside a match statement |
+| `for` | Iterates over a sequence |
+| `while` | Executes repeatedly while a condition is True |
+| `break` | Terminates the loop immediately |
+| `continue` | Skips the current iteration |
+| `range()` | Generates a sequence of numbers |
+
+---
+
+# 💻 Practice Problems & Solutions
+
+## Problem 1
+
+### Check whether a number is positive, negative or zero.
+
+### Solution
+
+- Use `if-elif-else` conditions.
+
+---
+
+## Problem 2
+
+### Check whether a number is even or odd.
+
+### Solution
+
+- Use the modulus operator (`%`) with an `if-else` statement.
+
+---
+
+## Problem 3
+
+### Find the largest among three numbers.
+
+### Solution
+
+- Compare all three numbers using nested `if` or `if-elif-else`.
+
+---
+
+## Problem 4
+
+### Check whether a year is a leap year.
+
+### Solution
+
+- Apply leap year conditions using `if-else`.
+
+---
+
+## Problem 5
+
+### Display grades based on marks.
+
+### Solution
+
+- Use multiple `elif` conditions.
+
+---
+
+## Problem 6
+
+### Implement a simple calculator using Match-Case.
+
+### Solution
+
+- Read the operator from the user.
+- Use `match-case` to perform the corresponding arithmetic operation.
+
+---
+
+## Problem 7
+
+### Print numbers from 1 to 10.
+
+### Solution
+
+- Use a `for` loop with `range()`.
+
+---
+
+## Problem 8
+
+### Print numbers from 10 to 1.
+
+### Solution
+
+- Use a `for` loop with a negative step in `range()`.
+
+---
+
+## Problem 9
+
+### Print the multiplication table of a number.
+
+### Solution
+
+- Use a `for` loop from 1 to 10.
+
+---
+
+## Problem 10
+
+### Find the sum of the first N natural numbers.
+
+### Solution
+
+- Use a loop to accumulate the sum.
+
+---
+
+## Problem 11
+
+### Find the factorial of a number.
+
+### Solution
+
+- Use a `for` loop or `while` loop.
+
+---
+
+## Problem 12
+
+### Generate the Fibonacci series up to N terms.
+
+### Solution
+
+- Use a loop and update the previous two numbers in each iteration.
+
+---
+
+## Problem 13
+
+### Check whether a number is prime.
+
+### Solution
+
+- Check divisibility using a loop.
+
+---
+
+## Problem 14
+
+### Count the number of digits in a number.
+
+### Solution
+
+- Use a `while` loop by repeatedly dividing the number by 10.
+
+---
+
+## Problem 15
+
+### Reverse a number.
+
+### Solution
+
+- Extract digits using `%` and `//` inside a `while` loop.
+
+---
+
+## Problem 16
+
+### Print all even numbers between 1 and 100.
+
+### Solution
+
+- Use a `for` loop and check divisibility by 2.
+
+---
+
+## Problem 17
+
+### Skip multiples of 5 while printing numbers from 1 to 50.
+
+### Solution
+
+- Use the `continue` statement.
+
+---
+
+## Problem 18
+
+### Stop printing numbers once the value reaches 25.
+
+### Solution
+
+- Use the `break` statement.
+
+---
+
+## Problem 19
+
+### Search for a number in a list using a `for-else` loop.
+
+### Solution
+
+- Use `break` if the element is found.
+- Use the `else` block if the loop completes without finding the element.
+
+---
+
+## Problem 20
+
+### Print the following pattern:
+
+```
+*
+**
+***
+****
+*****
+```
+
+### Solution
+
+- Use nested `for` loops.
+
+---
+
+# 🎯 Learning Outcome
+
+Today I revised:
+
+- Decision-making statements
+- Match-Case Statement
+- For Loop
+- While Loop
+- break Statement
+- continue Statement
+- for-else Loop
+- Basic logic-building using loops
+
+---
+
+# 📊 Revision Summary
+
+- 📅 Date: **22 July**
+- 📚 Topics Revised: Conditional Statements & Loops
+- 💻 Practice Problems Solved: **20**
+- 🛠 Keywords Revised: **10**
+- ✅ Revision Status: Completed
+
+---
+
+# 🚀 Next Revision (23 July)
+
+### Topics
+
+- Functions
+- Function Arguments
+- Recursion
+- Lists
+- List Methods
+- Tuples
+- Tuple Operations
+
+### Practice
+
+- 20 Function, List & Tuple Problems
