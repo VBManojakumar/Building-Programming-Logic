@@ -1,0 +1,326 @@
+# 📅 Python Revision Journey – Day 4
+## 🗓️ Date: 23 July
+
+## 📖 Overview
+
+Today, I revised Python functions, recursion, lists, tuples, and their commonly used methods. I practiced problems involving reusable functions, list manipulation, tuple operations, and recursive thinking to strengthen my problem-solving skills.
+
+---
+
+# 📚 Topics Revised
+
+- Functions
+- User-defined Functions
+- Function Arguments
+  - Positional Arguments
+  - Default Arguments
+  - Keyword Arguments
+  - Variable-length Arguments (`*args`, `**kwargs`)
+- Return Statement
+- Recursion
+- Lists
+- List Indexing & Slicing
+- List Methods
+- Tuples
+- Tuple Operations
+- Tuple Methods
+
+---
+
+# 🛠 Built-in Functions & Methods Revised
+
+## Built-in Functions
+
+| Function | Use |
+|----------|-----|
+| `len()` | Returns the number of elements |
+| `max()` | Returns the largest element |
+| `min()` | Returns the smallest element |
+| `sum()` | Returns the sum of elements |
+| `sorted()` | Returns a sorted list |
+| `list()` | Converts an iterable into a list |
+| `tuple()` | Converts an iterable into a tuple |
+
+---
+
+## List Methods
+
+| Method | Use |
+|---------|-----|
+| `append()` | Adds an element at the end |
+| `extend()` | Adds multiple elements |
+| `insert()` | Inserts an element at a specific position |
+| `remove()` | Removes the first matching element |
+| `pop()` | Removes an element by index |
+| `clear()` | Removes all elements |
+| `index()` | Returns the index of an element |
+| `count()` | Counts occurrences of an element |
+| `sort()` | Sorts the list |
+| `reverse()` | Reverses the list |
+| `copy()` | Creates a shallow copy |
+
+---
+
+## Tuple Methods
+
+| Method | Use |
+|---------|-----|
+| `count()` | Counts occurrences of an element |
+| `index()` | Returns the index of an element |
+
+---
+
+# 💻 Practice Problems & Solutions
+
+## Problem 1
+
+### Write a function to find the square of a number.
+
+### Solution
+
+- Create a function that accepts a number as an argument.
+- Return its square.
+
+---
+
+## Problem 2
+
+### Write a function to check whether a number is even or odd.
+
+### Solution
+
+- Use the modulus operator inside the function.
+
+---
+
+## Problem 3
+
+### Write a function to find the largest of three numbers.
+
+### Solution
+
+- Compare the three numbers and return the largest.
+
+---
+
+## Problem 4
+
+### Write a function to calculate the factorial of a number.
+
+### Solution
+
+- Use a loop or recursion inside the function.
+
+---
+
+## Problem 5
+
+### Print the Fibonacci series using recursion.
+
+### Solution
+
+- Create a recursive function with a base case.
+
+---
+
+## Problem 6
+
+### Find the sum of all elements in a list.
+
+### Solution
+
+- Use the `sum()` function or iterate through the list.
+
+---
+
+## Problem 7
+
+### Find the largest element in a list.
+
+### Solution
+
+- Use the `max()` function.
+
+---
+
+## Problem 8
+
+### Find the smallest element in a list.
+
+### Solution
+
+- Use the `min()` function.
+
+---
+
+## Problem 9
+
+### Find the average of elements in a list.
+
+### Solution
+
+- Divide the sum of elements by the length of the list.
+
+---
+
+## Problem 10
+
+### Remove duplicate elements from a list.
+
+### Solution
+
+- Convert the list into a set and back into a list or use a loop.
+
+---
+
+## Problem 11
+
+### Reverse a list.
+
+### Solution
+
+- Use the `reverse()` method or slicing.
+
+---
+
+## Problem 12
+
+### Sort a list in ascending order.
+
+### Solution
+
+- Use the `sort()` method.
+
+---
+
+## Problem 13
+
+### Sort a list in descending order.
+
+### Solution
+
+- Use the `sort()` method with reverse order.
+
+---
+
+## Problem 14
+
+### Count how many times an element appears in a list.
+
+### Solution
+
+- Use the `count()` method.
+
+---
+
+## Problem 15
+
+### Find the index of an element in a list.
+
+### Solution
+
+- Use the `index()` method.
+
+---
+
+## Problem 16
+
+### Merge two lists.
+
+### Solution
+
+- Use the `extend()` method or the `+` operator.
+
+---
+
+## Problem 17
+
+### Convert a list into a tuple.
+
+### Solution
+
+- Use the `tuple()` function.
+
+---
+
+## Problem 18
+
+### Convert a tuple into a list.
+
+### Solution
+
+- Use the `list()` function.
+
+---
+
+## Problem 19
+
+### Count the occurrences of an element in a tuple.
+
+### Solution
+
+- Use the `count()` method.
+
+---
+
+## Problem 20
+
+### Find the index of an element in a tuple.
+
+### Solution
+
+- Use the `index()` method.
+
+---
+
+# 🎯 Learning Outcome
+
+Today I revised:
+
+- User-defined Functions
+- Function Arguments
+- Return Statement
+- Recursion
+- Lists & List Methods
+- Tuples & Tuple Methods
+- List Manipulation
+- Recursive Problem Solving
+
+---
+
+# 📊 Revision Summary
+
+- 📅 Date: **23 July**
+- 📚 Topics Revised: Functions, Recursion, Lists & Tuples
+- 💻 Practice Problems Solved: **20**
+- 🛠 Built-in Functions & Methods Revised: **20**
+- ✅ Revision Status: Completed
+
+---
+
+# 🚀 Next Revision (24 July)
+
+### Topics
+
+- f-Strings
+- Docstrings
+- Sets & Set Methods
+- Dictionaries & Dictionary Methods
+- Exception Handling
+- Finally
+- Custom Errors
+- Short-hand If-Else
+- Enumerate
+- Virtual Environment
+- Import System
+- `if __name__ == "__main__"`
+- OS Module
+- Local vs Global Variables
+- File Handling
+- Lambda Functions
+- `map()`, `filter()`, `reduce()`
+- `is` vs `==`
+
+### Practice
+
+- 20 Advanced Core Python Problems
