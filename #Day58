@@ -1,0 +1,474 @@
+# 📅 Python Revision Journey – Day 5
+## 🗓️ Date: 24 July
+
+## 📖 Overview
+
+Today, I completed the revision of all the remaining Core Python concepts learned during the CodeWithHarry Python course (Day 1–54). This revision focused on advanced core Python features, built-in modules, file handling, functional programming concepts, and best practices.
+
+With today's revision, I have successfully revised the complete Core Python syllabus before moving on to Advanced Python.
+
+---
+
+# 📚 Topics Revised
+
+## ✅ String Formatting
+
+- f-Strings
+
+---
+
+## ✅ Documentation
+
+- Docstrings
+
+---
+
+## ✅ Sets
+
+- Creating Sets
+- Set Operations
+- Set Methods
+
+### Set Methods Revised
+
+- `add()`
+- `update()`
+- `remove()`
+- `discard()`
+- `pop()`
+- `clear()`
+- `copy()`
+- `union()`
+- `intersection()`
+- `difference()`
+- `symmetric_difference()`
+- `issubset()`
+- `issuperset()`
+- `isdisjoint()`
+
+---
+
+## ✅ Dictionaries
+
+- Dictionary Basics
+- Dictionary Operations
+- Dictionary Methods
+
+### Dictionary Methods Revised
+
+- `get()`
+- `keys()`
+- `values()`
+- `items()`
+- `update()`
+- `pop()`
+- `popitem()`
+- `clear()`
+- `copy()`
+- `setdefault()`
+- `fromkeys()`
+
+---
+
+## ✅ Exception Handling
+
+- try
+- except
+- else
+- finally
+
+---
+
+## ✅ Custom Errors
+
+- Raising Custom Exceptions
+- Defining Custom Exceptions
+
+---
+
+## ✅ Short-hand If-Else
+
+---
+
+## ✅ Enumerate Function
+
+- `enumerate()`
+- Custom Start Index
+
+---
+
+## ✅ Virtual Environment
+
+- Creating Virtual Environments
+- Activating Virtual Environments
+- Installing Packages
+- `pip`
+- `pip freeze`
+- Deactivating Virtual Environment
+
+---
+
+## ✅ Import System
+
+- `import`
+- `from ... import`
+- `as`
+- User-defined Modules
+
+---
+
+## ✅ `if __name__ == "__main__"`
+
+- Purpose
+- Usage
+
+---
+
+## ✅ OS Module
+
+Functions Revised
+
+- `getcwd()`
+- `chdir()`
+- `listdir()`
+- `mkdir()`
+- `makedirs()`
+- `rename()`
+- `remove()`
+- `rmdir()`
+- `removedirs()`
+- `exists()`
+
+---
+
+## ✅ Local vs Global Variables
+
+- Local Variables
+- Global Variables
+- `global` Keyword
+
+---
+
+## ✅ File Handling
+
+Modes
+
+- Read
+- Write
+- Append
+- Read & Write
+
+Functions Revised
+
+- `open()`
+- `close()`
+- `read()`
+- `readline()`
+- `readlines()`
+- `write()`
+- `writelines()`
+- `seek()`
+- `tell()`
+- `flush()`
+
+---
+
+## ✅ Lambda Functions
+
+- Lambda Expressions
+- Anonymous Functions
+
+---
+
+## ✅ Functional Programming
+
+- `map()`
+- `filter()`
+- `reduce()`
+
+---
+
+## ✅ Identity vs Equality
+
+- `is`
+- `==`
+
+---
+
+# 💻 Practice Problems & Solutions
+
+## Problem 1
+
+### Create a set and perform union and intersection.
+
+### Solution
+
+- Use `union()` and `intersection()` methods.
+
+---
+
+## Problem 2
+
+### Remove duplicate values from a list.
+
+### Solution
+
+- Convert the list into a set and back into a list.
+
+---
+
+## Problem 3
+
+### Count the frequency of words using a dictionary.
+
+### Solution
+
+- Store words as keys and their counts as values.
+
+---
+
+## Problem 4
+
+### Safely divide two numbers and handle division by zero.
+
+### Solution
+
+- Use `try` and `except`.
+
+---
+
+## Problem 5
+
+### Raise a custom exception if age is less than 18.
+
+### Solution
+
+- Use `raise` with a custom exception class.
+
+---
+
+## Problem 6
+
+### Print index and value of a list.
+
+### Solution
+
+- Use `enumerate()`.
+
+---
+
+## Problem 7
+
+### Create and activate a virtual environment.
+
+### Solution
+
+- Create using `python -m venv`.
+- Activate using the appropriate command for your operating system.
+
+---
+
+## Problem 8
+
+### Import a function from another Python file.
+
+### Solution
+
+- Use the `import` statement.
+
+---
+
+## Problem 9
+
+### Display the current working directory.
+
+### Solution
+
+- Use `os.getcwd()`.
+
+---
+
+## Problem 10
+
+### Create a new folder.
+
+### Solution
+
+- Use `os.mkdir()`.
+
+---
+
+## Problem 11
+
+### Write data into a file.
+
+### Solution
+
+- Open the file in write mode and use `write()`.
+
+---
+
+## Problem 12
+
+### Read an entire file.
+
+### Solution
+
+- Use `read()`.
+
+---
+
+## Problem 13
+
+### Read a file line by line.
+
+### Solution
+
+- Use `readline()` or iterate through the file.
+
+---
+
+## Problem 14
+
+### Move the file pointer to a specific location.
+
+### Solution
+
+- Use `seek()`.
+
+---
+
+## Problem 15
+
+### Find the current position of the file pointer.
+
+### Solution
+
+- Use `tell()`.
+
+---
+
+## Problem 16
+
+### Find the square of numbers using Lambda.
+
+### Solution
+
+- Create an anonymous function using `lambda`.
+
+---
+
+## Problem 17
+
+### Double every number in a list.
+
+### Solution
+
+- Use `map()`.
+
+---
+
+## Problem 18
+
+### Filter even numbers from a list.
+
+### Solution
+
+- Use `filter()`.
+
+---
+
+## Problem 19
+
+### Find the sum of a list using Functional Programming.
+
+### Solution
+
+- Use `reduce()`.
+
+---
+
+## Problem 20
+
+### Demonstrate the difference between `is` and `==`.
+
+### Solution
+
+- Compare two objects using both operators and observe the difference between identity and equality.
+
+---
+
+# 🎯 Learning Outcome
+
+Today I revised:
+
+- Sets & Dictionary Operations
+- Exception Handling
+- Custom Exceptions
+- Enumerate
+- Virtual Environment
+- Import System
+- OS Module
+- File Handling
+- Lambda Functions
+- Functional Programming (`map`, `filter`, `reduce`)
+- Identity vs Equality
+
+---
+
+# 🏆 Milestone Achieved
+
+✅ Successfully completed the revision of **all Core Python concepts (Day 1–54)** from the CodeWithHarry Python course.
+
+### Topics Revised During the Revision Journey
+
+- Python Basics
+- Variables & Data Types
+- Input & Output
+- Operators
+- Strings
+- Conditional Statements
+- Loops
+- Functions
+- Recursion
+- Lists
+- Tuples
+- Sets
+- Dictionaries
+- Exception Handling
+- File Handling
+- Modules
+- Virtual Environment
+- Functional Programming
+- OS Module
+- Core Python Utilities
+
+---
+
+# 📊 Revision Summary
+
+- 📅 Date: **24 July**
+- 📚 Topics Revised: Remaining Core Python Concepts
+- 💻 Practice Problems Solved: **20**
+- 🛠 Methods & Functions Revised: **40+**
+- ✅ Core Python Revision: **100% Completed**
+
+---
+
+# 🚀 Next Learning Phase
+
+## Advanced Python
+
+### Day 54 (Custom Roadmap)
+
+- Iterators
+- Iterables
+- Iterator Protocol
+- `iter()`
+- `next()`
+- Generators
+- `yield`
+- Generator Expressions
+- Lazy Evaluation
+
+🎯 **Next Goal:** Begin the Advanced Python roadmap and continue building toward Python backend and full-stack development.
