@@ -1,2 +1,377 @@
-....
 
+
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 42 – Tuple Revision
+
+Today I revised Python Tuples by solving practice problems on tuple traversal, indexing, counting, searching, finding largest and smallest elements, average calculation, reverse traversal, and frequency counting.
+
+---
+
+# Quick Revision
+
+A **Tuple** is an ordered collection of elements enclosed in parentheses `()`.
+
+Example:
+
+```python
+a = (10,20,30)
+```
+
+### Key Points
+
+- Uses `()`
+- Immutable (Cannot modify elements)
+- Ordered
+- Allows duplicate values
+- Supports indexing and slicing
+
+---
+
+# Problem 1 – Print All Elements
+
+### Code
+
+```python
+a = (5,10,15,20,25)
+
+for i in a:
+    print(i)
+```
+
+### Output
+
+```
+5
+10
+15
+20
+25
+```
+
+### Logic
+
+Traverse the tuple and print every element.
+
+---
+
+# Problem 2 – Print Elements at Even Indexes
+
+### Code
+
+```python
+a = (10,20,30,40,50,60)
+
+for i in range(0,len(a),2):
+    print(a[i])
+```
+
+### Output
+
+```
+10
+30
+50
+```
+
+### Logic
+
+Start from index `0` and increment the index by `2`.
+
+---
+
+# Problem 3 – Print Elements at Odd Indexes
+
+### Code
+
+```python
+a = (10,20,30,40,50,60)
+
+for i in range(1,len(a),2):
+    print(a[i])
+```
+
+### Output
+
+```
+20
+40
+60
+```
+
+### Logic
+
+Start from index `1` and increment the index by `2`.
+
+---
+
+# Problem 4 – Count Positive Numbers
+
+### Code
+
+```python
+a = (-5,10,-2,8,0,15)
+
+count = 0
+
+for i in a:
+    if i > 0:
+        count = count + 1
+
+print(count)
+```
+
+### Output
+
+```
+3
+```
+
+### Logic
+
+Traverse the tuple and count numbers greater than zero.
+
+---
+
+# Problem 5 – Count Negative Numbers
+
+### Code
+
+```python
+a = (-5,10,-2,8,0,15)
+
+count = 0
+
+for i in a:
+    if i < 0:
+        count = count + 1
+
+print(count)
+```
+
+### Output
+
+```
+2
+```
+
+### Logic
+
+Traverse the tuple and count numbers less than zero.
+
+---
+
+# Problem 6 – Find Largest Element
+
+### Code
+
+```python
+a = (12,45,7,30,18)
+
+largest = a[0]
+
+for i in a:
+    if i > largest:
+        largest = i
+
+print(largest)
+```
+
+### Output
+
+```
+45
+```
+
+### Logic
+
+Assume the first element is the largest and update it while traversing.
+
+---
+
+# Problem 7 – Find Smallest Element
+
+### Code
+
+```python
+a = (12,45,7,30,18)
+
+smallest = a[0]
+
+for i in a:
+    if i < smallest:
+        smallest = i
+
+print(smallest)
+```
+
+### Output
+
+```
+7
+```
+
+### Logic
+
+Assume the first element is the smallest and update it while traversing.
+
+---
+
+# Problem 8 – Calculate Average
+
+### Code
+
+```python
+a = (10,20,30,40,50)
+
+total = 0
+
+for i in a:
+    total = total + i
+
+avg = total / len(a)
+
+print(avg)
+```
+
+### Output
+
+```
+30.0
+```
+
+### Logic
+
+Calculate the total sum and divide it by the number of elements.
+
+---
+
+# Problem 9 – Search an Element
+
+### Code
+
+```python
+a = (10,20,30,40,50)
+
+key = 40
+
+if key in a:
+    print("Found")
+else:
+    print("Not Found")
+```
+
+### Output
+
+```
+Found
+```
+
+### Logic
+
+Use the membership operator (`in`) to search for the element.
+
+---
+
+# Problem 10 – Reverse Print
+
+### Code
+
+```python
+a = (10,20,30,40,50)
+
+for i in range(len(a)-1,-1,-1):
+    print(a[i])
+```
+
+### Output
+
+```
+50
+40
+30
+20
+10
+```
+
+### Logic
+
+Start from the last index and move backwards.
+
+---
+
+# Bonus Problem 11 – Count Frequency of Each Element
+
+### Code
+
+```python
+a = (10,20,10,30,20,10)
+
+seen = []
+
+for i in a:
+    if i not in seen:
+        print(i,"=",a.count(i))
+        seen.append(i)
+```
+
+### Output
+
+```
+10 = 3
+20 = 2
+30 = 1
+```
+
+### Logic
+
+Print the frequency of each element only once.
+
+---
+
+# Bonus Problem 12 – Print Unique Elements
+
+### Code
+
+```python
+a = (10,20,10,30,40,20,50)
+
+for i in a:
+    if a.count(i) == 1:
+        print(i)
+```
+
+### Output
+
+```
+30
+40
+50
+```
+
+### Logic
+
+Print elements whose frequency is exactly one.
+
+---
+
+# 🎯 Key Concepts Revised
+
+- ✅ Tuple Creation
+- ✅ Tuple Traversal
+- ✅ Tuple Indexing
+- ✅ Even/Odd Index Traversal
+- ✅ Positive & Negative Counting
+- ✅ Largest Element
+- ✅ Smallest Element
+- ✅ Average Calculation
+- ✅ Searching
+- ✅ Reverse Traversal
+- ✅ Frequency Counting
+- ✅ Unique Elements
+
+---
