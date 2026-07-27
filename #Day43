@@ -1,1 +1,340 @@
-....
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 43 – Linear Search
+
+Today I learned **Linear Search**, one of the fundamental searching algorithms in programming. I practiced searching elements in lists, tuples, and strings, finding positions, counting occurrences, and searching characters.
+
+---
+
+# What is Linear Search?
+
+**Linear Search** is a searching algorithm that checks each element one by one until the required element is found.
+
+### Algorithm
+
+1. Start from the first element.
+2. Compare it with the key.
+3. If it matches, print **Found**.
+4. Otherwise, move to the next element.
+5. If the entire collection is checked and no match is found, print **Not Found**.
+
+---
+
+# Problem 1 – Linear Search
+
+### Code
+
+```python
+a = [10,20,30,40,50]
+
+key = 30
+
+for i in a:
+    if i == key:
+        print("Found")
+        break
+else:
+    print("Not Found")
+```
+
+### Output
+
+```
+Found
+```
+
+### Logic
+
+- Traverse the list.
+- Compare every element with the key.
+- Stop when the element is found.
+
+---
+
+# Problem 2 – Element Not Found
+
+### Code
+
+```python
+a = [10,20,30,40,50]
+
+key = 35
+
+for i in a:
+    if i == key:
+        print("Found")
+        break
+else:
+    print("Not Found")
+```
+
+### Output
+
+```
+Not Found
+```
+
+### Logic
+
+- Traverse the entire list.
+- If no match is found, print **Not Found**.
+
+---
+
+# Problem 3 – Find Position of an Element
+
+### Code
+
+```python
+a = [10,20,30,40,50]
+
+key = 40
+
+for i in range(len(a)):
+    if a[i] == key:
+        print("Position =", i)
+        break
+```
+
+### Output
+
+```
+Position = 3
+```
+
+### Logic
+
+- Traverse using indexes.
+- Print the index when the key is found.
+
+---
+
+# Problem 4 – Count Occurrences
+
+### Code
+
+```python
+a = [10,20,10,30,10,40]
+
+key = 10
+
+count = 0
+
+for i in a:
+    if i == key:
+        count = count + 1
+
+print(count)
+```
+
+### Output
+
+```
+3
+```
+
+### Logic
+
+- Compare every element with the key.
+- Increase the counter whenever a match is found.
+
+---
+
+# Problem 5 – Print All Positions
+
+### Code
+
+```python
+a = [10,20,10,30,10,40]
+
+key = 10
+
+for i in range(len(a)):
+    if a[i] == key:
+        print(i)
+```
+
+### Output
+
+```
+0
+2
+4
+```
+
+### Logic
+
+- Traverse the list using indexes.
+- Print every matching index.
+
+---
+
+# Problem 6 – First Occurrence
+
+### Code
+
+```python
+a = [5,10,15,10,20]
+
+key = 10
+
+for i in range(len(a)):
+    if a[i] == key:
+        print(i)
+        break
+```
+
+### Output
+
+```
+1
+```
+
+### Logic
+
+- Print the first matching index.
+- Stop the loop immediately.
+
+---
+
+# Problem 7 – Last Occurrence
+
+### Code
+
+```python
+a = [5,10,15,10,20]
+
+key = 10
+
+last = -1
+
+for i in range(len(a)):
+    if a[i] == key:
+        last = i
+
+if last != -1:
+    print(last)
+else:
+    print("Not Found")
+```
+
+### Output
+
+```
+3
+```
+
+### Logic
+
+- Keep updating the last matching index.
+- Print the final stored index.
+
+---
+
+# Problem 8 – Search in a Tuple
+
+### Code
+
+```python
+a = (10,20,30,40,50)
+
+key = 50
+
+for i in a:
+    if i == key:
+        print("Found")
+        break
+else:
+    print("Not Found")
+```
+
+### Output
+
+```
+Found
+```
+
+### Logic
+
+- Traverse the tuple.
+- Compare every element with the key.
+
+---
+
+# Problem 9 – Search a Character in a String
+
+### Code
+
+```python
+a = "PYTHON"
+
+key = "T"
+
+for i in a:
+    if i == key:
+        print("Found")
+        break
+else:
+    print("Not Found")
+```
+
+### Output
+
+```
+Found
+```
+
+### Logic
+
+- Traverse each character.
+- Compare with the required character.
+
+---
+
+# Problem 10 – Count Vowels
+
+### Code
+
+```python
+a = "PROGRAMMING"
+
+count = 0
+
+for i in a:
+    if i in "AEIOUaeiou":
+        count = count + 1
+
+print(count)
+```
+
+### Output
+
+```
+3
+```
+
+### Logic
+
+- Traverse each character.
+- If it is a vowel, increase the counter.
+
+---
+
+# 🎯 Key Concepts Learned
+
+- ✅ Linear Search
+- ✅ Searching in Lists
+- ✅ Searching in Tuples
+- ✅ Searching in Strings
+- ✅ Finding Position
+- ✅ Counting Occurrences
+- ✅ First Occurrence
+- ✅ Last Occurrence
+- ✅ Character Search
+- ✅ Counting Vowels
+
+---
