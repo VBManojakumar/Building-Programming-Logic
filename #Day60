@@ -1,0 +1,95 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 60 – Searching Algorithms Revision
+
+Today I revised the two fundamental searching algorithms in Python:
+
+- Linear Search
+- Binary Search
+
+I solved practice problems on searching elements, finding positions, handling found/not found cases, and understood the differences between both algorithms.
+
+---
+
+# Topics Revised
+
+## ✅ Linear Search
+
+Linear Search checks each element one by one until the required element is found.
+
+### Features
+
+- Works on both sorted and unsorted lists.
+- Easy to understand and implement.
+- Slower for large datasets.
+
+---
+
+## ✅ Binary Search
+
+Binary Search repeatedly divides the search space into two halves.
+
+### Features
+
+- Works only on sorted lists.
+- Faster than Linear Search.
+- Uses `low`, `high`, and `mid` pointers.
+
+---
+
+# Problems Practiced
+
+### ✅ Linear Search
+
+- Search an element
+- Element not found
+- Find position
+- Count occurrences
+- First occurrence
+- Last occurrence
+- Search in tuple
+- Search in string
+
+### ✅ Binary Search
+
+- Search an element
+- Element not found
+- Find position
+- Search first element
+- Search last element
+- Search middle element
+- Search in larger sorted list
+- Search smallest element
+- Search largest element
+
+---
+
+# Comparison
+
+| Linear Search | Binary Search |
+|---------------|---------------|
+| Works on any list | Works only on sorted lists |
+| Sequential search | Divide-and-conquer search |
+| Simpler | Slightly more complex |
+| Slower | Faster |
+
+---
+
+# 🎯 Key Concepts Revised
+
+- ✅ Linear Search
+- ✅ Binary Search
+- ✅ Searching in Lists
+- ✅ Searching in Tuples
+- ✅ Searching in Strings
+- ✅ Finding Positions
+- ✅ First and Last Occurrence
+- ✅ Sorted List Requirement
+- ✅ Low, High and Mid Concept
+- ✅ Search Algorithm Comparison
+
+---
