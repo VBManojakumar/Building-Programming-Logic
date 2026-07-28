@@ -1,1 +1,140 @@
-.....
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 59 – Tuple Revision
+
+Today I revised Python Tuples by solving different practice problems. This revision helped me strengthen my understanding of tuple traversal, indexing, searching, counting, finding maximum and minimum values, calculating averages, and reverse traversal.
+
+---
+
+# What is a Tuple?
+
+A **Tuple** is an ordered collection of elements enclosed in parentheses `()`.
+
+Example:
+
+```python
+a = (10,20,30,40,50)
+```
+
+### Key Features
+
+- Ordered collection
+- Immutable (Cannot modify elements)
+- Allows duplicate values
+- Supports indexing and slicing
+- Faster than lists for read-only data
+
+---
+
+# Problems Practiced
+
+## ✅ Problem 1 – Print All Elements
+
+Traversed the tuple and printed every element.
+
+---
+
+## ✅ Problem 2 – Print Elements at Even Indexes
+
+Printed elements stored at indexes 0, 2, 4...
+
+---
+
+## ✅ Problem 3 – Print Elements at Odd Indexes
+
+Printed elements stored at indexes 1, 3, 5...
+
+---
+
+## ✅ Problem 4 – Count Positive Numbers
+
+Traversed the tuple and counted all positive values.
+
+---
+
+## ✅ Problem 5 – Count Negative Numbers
+
+Traversed the tuple and counted all negative values.
+
+---
+
+## ✅ Problem 6 – Find Largest Element
+
+Compared each element and found the maximum value.
+
+---
+
+## ✅ Problem 7 – Find Smallest Element
+
+Compared each element and found the minimum value.
+
+---
+
+## ✅ Problem 8 – Calculate Average
+
+Calculated the total sum of all elements and divided it by the total number of elements.
+
+---
+
+## ✅ Problem 9 – Search an Element
+
+Checked whether the required element exists in the tuple.
+
+---
+
+## ✅ Problem 10 – Reverse Traversal
+
+Printed all elements from last to first.
+
+---
+
+## ⭐ Bonus Problem 11 – Count Frequency
+
+Printed the frequency of every unique element in the tuple.
+
+Example
+
+```
+10 = 3
+20 = 2
+30 = 1
+```
+
+---
+
+## ⭐ Bonus Problem 12 – Print Unique Elements
+
+Printed only the elements whose frequency was exactly one.
+
+Example
+
+```
+30
+40
+50
+```
+
+---
+
+# 🎯 Key Concepts Revised
+
+- ✅ Tuple Creation
+- ✅ Tuple Traversal
+- ✅ Tuple Indexing
+- ✅ Even Index Traversal
+- ✅ Odd Index Traversal
+- ✅ Counting Positive Numbers
+- ✅ Counting Negative Numbers
+- ✅ Finding Largest Element
+- ✅ Finding Smallest Element
+- ✅ Sum and Average
+- ✅ Searching
+- ✅ Reverse Traversal
+- ✅ Frequency Counting
+- ✅ Unique Elements
+
+---
