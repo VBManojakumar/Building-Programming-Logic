@@ -1,1 +1,417 @@
-.....
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 44 – Binary Search
+
+Today I learned **Binary Search**, a faster searching algorithm that works only on **sorted lists**. I practiced searching elements, finding positions, and understood the difference between Linear Search and Binary Search.
+
+---
+
+# What is Binary Search?
+
+**Binary Search** is an efficient searching algorithm that repeatedly divides the search space into two halves.
+
+Instead of checking every element one by one, it compares the **middle element** with the required key.
+
+> **Note:** Binary Search works **only on sorted lists.**
+
+---
+
+# Algorithm
+
+1. Set `low = 0`
+2. Set `high = len(a) - 1`
+3. Find the middle index:
+
+```python
+mid = (low + high) // 2
+```
+
+4. If `a[mid] == key`, the element is found.
+5. If `key < a[mid]`, search the left half.
+6. If `key > a[mid]`, search the right half.
+7. Repeat until the element is found or `low > high`.
+
+---
+
+# Problem 1 – Binary Search (Element Found)
+
+### Code
+
+```python
+a = [10,20,30,40,50,60,70]
+
+key = 50
+
+low = 0
+high = len(a) - 1
+
+while low <= high:
+
+    mid = (low + high) // 2
+
+    if a[mid] == key:
+        print("Found")
+        break
+
+    elif key < a[mid]:
+        high = mid - 1
+
+    else:
+        low = mid + 1
+
+else:
+    print("Not Found")
+```
+
+### Output
+
+```
+Found
+```
+
+### Logic
+
+Repeatedly compare the middle element with the key until the element is found.
+
+---
+
+# Problem 2 – Element Not Found
+
+### Code
+
+```python
+a = [10,20,30,40,50,60,70]
+
+key = 35
+
+low = 0
+high = len(a) - 1
+
+while low <= high:
+
+    mid = (low + high) // 2
+
+    if a[mid] == key:
+        print("Found")
+        break
+
+    elif key < a[mid]:
+        high = mid - 1
+
+    else:
+        low = mid + 1
+
+else:
+    print("Not Found")
+```
+
+### Output
+
+```
+Not Found
+```
+
+### Logic
+
+Search until `low > high`. If the key is not found, print **Not Found**.
+
+---
+
+# Problem 3 – Find Position
+
+### Code
+
+```python
+a = [5,10,15,20,25,30]
+
+key = 20
+
+low = 0
+high = len(a) - 1
+
+while low <= high:
+
+    mid = (low + high) // 2
+
+    if a[mid] == key:
+        print("Position =", mid)
+        break
+
+    elif key < a[mid]:
+        high = mid - 1
+
+    else:
+        low = mid + 1
+
+else:
+    print("Not Found")
+```
+
+### Output
+
+```
+Position = 3
+```
+
+### Logic
+
+Print the index of the required element.
+
+---
+
+# Problem 4 – Search First Element
+
+### Code
+
+```python
+a = [10,20,30,40,50]
+
+key = 10
+
+low = 0
+high = len(a) - 1
+
+while low <= high:
+
+    mid = (low + high) // 2
+
+    if a[mid] == key:
+        print("Found")
+        break
+
+    elif key < a[mid]:
+        high = mid - 1
+
+    else:
+        low = mid + 1
+
+else:
+    print("Not Found")
+```
+
+### Output
+
+```
+Found
+```
+
+---
+
+# Problem 5 – Search Last Element
+
+### Code
+
+```python
+a = [10,20,30,40,50]
+
+key = 50
+
+low = 0
+high = len(a) - 1
+
+while low <= high:
+
+    mid = (low + high) // 2
+
+    if a[mid] == key:
+        print("Found")
+        break
+
+    elif key < a[mid]:
+        high = mid - 1
+
+    else:
+        low = mid + 1
+
+else:
+    print("Not Found")
+```
+
+### Output
+
+```
+Found
+```
+
+---
+
+# Problem 6 – Search Middle Element
+
+### Code
+
+```python
+a = [10,20,30,40,50]
+
+key = 30
+
+low = 0
+high = len(a) - 1
+
+while low <= high:
+
+    mid = (low + high) // 2
+
+    if a[mid] == key:
+        print("Found")
+        break
+
+    elif key < a[mid]:
+        high = mid - 1
+
+    else:
+        low = mid + 1
+
+else:
+    print("Not Found")
+```
+
+### Output
+
+```
+Found
+```
+
+---
+
+# Problem 7 – Search in a Larger List
+
+### Code
+
+```python
+a = [5,10,15,20,25,30,35,40,45,50]
+
+key = 45
+
+low = 0
+high = len(a) - 1
+
+while low <= high:
+
+    mid = (low + high) // 2
+
+    if a[mid] == key:
+        print("Found")
+        break
+
+    elif key < a[mid]:
+        high = mid - 1
+
+    else:
+        low = mid + 1
+
+else:
+    print("Not Found")
+```
+
+### Output
+
+```
+Found
+```
+
+---
+
+# Problem 8 – Search Smallest Element
+
+### Code
+
+```python
+a = [2,4,6,8,10]
+
+key = 2
+
+low = 0
+high = len(a) - 1
+
+while low <= high:
+
+    mid = (low + high) // 2
+
+    if a[mid] == key:
+        print("Found")
+        break
+
+    elif key < a[mid]:
+        high = mid - 1
+
+    else:
+        low = mid + 1
+
+else:
+    print("Not Found")
+```
+
+### Output
+
+```
+Found
+```
+
+---
+
+# Problem 9 – Search Largest Element
+
+### Code
+
+```python
+a = [2,4,6,8,10]
+
+key = 10
+
+low = 0
+high = len(a) - 1
+
+while low <= high:
+
+    mid = (low + high) // 2
+
+    if a[mid] == key:
+        print("Found")
+        break
+
+    elif key < a[mid]:
+        high = mid - 1
+
+    else:
+        low = mid + 1
+
+else:
+    print("Not Found")
+```
+
+### Output
+
+```
+Found
+```
+
+---
+
+# Problem 10 – Linear Search vs Binary Search
+
+| Linear Search | Binary Search |
+|--------------|---------------|
+| Checks every element | Checks the middle element |
+| Works on sorted & unsorted lists | Works only on sorted lists |
+| Simpler | Slightly more complex |
+| Slower for large lists | Faster for large sorted lists |
+
+---
+
+# 🎯 Key Concepts Learned
+
+- ✅ Binary Search
+- ✅ Sorted List Requirement
+- ✅ Low Pointer
+- ✅ High Pointer
+- ✅ Middle Index
+- ✅ Efficient Searching
+- ✅ Finding Position
+- ✅ Search Logic
+- ✅ Linear Search vs Binary Search
+
+---
