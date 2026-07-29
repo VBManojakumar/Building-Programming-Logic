@@ -1,0 +1,204 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 61 – Recursion Revision
+
+Today I revised the fundamentals of **Recursion** by solving different practice problems. This revision strengthened my understanding of recursive thinking, base conditions, recursive calls, and solving mathematical problems without using loops.
+
+---
+
+# What is Recursion?
+
+**Recursion** is a programming technique in which a function calls itself to solve a smaller version of the same problem.
+
+Every recursive function must have:
+
+- ✅ Base Condition
+- ✅ Recursive Call
+
+---
+
+# Problems Practiced
+
+## ✅ Problem 1 – Print Numbers from 1 to 5
+
+### Code
+
+```python
+def display(n):
+    if n > 5:
+        return
+    print(n)
+    display(n + 1)
+
+display(1)
+```
+
+---
+
+## ✅ Problem 2 – Print Numbers from 5 to 1
+
+### Code
+
+```python
+def display(n):
+    if n == 0:
+        return
+    print(n)
+    display(n - 1)
+
+display(5)
+```
+
+---
+
+## ✅ Problem 3 – Sum of First N Numbers
+
+### Code
+
+```python
+def sum_number(n):
+    if n == 0:
+        return 0
+    return n + sum_number(n - 1)
+
+print(sum_number(5))
+```
+
+---
+
+## ✅ Problem 4 – Factorial
+
+### Code
+
+```python
+def fact(n):
+    if n == 0:
+        return 1
+    return n * fact(n - 1)
+
+print(fact(5))
+```
+
+---
+
+## ✅ Problem 5 – Fibonacci Number
+
+### Code
+
+```python
+def fib(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+
+print(fib(6))
+```
+
+---
+
+## ✅ Problem 6 – Power of a Number
+
+### Code
+
+```python
+def power_number(a, b):
+    if b == 0:
+        return 1
+    return a * power_number(a, b - 1)
+
+print(power_number(2, 5))
+```
+
+---
+
+## ✅ Problem 7 – Count Digits
+
+### Code
+
+```python
+def count_digit(n):
+    if n == 0:
+        return 0
+    return 1 + count_digit(n // 10)
+
+print(count_digit(12345))
+```
+
+---
+
+## ✅ Problem 8 – Reverse a Number
+
+### Code
+
+```python
+def reverse_number(n):
+    if n == 0:
+        return
+    print(n % 10, end="")
+    reverse_number(n // 10)
+
+reverse_number(1234)
+```
+
+---
+
+## ✅ Problem 9 – Sum of Digits
+
+### Code
+
+```python
+def sum_digit(n):
+    if n == 0:
+        return 0
+    return (n % 10) + sum_digit(n // 10)
+
+print(sum_digit(1234))
+```
+
+---
+
+## ✅ Problem 10 – Check Palindrome
+
+### Code
+
+```python
+def reverse_number(n, rev):
+    if n == 0:
+        return rev
+    return reverse_number(n // 10, rev * 10 + n % 10)
+
+def check_pali(n):
+    rev = reverse_number(n, 0)
+
+    if rev == n:
+        print("Palindrome")
+    else:
+        print("Not Palindrome")
+
+check_pali(121)
+```
+
+---
+
+# 🎯 Key Concepts Revised
+
+- ✅ Recursion
+- ✅ Base Condition
+- ✅ Recursive Call
+- ✅ Printing Numbers
+- ✅ Sum of Numbers
+- ✅ Factorial
+- ✅ Fibonacci
+- ✅ Power of a Number
+- ✅ Count Digits
+- ✅ Reverse Number
+- ✅ Sum of Digits
+- ✅ Palindrome Check
+
+---
