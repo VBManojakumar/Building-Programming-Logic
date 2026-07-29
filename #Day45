@@ -1,1 +1,310 @@
-lllllll
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 45 – Recursion
+
+Today I learned **Recursion**, a programming technique where a function calls itself until a base condition is reached. I practiced solving different problems using recursion instead of loops.
+
+---
+
+# What is Recursion?
+
+**Recursion** is a technique in which a function calls itself to solve a smaller version of the same problem.
+
+A recursive function has two parts:
+
+1. **Base Condition** – Stops the recursion.
+2. **Recursive Call** – Calls the function again with a smaller problem.
+
+---
+
+# Problem 1 – Print Numbers from 1 to 5
+
+### Code
+
+```python
+def display(n):
+    if n > 5:
+        return
+    print(n)
+    display(n + 1)
+
+display(1)
+```
+
+### Output
+
+```
+1
+2
+3
+4
+5
+```
+
+### Logic
+
+Print the current number and call the function with the next number until `n > 5`.
+
+---
+
+# Problem 2 – Print Numbers from 5 to 1
+
+### Code
+
+```python
+def display(n):
+    if n == 0:
+        return
+    print(n)
+    display(n - 1)
+
+display(5)
+```
+
+### Output
+
+```
+5
+4
+3
+2
+1
+```
+
+### Logic
+
+Print the current number and recursively call the function with `n - 1`.
+
+---
+
+# Problem 3 – Sum of First N Numbers
+
+### Code
+
+```python
+def sum_number(n):
+    if n == 0:
+        return 0
+    return n + sum_number(n - 1)
+
+print(sum_number(5))
+```
+
+### Output
+
+```
+15
+```
+
+### Logic
+
+Add the current number with the sum of the remaining numbers.
+
+---
+
+# Problem 4 – Factorial
+
+### Code
+
+```python
+def fact(n):
+    if n == 0:
+        return 1
+    return n * fact(n - 1)
+
+print(fact(5))
+```
+
+### Output
+
+```
+120
+```
+
+### Logic
+
+Multiply the current number by the factorial of the previous number.
+
+---
+
+# Problem 5 – Fibonacci Number
+
+### Code
+
+```python
+def fib(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+
+print(fib(6))
+```
+
+### Output
+
+```
+8
+```
+
+### Logic
+
+Each Fibonacci number is the sum of the previous two Fibonacci numbers.
+
+---
+
+# Problem 6 – Power of a Number
+
+### Code
+
+```python
+def power_number(a, b):
+    if b == 0:
+        return 1
+    return a * power_number(a, b - 1)
+
+print(power_number(2, 5))
+```
+
+### Output
+
+```
+32
+```
+
+### Logic
+
+Multiply the base repeatedly until the exponent becomes zero.
+
+---
+
+# Problem 7 – Count Digits
+
+### Code
+
+```python
+def count_digit(n):
+    if n == 0:
+        return 0
+    return 1 + count_digit(n // 10)
+
+print(count_digit(12345))
+```
+
+### Output
+
+```
+5
+```
+
+### Logic
+
+Remove one digit in every recursive call and count it.
+
+---
+
+# Problem 8 – Reverse a Number
+
+### Code
+
+```python
+def reverse_number(n):
+    if n == 0:
+        return
+    print(n % 10, end="")
+    reverse_number(n // 10)
+
+reverse_number(1234)
+```
+
+### Output
+
+```
+4321
+```
+
+### Logic
+
+Print the last digit first, then recursively process the remaining digits.
+
+---
+
+# Problem 9 – Sum of Digits
+
+### Code
+
+```python
+def sum_digit(n):
+    if n == 0:
+        return 0
+    return (n % 10) + sum_digit(n // 10)
+
+print(sum_digit(1234))
+```
+
+### Output
+
+```
+10
+```
+
+### Logic
+
+Extract the last digit and add it to the recursive sum of the remaining digits.
+
+---
+
+# Problem 10 – Check Palindrome
+
+### Code
+
+```python
+def reverse_number(n, rev):
+    if n == 0:
+        return rev
+    return reverse_number(n // 10, rev * 10 + n % 10)
+
+def check_pali(n):
+    rev = reverse_number(n, 0)
+
+    if rev == n:
+        print("Palindrome")
+    else:
+        print("Not Palindrome")
+
+check_pali(121)
+```
+
+### Output
+
+```
+Palindrome
+```
+
+### Logic
+
+Reverse the number recursively and compare it with the original number.
+
+---
+
+# 🎯 Key Concepts Learned
+
+- ✅ Recursion
+- ✅ Base Condition
+- ✅ Recursive Call
+- ✅ Print Numbers
+- ✅ Sum of Numbers
+- ✅ Factorial
+- ✅ Fibonacci
+- ✅ Power of a Number
+- ✅ Count Digits
+- ✅ Reverse Number
+- ✅ Sum of Digits
+- ✅ Palindrome Check
+
+---
