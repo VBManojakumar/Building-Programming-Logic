@@ -1,0 +1,196 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 46 – Sets Revision
+
+Today I revised **Python Sets** by solving different practice problems. This revision helped me strengthen my understanding of creating sets, adding and removing elements, checking membership, removing duplicates, finding common elements, and combining sets.
+
+---
+
+# What is a Set?
+
+A **Set** is an unordered collection of **unique** elements enclosed in curly braces `{}`.
+
+Example:
+
+```python
+a = {10,20,30,40,50}
+print(a)
+```
+
+### Output
+
+```
+{10,20,30,40,50}
+```
+
+---
+
+# Features of Sets
+
+- ✅ Unordered
+- ✅ Stores only unique elements
+- ✅ Mutable
+- ✅ No indexing
+- ✅ Fast searching
+- ✅ Automatically removes duplicates
+
+---
+
+# Problems Practiced
+
+## ✅ Problem 1 – Create and Print a Set
+
+### Code
+
+```python
+a = {10,20,30,40,50}
+print(a)
+```
+
+---
+
+## ✅ Problem 2 – Print All Elements
+
+### Code
+
+```python
+a = {10,20,30,40,50}
+
+for i in a:
+    print(i)
+```
+
+---
+
+## ✅ Problem 3 – Find Length of a Set
+
+### Code
+
+```python
+a = {10,20,30,40,50}
+
+print(len(a))
+```
+
+---
+
+## ✅ Problem 4 – Add an Element
+
+### Code
+
+```python
+a = {10,20,30}
+
+a.add(40)
+
+print(a)
+```
+
+---
+
+## ✅ Problem 5 – Remove an Element
+
+### Code
+
+```python
+a = {10,20,30,40}
+
+a.remove(20)
+
+print(a)
+```
+
+---
+
+## ✅ Problem 6 – Search an Element
+
+### Code
+
+```python
+a = {10,20,30,40}
+
+key = 30
+
+if key in a:
+    print("Found")
+else:
+    print("Not Found")
+```
+
+---
+
+## ✅ Problem 7 – Remove Duplicates Using Set
+
+### Code
+
+```python
+a = [10,20,20,30,40,40,50]
+
+b = set(a)
+
+print(b)
+```
+
+---
+
+## ✅ Problem 8 – Count Unique Elements
+
+### Code
+
+```python
+a = [10,20,20,30,40,40,50]
+
+b = set(a)
+
+print(len(b))
+```
+
+---
+
+## ✅ Problem 9 – Find Common Elements
+
+### Code
+
+```python
+a = {10,20,30,40}
+b = {30,40,50,60}
+
+for i in a:
+    for j in b:
+        if i == j:
+            print(j)
+```
+
+---
+
+## ✅ Problem 10 – Union of Two Sets
+
+### Code
+
+```python
+a = {10,20,30}
+b = {30,40,50}
+
+print(a.union(b))
+```
+
+---
+
+# 🎯 Key Concepts Revised
+
+- ✅ Creating Sets
+- ✅ Printing Sets
+- ✅ Unique Elements
+- ✅ Add Elements
+- ✅ Remove Elements
+- ✅ Length of Sets
+- ✅ Membership (`in`)
+- ✅ Remove Duplicates
+- ✅ Common Elements
+- ✅ Union of Sets
+
+---
