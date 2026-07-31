@@ -1,1 +1,76 @@
-hi 
+# Day 53 
+
+# Python Collection Methods (List, Tuple, Set & Dictionary)
+Python provides built-in methods for its collection data types to efficiently add, remove, search, update, and manipulate data.
+
+# 📋 List Methods
+
+| List Method | Use                                                                               |
+| ----------- | --------------------------------------------------------------------------------- |
+| `append()`  | Adds an element to the end of the list.                                           |
+| `extend()`  | Adds all elements from another iterable to the end of the list.                   |
+| `insert()`  | Inserts an element at a specified index.                                          |
+| `remove()`  | Removes the first occurrence of the specified element.                            |
+| `pop()`     | Removes and returns the element at the specified index (last element by default). |
+| `clear()`   | Removes all elements from the list.                                               |
+| `index()`   | Returns the index of the first occurrence of an element.                          |
+| `count()`   | Returns the number of times an element appears in the list.                       |
+| `sort()`    | Sorts the list in ascending order by default.                                     |
+| `reverse()` | Reverses the order of the elements in the list.                                   |
+| `copy()`    | Returns a shallow copy of the list.                                               |
+
+---
+
+# 📋 Tuple Methods
+
+| Tuple Method | Use                                                               |
+| ------------ | ----------------------------------------------------------------- |
+| `count()`    | Returns the number of occurrences of a specified element.         |
+| `index()`    | Returns the index of the first occurrence of a specified element. |
+
+**Note:** Tuples are immutable, so they have only these two built-in methods.
+
+---
+
+# 📋 Set Methods
+
+| Set Method                      | Use                                                                           |
+| ------------------------------- | ----------------------------------------------------------------------------- |
+| `add()`                         | Adds a single element to the set.                                             |
+| `update()`                      | Adds elements from one or more iterables to the set.                          |
+| `remove()`                      | Removes the specified element; raises an error if the element is not present. |
+| `discard()`                     | Removes the specified element if present; does not raise an error if absent.  |
+| `pop()`                         | Removes and returns a random element from the set.                            |
+| `clear()`                       | Removes all elements from the set.                                            |
+| `copy()`                        | Returns a shallow copy of the set.                                            |
+| `union()`                       | Returns a new set containing all unique elements from both sets.              |
+| `intersection()`                | Returns a new set containing common elements.                                 |
+| `difference()`                  | Returns elements that exist in the first set but not in the second.           |
+| `symmetric_difference()`        | Returns elements that are present in either set but not in both.              |
+| `intersection_update()`         | Updates the set with only the common elements.                                |
+| `difference_update()`           | Removes elements found in another set.                                        |
+| `symmetric_difference_update()` | Updates the set with elements present in either set but not both.             |
+| `issubset()`                    | Checks whether the set is a subset of another set.                            |
+| `issuperset()`                  | Checks whether the set is a superset of another set.                          |
+| `isdisjoint()`                  | Checks whether two sets have no common elements.                              |
+
+---
+
+# 📋 Dictionary Methods
+
+| Dictionary Method | Use                                                                                    |
+| ----------------- | -------------------------------------------------------------------------------------- |
+| `keys()`          | Returns a view of all keys in the dictionary.                                          |
+| `values()`        | Returns a view of all values in the dictionary.                                        |
+| `items()`         | Returns a view of all key-value pairs as tuples.                                       |
+| `get()`           | Returns the value for a key without raising an error if the key does not exist.        |
+| `update()`        | Updates the dictionary with key-value pairs from another dictionary or iterable.       |
+| `pop()`           | Removes the specified key and returns its value.                                       |
+| `popitem()`       | Removes and returns the last inserted key-value pair.                                  |
+| `setdefault()`    | Returns the value of a key; inserts the key with a default value if it does not exist. |
+| `fromkeys()`      | Creates a new dictionary using specified keys and a common value.                      |
+| `copy()`          | Returns a shallow copy of the dictionary.                                              |
+| `clear()`         | Removes all key-value pairs from the dictionary.                                       |
+
+
+
