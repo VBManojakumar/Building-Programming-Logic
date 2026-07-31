@@ -1,1 +1,234 @@
-#Day 47
+# Building Programming Logic 🚀
+
+This repository contains my daily programming logic practice.
+
+---
+
+# 📚 Day 47 – Dictionaries in Python
+
+Today I learned **Python Dictionaries**, a data structure that stores data as **key-value pairs**. I practiced creating dictionaries, accessing values, adding and updating keys, removing elements, searching for keys, and traversing dictionaries using loops.
+
+---
+
+# What is a Dictionary?
+
+A **Dictionary** stores data in the form of **key-value pairs**.
+
+Example:
+
+```python
+student = {
+    "name": "Manoj",
+    "age": 20,
+    "course": "BCA"
+}
+
+print(student)
+```
+
+### Output
+
+```
+{'name': 'Manoj', 'age': 20, 'course': 'BCA'}
+```
+
+---
+
+# Features of Dictionaries
+
+- ✅ Stores data as key-value pairs
+- ✅ Keys are unique
+- ✅ Values can be duplicated
+- ✅ Mutable (can add, update, remove)
+- ✅ Fast data lookup using keys
+
+---
+
+# Problem 1 – Create and Print a Dictionary
+
+### Code
+
+```python
+a = {
+    "name":"manoj",
+    "age":20,
+    "course":"BCA"
+}
+
+print(a)
+```
+
+---
+
+# Problem 2 – Access a Value
+
+### Code
+
+```python
+a = {
+    "name":"manoj",
+    "age":20,
+    "course":"BCA"
+}
+
+print(a["course"])
+```
+
+---
+
+# Problem 3 – Add a New Key
+
+### Code
+
+```python
+a = {
+    "name":"manoj",
+    "age":20
+}
+
+a["course"] = "BCA"
+
+print(a)
+```
+
+---
+
+# Problem 4 – Update a Value
+
+### Code
+
+```python
+a = {
+    "name":"manoj",
+    "age":20,
+    "course":"BCA"
+}
+
+a["age"] = 21
+
+print(a)
+```
+
+---
+
+# Problem 5 – Remove a Key
+
+### Code
+
+```python
+a = {
+    "name":"manoj",
+    "age":20,
+    "course":"BCA"
+}
+
+a.pop("age")
+
+print(a)
+```
+
+---
+
+# Problem 6 – Find Length
+
+### Code
+
+```python
+a = {
+    "name":"manoj",
+    "age":20,
+    "course":"BCA"
+}
+
+print(len(a))
+```
+
+---
+
+# Problem 7 – Print All Keys
+
+### Code
+
+```python
+a = {
+    "name":"manoj",
+    "age":20,
+    "course":"BCA"
+}
+
+for key in a:
+    print(key)
+```
+
+---
+
+# Problem 8 – Print All Values
+
+### Code
+
+```python
+a = {
+    "name":"manoj",
+    "age":20,
+    "course":"BCA"
+}
+
+for value in a.values():
+    print(value)
+```
+
+---
+
+# Problem 9 – Search a Key
+
+### Code
+
+```python
+a = {
+    "name":"manoj",
+    "age":20,
+    "course":"BCA"
+}
+
+key = "age"
+
+if key in a:
+    print("Found")
+else:
+    print("Not Found")
+```
+
+---
+
+# Problem 10 – Print Key and Value
+
+### Code
+
+```python
+a = {
+    "name":"manoj",
+    "age":20,
+    "course":"BCA"
+}
+
+for key, value in a.items():
+    print(f"{key} : {value}")
+```
+
+---
+
+# 🎯 Key Concepts Learned
+
+- ✅ Dictionary Creation
+- ✅ Key-Value Pairs
+- ✅ Accessing Values
+- ✅ Adding New Keys
+- ✅ Updating Values
+- ✅ Removing Keys
+- ✅ Dictionary Length
+- ✅ Traversing Keys
+- ✅ Traversing Values
+- ✅ Searching Keys
+- ✅ Using `items()` Method
+
+---
