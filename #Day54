@@ -1,107 +1,113 @@
-# Day 54: Iterators and Generators in Python
+# Day 54 
 
-## 📖 Overview
+# Python Functions, File Handling, OS Module & Miscellaneous
 
-Today, I learned about **Iterators** and **Generators**, two powerful Python concepts that make it easy to work with sequences of data efficiently. They help process data one item at a time, reducing memory usage and improving performance, especially when dealing with large datasets.
+## 📖 Introduction
 
----
-
-# 📚 Topics Covered
-
-## 🔹 Iterators
-
-* What is an iterator
-* Iterable vs Iterator
-* `iter()` function
-* `next()` function
-* How iteration works internally
-* `StopIteration` exception
-* Creating custom iterators using classes
+This section covers the built-in functions, file handling methods, OS module functions, and other important concepts learned throughout the Python course.
 
 ---
 
-## 🔹 Generators
+# 📋 File Handling Methods
 
-* What is a generator
-* Creating generator functions
-* `yield` keyword
-* Difference between `yield` and `return`
-* Generator expressions
-* Lazy evaluation
-* Infinite generators
-* Advantages of generators
-* Memory efficiency
-
----
-
-# 🛠 Built-in Functions
-
-| Function | Use                                     |
-| -------- | --------------------------------------- |
-| `iter()` | Converts an iterable into an iterator.  |
-| `next()` | Returns the next item from an iterator. |
-
----
-
-# 💡 Key Concepts Learned
-
-* An **iterable** is an object that can be looped over.
-* An **iterator** is an object that produces one element at a time.
-* Every iterator implements the iterator protocol using `__iter__()` and `__next__()`.
-* `iter()` creates an iterator from an iterable.
-* `next()` retrieves the next element from an iterator.
-* When no elements remain, Python raises a `StopIteration` exception.
-* A **generator** is a special type of iterator created using the `yield` keyword.
-* Generators produce values only when needed (lazy evaluation).
-* Generator expressions are similar to list comprehensions but consume much less memory.
-* Generators are ideal for processing large files, streams, and datasets.
+| Function / Method | Use                                                         |
+| ----------------- | ----------------------------------------------------------- |
+| `open()`          | Opens a file and returns a file object.                     |
+| `close()`         | Closes an opened file and releases system resources.        |
+| `read()`          | Reads the entire file or a specified number of characters.  |
+| `readline()`      | Reads a single line from a file.                            |
+| `readlines()`     | Reads all lines and returns them as a list.                 |
+| `write()`         | Writes text to a file.                                      |
+| `writelines()`    | Writes multiple lines to a file.                            |
+| `seek()`          | Moves the file pointer to a specified position.             |
+| `tell()`          | Returns the current position of the file pointer.           |
+| `flush()`         | Forces buffered data to be written to the file immediately. |
+| `truncate()`      | Resizes the file to a specified size.                       |
+| `readable()`      | Checks whether the file is readable.                        |
+| `writable()`      | Checks whether the file is writable.                        |
+| `seekable()`      | Checks whether the file supports random access.             |
+| `fileno()`        | Returns the file descriptor used by the operating system.   |
+| `isatty()`        | Checks whether the file is connected to a terminal.         |
+| `readinto()`      | Reads binary data directly into a writable buffer.          |
+| `detach()`        | Separates the underlying binary buffer from a text stream.  |
 
 ---
 
-# ⭐ Advantages of Iterators
+# 📋 Functional Programming
 
-* Process data sequentially.
-* Reduce memory usage.
-* Support lazy evaluation.
-* Work efficiently with loops.
-* Allow custom iteration logic.
+| Function   | Use                                                       |
+| ---------- | --------------------------------------------------------- |
+| `lambda`   | Creates an anonymous function for short operations.       |
+| `map()`    | Applies a function to every element of an iterable.       |
+| `filter()` | Selects elements that satisfy a given condition.          |
+| `reduce()` | Combines all elements of an iterable into a single value. |
 
----
 
-# ⭐ Advantages of Generators
 
-* Consume very little memory.
-* Faster than creating large lists.
-* Produce values on demand.
-* Easy to implement compared to custom iterators.
-* Useful for large datasets and infinite sequences.
 
----
+# 📋 OS Module Functions
 
-# 📌 Real-World Applications
-
-* Reading large files line by line.
-* Processing millions of database records.
-* Streaming API responses.
-* Data pipelines.
-* Log file processing.
-* Infinite sequences (e.g., Fibonacci numbers).
-* Machine Learning data generators.
-* Batch processing of large datasets.
-
----
-
-# 🎯 What I Learned Today
-
-* Understood the difference between **iterables**, **iterators**, and **generators**.
-* Learned how `iter()` and `next()` work.
-* Explored the `yield` keyword.
-* Learned about generator expressions.
-* Understood lazy evaluation and memory optimization.
-* Learned when to use iterators and generators in real-world applications.
+| Function             | Use                                                 |
+| -------------------- | --------------------------------------------------- |
+| `os.getcwd()`        | Returns the current working directory.              |
+| `os.chdir()`         | Changes the current working directory.              |
+| `os.listdir()`       | Returns a list of files and folders in a directory. |
+| `os.mkdir()`         | Creates a new directory.                            |
+| `os.makedirs()`      | Creates multiple nested directories.                |
+| `os.rmdir()`         | Removes an empty directory.                         |
+| `os.removedirs()`    | Removes nested empty directories.                   |
+| `os.remove()`        | Deletes a file.                                     |
+| `os.rename()`        | Renames a file or directory.                        |
+| `os.path.exists()`   | Checks whether a file or directory exists.          |
+| `os.path.isfile()`   | Checks whether the path points to a file.           |
+| `os.path.isdir()`    | Checks whether the path points to a directory.      |
+| `os.path.join()`     | Joins multiple path components into a single path.  |
+| `os.path.basename()` | Returns the file name from a path.                  |
+| `os.path.dirname()`  | Returns the directory portion of a path.            |
+| `os.path.abspath()`  | Returns the absolute path of a file or directory.   |
+| `os.system()`        | Executes an operating system command.               |
 
 ---
 
-## 🚀 Outcome
+# 📋 Import System
 
-By the end of Day 54, I gained a solid understanding of Python's iteration mechanism and learned how generators provide a memory-efficient way to process data one element at a time. These concepts are fundamental for writing efficient and scalable Python programs.
+| Keyword / Function          | Use                                               |
+| --------------------------- | ------------------------------------------------- |
+| `import`                    | Imports an entire module.                         |
+| `from ... import`           | Imports specific objects from a module.           |
+| `as`                        | Assigns an alias to a module or imported object.  |
+| `__name__`                  | Stores the name of the current module.            |
+| `if __name__ == "__main__"` | Executes code only when the file is run directly. |
+
+---
+
+# 📋 Exception Handling
+
+| Keyword   | Use                                                 |
+| --------- | --------------------------------------------------- |
+| `try`     | Defines a block of code to monitor for exceptions.  |
+| `except`  | Handles an exception if one occurs.                 |
+| `else`    | Executes if no exception occurs in the `try` block. |
+| `finally` | Executes regardless of whether an exception occurs. |
+| `raise`   | Raises an exception manually.                       |
+
+---
+
+# 📋 Variable Scope
+
+| Keyword     | Use                                                  |
+| ----------- | ---------------------------------------------------- |
+| `global`    | Declares that a variable refers to the global scope. |
+| `locals()`  | Returns a dictionary of local variables.             |
+| `globals()` | Returns a dictionary of global variables.            |
+
+---
+# 📋 Identity & Comparison
+
+| Operator / Function | Use                                                              |
+| ------------------- | ---------------------------------------------------------------- |
+| `is`                | Checks whether two variables refer to the same object in memory. |
+| `==`                | Checks whether two values are equal.                             |
+| `id()`              | Returns the unique identity (memory reference) of an object.     |
+
+---
