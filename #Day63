@@ -1,0 +1,196 @@
+# Python OS Module
+
+The **`os` module** in Python allows us to interact with the operating system. It provides functions to work with files, folders, directories, and system information.
+
+---
+
+# Import the OS Module
+
+```python
+import os
+```
+
+---
+
+# 1. Get Current Working Directory
+
+Returns the current directory where the Python program is running.
+
+```python
+import os
+
+print(os.getcwd())
+```
+
+---
+
+# 2. Change Current Directory
+
+Changes the current working directory.
+
+```python
+import os
+
+os.chdir("C:\\Users\\Manoj\\Desktop")
+```
+
+---
+
+# 3. List Files and Folders
+
+Displays all files and folders in the current directory.
+
+```python
+import os
+
+print(os.listdir())
+```
+
+---
+
+# 4. Create a New Folder
+
+```python
+import os
+
+os.mkdir("MyFolder")
+```
+
+---
+
+# 5. Remove an Empty Folder
+
+```python
+import os
+
+os.rmdir("MyFolder")
+```
+
+---
+
+# 6. Rename a File or Folder
+
+```python
+import os
+
+os.rename("old.txt", "new.txt")
+```
+
+---
+
+# 7. Delete a File
+
+```python
+import os
+
+os.remove("test.txt")
+```
+
+---
+
+# 8. Check if a File or Folder Exists
+
+```python
+import os
+
+print(os.path.exists("test.txt"))
+```
+
+### Output
+
+```
+True
+```
+
+or
+
+```
+False
+```
+
+---
+
+# 9. Get Operating System Name
+
+```python
+import os
+
+print(os.name)
+```
+
+### Output (Windows)
+
+```
+nt
+```
+
+### Output (Linux/macOS)
+
+```
+posix
+```
+
+---
+
+# 10. Get Environment Variables
+
+```python
+import os
+
+print(os.environ)
+```
+
+---
+
+# Example Program
+
+```python
+import os
+
+print("Current Directory:", os.getcwd())
+
+print("Files and Folders:")
+
+for file in os.listdir():
+    print(file)
+```
+
+---
+
+# Common Functions of the OS Module
+
+| Function | Description |
+|----------|-------------|
+| `os.getcwd()` | Returns current working directory |
+| `os.chdir(path)` | Changes the current directory |
+| `os.listdir()` | Lists files and folders |
+| `os.mkdir(name)` | Creates a new folder |
+| `os.rmdir(name)` | Removes an empty folder |
+| `os.rename(old, new)` | Renames a file or folder |
+| `os.remove(file)` | Deletes a file |
+| `os.path.exists(path)` | Checks whether a file or folder exists |
+| `os.name` | Returns the operating system name |
+| `os.environ` | Returns environment variables |
+
+---
+
+# Applications of the OS Module
+
+- 📁 File Management
+- 📂 Folder Management
+- 🗂️ Directory Navigation
+- 💻 Operating System Information
+- ⚙️ Automation Scripts
+- 📝 File Handling Projects
+
+---
+
+# Key Concepts Learned
+
+- Importing the `os` module
+- Working with directories
+- Creating and deleting folders
+- Renaming and deleting files
+- Checking file existence
+- Getting operating system information
+- Listing files and folders
