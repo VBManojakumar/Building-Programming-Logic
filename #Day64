@@ -1,0 +1,118 @@
+# Building Programming Logic 🚀
+
+This repository contains my daily Python learning journey.
+
+---
+
+# 📚 Day 64 – Introduction to Pandas
+
+Today I started learning **Pandas**, one of the most popular Python libraries for data analysis and data manipulation.
+
+Pandas makes it easy to work with structured data such as tables, spreadsheets, and CSV files.
+
+---
+
+# What is Pandas?
+
+**Pandas** is an open-source Python library used for:
+
+- Data Analysis
+- Data Cleaning
+- Data Manipulation
+- Reading and Writing Files
+- Working with Tabular Data
+
+It provides powerful and easy-to-use data structures for handling data efficiently.
+
+---
+
+# Why Use Pandas?
+
+- Easy to organize large amounts of data
+- Fast data processing
+- Built-in functions for analysis
+- Supports CSV, Excel, JSON, SQL, and more
+- Widely used in Data Science and Machine Learning
+
+---
+
+# Installing Pandas
+
+```bash
+pip install pandas
+```
+
+---
+
+# Importing Pandas
+
+```python
+import pandas as pd
+```
+
+The alias **`pd`** is the standard convention used by Python developers.
+
+---
+
+# Main Data Structures in Pandas
+
+## 1. Series
+
+A **Series** is a one-dimensional labeled array.
+
+Example:
+
+```python
+import pandas as pd
+
+data = pd.Series([10, 20, 30, 40])
+
+print(data)
+```
+
+---
+
+## 2. DataFrame
+
+A **DataFrame** is a two-dimensional table consisting of rows and columns.
+
+Example:
+
+```python
+import pandas as pd
+
+data = {
+    "Name": ["Manoj", "Rahul"],
+    "Age": [20, 21]
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+```
+
+---
+
+# Applications of Pandas
+
+- Data Analysis
+- Data Cleaning
+- Machine Learning
+- Artificial Intelligence
+- Business Analytics
+- Data Visualization
+- Financial Analysis
+
+---
+
+# Key Concepts Learned
+
+- ✅ Introduction to Pandas
+- ✅ Why Pandas is Used
+- ✅ Installing Pandas
+- ✅ Importing Pandas
+- ✅ Series
+- ✅ DataFrame
+- ✅ Applications of Pandas
+
+---
