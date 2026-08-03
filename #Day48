@@ -1,1 +1,217 @@
-HI VB MANOJ KUMAR HOW ARE YOU 
+# Building Programming Logic 🚀
+
+This repository contains my daily Python learning journey.
+
+---
+
+# 📚 Day 48 – Virtual Environment, Imports and __name__ in Python
+
+Today I learned three important Python concepts that are widely used in real-world projects:
+
+- Virtual Environment
+- Import System
+- `if __name__ == "__main__"`
+
+These concepts help in managing projects, organizing code, and writing reusable Python programs.
+
+---
+
+# 1. Virtual Environment
+
+A **Virtual Environment** is an isolated Python environment used for a specific project.
+
+It allows different projects to use different package versions without affecting each other.
+
+---
+
+## Create a Virtual Environment
+
+```bash
+python -m venv myenv
+```
+
+---
+
+## Activate the Virtual Environment
+
+### Windows
+
+```bash
+myenv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+source myenv/bin/activate
+```
+
+---
+
+## Deactivate the Virtual Environment
+
+```bash
+deactivate
+```
+
+---
+
+# Why Use a Virtual Environment?
+
+- Keeps project dependencies separate
+- Avoids package version conflicts
+- Makes projects easier to share
+- Used in almost every professional Python project
+
+---
+
+# 2. Import in Python
+
+The **import** statement is used to use code written in another module or file.
+
+Example:
+
+```python
+import math
+
+print(math.sqrt(25))
+```
+
+### Output
+
+```
+5.0
+```
+
+---
+
+## Import a Specific Function
+
+```python
+from math import sqrt
+
+print(sqrt(49))
+```
+
+### Output
+
+```
+7.0
+```
+
+---
+
+## Import with Alias
+
+```python
+import math as m
+
+print(m.pi)
+```
+
+### Output
+
+```
+3.141592653589793
+```
+
+---
+
+# Creating Your Own Module
+
+## file1.py
+
+```python
+def greet():
+    print("Hello, Manoj!")
+```
+
+---
+
+## file2.py
+
+```python
+import file1
+
+file1.greet()
+```
+
+### Output
+
+```
+Hello, Manoj!
+```
+
+---
+
+# 3. if __name__ == "__main__"
+
+Every Python file has a special built-in variable called `__name__`.
+
+- When a file is run directly, `__name__` becomes `"__main__"`.
+- When a file is imported into another file, `__name__` becomes the module name.
+
+---
+
+## Example
+
+```python
+def greet():
+    print("Welcome!")
+
+if __name__ == "__main__":
+    greet()
+```
+
+---
+
+## Why is it Used?
+
+- Prevents certain code from running when the file is imported.
+- Keeps modules reusable.
+- Separates testing code from reusable code.
+
+---
+
+# Example
+
+## calculator.py
+
+```python
+def add(a, b):
+    return a + b
+
+if __name__ == "__main__":
+    print(add(5, 3))
+```
+
+If executed directly:
+
+```
+8
+```
+
+If imported:
+
+```python
+import calculator
+```
+
+Only the function is imported; the `print()` statement does not execute.
+
+---
+
+# Key Concepts Learned
+
+- ✅ Virtual Environment
+- ✅ Creating a Virtual Environment
+- ✅ Activating and Deactivating a Virtual Environment
+- ✅ Import Statement
+- ✅ Importing Modules
+- ✅ Importing Specific Functions
+- ✅ Import Alias
+- ✅ Creating Custom Modules
+- ✅ `__name__`
+- ✅ `if __name__ == "__main__"`
+
+---
