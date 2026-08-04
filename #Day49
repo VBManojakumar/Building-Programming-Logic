@@ -1,1 +1,163 @@
-HI TODAY IM LEARNING PYTHON FILES CONCEPTS WITH METHODS LIKE READLINES WRITE WRITELINES AND OTHER SUCH METHODS GIVEN BELOW 
+# Python Complete Revision 🚀
+
+This repository contains my complete Python revision before starting Advanced Python.
+
+---
+
+# 📚 Revision – Python Basics
+
+Today I revised the fundamental concepts of Python by solving mixed practice problems without referring to previous notes.
+
+---
+
+# Topics Revised
+
+- Variables
+- Data Types
+- Input & Output
+- Type Casting
+- Arithmetic Operators
+- Comparison Operators
+- Logical Operators
+- Assignment Operators
+- Swapping Variables
+- Circle Calculations
+
+---
+
+# Problem 1 – Variables
+
+Created variables to store personal information and printed them.
+
+### Concepts
+
+- Variable Declaration
+- Printing Variables
+
+---
+
+# Problem 2 – Data Types
+
+Created variables of different data types.
+
+### Concepts
+
+- int
+- float
+- str
+- bool
+- type()
+
+---
+
+# Problem 3 – User Input
+
+Took two numbers as input and performed:
+
+- Addition
+- Subtraction
+- Multiplication
+- Division
+
+### Concepts
+
+- input()
+- int()
+- split()
+
+---
+
+# Problem 4 – Type Casting
+
+Converted an integer into:
+
+- float
+- string
+
+### Concepts
+
+- float()
+- str()
+
+---
+
+# Problem 5 – Arithmetic Operators
+
+Revised:
+
+- +
+- -
+- *
+- /
+- //
+- %
+- **
+
+---
+
+# Problem 6 – Comparison Operators
+
+Revised:
+
+- >
+- <
+- ==
+- !=
+- >=
+- <=
+
+---
+
+# Problem 7 – Logical Operators
+
+Practiced:
+
+- and
+- or
+- not
+
+---
+
+# Problem 8 – Assignment Operators
+
+Revised:
+
+- +=
+- -=
+- *=
+- //=
+
+---
+
+# Problem 9 – Swapping Variables
+
+Swapped two variables without using a third variable.
+
+---
+
+# Problem 10 – Circle Calculations
+
+Calculated:
+
+- Diameter
+- Circumference
+- Area
+
+using the radius entered by the user.
+
+---
+
+# Key Concepts Revised
+
+- ✅ Variables
+- ✅ Data Types
+- ✅ Input & Output
+- ✅ Type Casting
+- ✅ Arithmetic Operators
+- ✅ Comparison Operators
+- ✅ Logical Operators
+- ✅ Assignment Operators
+- ✅ Swapping Variables
+- ✅ Mathematical Calculations
+
+---
