@@ -1,1 +1,167 @@
-HI TODAY I LEARNT THE TOPIC FROM PYTHON
+# Python Complete Revision 🚀
+
+This repository documents my complete Python revision journey before starting Advanced Python.
+
+---
+
+# 📚 Revision – If-Else, Loops & Mixed Logic Problems
+
+Today, I revised Python decision-making statements and looping concepts by solving mixed logical problems completely from memory.
+
+This revision strengthened my problem-solving skills and helped me identify a few minor mistakes, which I corrected after reviewing my solutions.
+
+---
+
+# Topics Revised
+
+- If Statement
+- If-Else Statement
+- Elif Ladder
+- Nested Conditions
+- For Loop
+- While Loop
+- break Statement
+- continue Statement
+- Logical Thinking
+- Mixed Programming Problems
+
+---
+
+# Problem 1 – Even or Odd
+
+Checked whether a given number is even or odd.
+
+### Concepts
+
+- if-else
+- Modulus Operator (%)
+
+---
+
+# Problem 2 – Largest of Three Numbers
+
+Accepted three numbers and found the largest among them.
+
+### Concepts
+
+- if
+- elif
+- Logical Operators
+
+---
+
+# Problem 3 – Leap Year
+
+Determined whether a given year is a leap year.
+
+### Concepts
+
+- Nested Conditions
+- Logical Operators
+
+---
+
+# Problem 4 – Multiplication Table
+
+Printed the multiplication table of a given number up to 10.
+
+### Concepts
+
+- for Loop
+- Formatted Output
+
+---
+
+# Problem 5 – Sum of First N Natural Numbers
+
+Calculated the sum of numbers from 1 to N using a while loop.
+
+### Concepts
+
+- while Loop
+- Accumulator Pattern
+
+---
+
+# Problem 6 – Count Even and Odd Numbers
+
+Counted the number of even and odd elements in a list.
+
+### Concepts
+
+- Lists
+- Looping
+- Conditional Statements
+
+---
+
+# Problem 7 – continue Statement
+
+Printed numbers from 1 to 20 while skipping multiples of 3.
+
+### Concepts
+
+- continue
+- Loop Control
+
+---
+
+# Problem 8 – break Statement
+
+Found the first multiple of 7 greater than 50 and immediately stopped the loop.
+
+### Concepts
+
+- break
+- Searching
+
+---
+
+# Problem 9 – Reverse a Number
+
+Reversed an integer using arithmetic operations without converting it to a string.
+
+### Concepts
+
+- while Loop
+- Modulus (%)
+- Floor Division (//)
+
+---
+
+# Problem 10 – Prime Number Check
+
+Determined whether a given number is prime.
+
+### Concepts
+
+- Looping
+- Conditional Statements
+- break
+- for-else
+
+---
+
+# Mistakes Corrected During Revision
+
+- Corrected placement of `print()` outside loops while counting values.
+- Revised proper usage of the `continue` statement.
+- Corrected reverse number logic by using an integer variable instead of a string.
+- Improved understanding of loop control statements.
+
+---
+
+# Key Concepts Revised
+
+- ✅ If Statement
+- ✅ If-Else Statement
+- ✅ Elif Ladder
+- ✅ Logical Operators
+- ✅ For Loop
+- ✅ While Loop
+- ✅ break
+- ✅ continue
+- ✅ Prime Number Logic
+- ✅ Mathematical Programming
+
+---
