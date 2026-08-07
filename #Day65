@@ -1,1 +1,159 @@
-hi ATM MACHINE Project
+# Day 65 — Python Mini Project: ATM Machine 🏧
+
+Today I built a **console-based ATM Machine using Python**.
+
+## 🔹 Features
+
+* 🔐 PIN-based login
+* 🔢 Maximum 3 login attempts
+* 💰 Check balance
+* ➕ Deposit money
+* ➖ Withdraw money
+* 📜 Transaction history
+* 🔑 Change PIN
+* 🚪 Exit option
+* ⚠️ Insufficient balance validation
+
+## 🔹 Python Concepts Used
+
+* Variables
+* Input & Output
+* Conditional Statements
+* `while` loop
+* `for` loop
+* Functions
+* Lists
+* Strings & f-strings
+* `match-case`
+* `break`
+* `global` variables
+* `main()` function
+* `if __name__ == "__main__"`
+
+## 🔹 What I Learned
+
+I learned how to combine multiple Python concepts to build a complete small application using my own programming logic.
+
+Instead of practicing concepts separately, I applied them together in a real-world-style ATM project.
+
+## 🔹 Project Code
+
+```python
+amount=1000
+pin="1234"
+st=[]
+
+def login():
+    global pin
+    attempt=0
+    while attempt <3:
+        User=input("Enter the PIN to login:")
+        if pin==User:
+            print("Login Successuful")
+            show_menu()
+            break
+        else:
+            print("Please Enter Valid PIN")
+            attempt+=1
+            print(f"You have {attempt} attempts completed out of 3")
+                
+    if attempt==3:
+        print("Your account has been blocked 24hrs ")    
+
+def show_menu():
+    print("==========ATM MACHINE==========")
+    print("1. Check Balance")
+    print("2. Deposite Money")
+    print("3. Withdraw Money")
+    print("4. Transaction History")
+    print("5. Change PIN")
+    print("6. Exit")
+
+    while True:
+        choice=int(input("Enter your choice:"))
+
+        match choice:
+            case 1:
+                check_balance()
+            case 2:
+                deposite_money()
+            case 3:
+                withdraw_money()
+            case 4:
+                transaction_history()
+            case 5:
+                change_pin()
+            case 6:
+                print("Thanks for your visit")
+                break
+            case _:
+                print("Invalid choice ! Please Try Again")
+
+def check_balance():
+    print("Total Balance is:",amount)
+
+def deposite_money():
+    dpm=int(input("Enter the amount to deposite:"))
+    global amount
+    global st
+
+    amount=amount+dpm
+    dm=f"Deposited: {dpm}"
+    st.append(dm)
+
+    print(f"{dpm} Amount is deposited successufully")
+
+def withdraw_money():
+    wm=int(input("Enter Money to Withdraw: "))
+    global amount
+    global st
+
+    if wm<=amount:
+        amount=amount-wm
+        wms=f"Withdrawed: {wm}"
+        st.append(wms)
+        print(f"{wm} Amount is withdrawed successufully")
+    else:
+        print("Insuficiant amount")
+
+def transaction_history():
+    global st
+
+    if len(st) > 0:
+        for i in st:
+            print(i)
+    else:
+        print("No transections Found")
+
+def change_pin():
+    global pin
+    cp=input("Enter Current PIN: ")
+
+    while True:
+        if cp==pin:
+            cpn=input("Enter New PIN: ")
+            cnp=input("Confirm New PIN: ")
+
+            if cpn==cnp:
+                pin=cpn
+                print("PIN changed successufully ")
+                show_menu()
+                break
+            else:
+                print("Try Again")
+        else:
+            print("Invalid Current PIN")
+
+def main():
+    if login():
+        show_menu()
+
+if __name__=="__main__":
+    main()
+```
+
+## ✅ Project Status
+
+Completed and tested successfully.
+
+**Learning by building 🚀**
