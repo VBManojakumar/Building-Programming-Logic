@@ -1,1 +1,275 @@
-.............
+# Day 66 — Advanced Python: Functional Programming 
+
+Today I completed **Module 1: Functional Programming** in Advanced Python.
+
+## 🔹 Topics Covered
+
+* First-Class Functions
+* Higher-Order Functions
+* Lambda Functions
+* `map()`
+* `filter()`
+* `reduce()`
+
+## 🔹 What I Learned
+
+### First-Class Functions
+
+Functions can be stored in variables, passed as arguments, and returned from other functions.
+
+### Higher-Order Functions
+
+A function can accept another function as an argument or return another function.
+
+### Lambda Functions
+
+Small anonymous functions used for simple operations.
+
+### `map()`
+
+Applies a function to every item in an iterable.
+
+### `filter()`
+
+Selects items that satisfy a condition.
+
+### `reduce()`
+
+Combines multiple values into one final result.
+
+##  Key Learning
+
+```text
+map()    → Transform items
+filter() → Select items
+reduce() → Combine items
+```
+
+---
+
+# Practiced Logic Code
+
+## 1. First-Class Function
+
+```python
+def greet():
+    print("Hello Manoj")
+
+new_function = greet
+new_function()
+```
+
+## 2. Higher-Order Function
+
+```python
+def add(a, b):
+    return a + b
+
+def multiply(a, b):
+    return a * b
+
+def execute(operation, x, y):
+    return operation(x, y)
+
+print(execute(add, 10, 5))
+print(execute(multiply, 10, 5))
+```
+
+## 3. Function Returning a Function
+
+```python
+def calculator():
+
+    def add(a, b):
+        return a + b
+
+    return add
+
+operation = calculator()
+
+print(operation(10, 20))
+```
+
+## 4. Lambda — Cube
+
+```python
+x = 3
+
+a = lambda x: x * x * x
+
+print(a(x))
+```
+
+## 5. Lambda — Find Larger Number
+
+```python
+x = 4
+y = 8
+
+a = lambda x, y: x if x > y else y
+
+print("Larger number is:", a(x, y))
+```
+
+## 6. Lambda — Even or Odd
+
+```python
+y = 2
+
+a = lambda y: y % 2
+
+if a(y) == 0:
+    print("Even")
+else:
+    print("Odd")
+```
+
+## 7. `map()` — Square Numbers
+
+```python
+x = [2, 4, 6, 8]
+
+a = lambda y: y ** 2
+
+result = list(map(a, x))
+
+print(result)
+```
+
+## 8. `map()` — Multiply by 10
+
+```python
+x = [1, 2, 3, 4, 5]
+
+a = lambda y: y * 10
+
+result = list(map(a, x))
+
+print(result)
+```
+
+## 9. `map()` — Find Word Length
+
+```python
+words = ["Python", "Java", "HTML", "Developer"]
+
+a = lambda y: len(y)
+
+result = list(map(a, words))
+
+print(result)
+```
+
+## 10. `map()` — Add 5
+
+```python
+numbers = [10, 15, 20, 25, 30]
+
+add = lambda y: y + 5
+
+result = list(map(add, numbers))
+
+print(result)
+```
+
+## 11. `filter()` — Even Numbers
+
+```python
+numbers = [10, 15, 20, 25, 30, 35]
+
+a = lambda y: y % 10 == 0
+
+result = list(filter(a, numbers))
+
+print(result)
+```
+
+## 12. `filter()` — Numbers Greater Than 50
+
+```python
+numbers = [20, 55, 40, 80, 35, 90]
+
+a = lambda y: y > 50
+
+result = list(filter(a, numbers))
+
+print(result)
+```
+
+## 13. `filter()` — Words Longer Than 4
+
+```python
+words = ["cat", "python", "java", "developer", "AI", "coding"]
+
+a = lambda y: len(y) > 4
+
+result = list(filter(a, words))
+
+print(result)
+```
+
+## 14. `reduce()` — Sum
+
+```python
+from functools import reduce
+
+numbers = [10, 20, 30, 40, 50]
+
+add = lambda x, y: x + y
+
+result = reduce(add, numbers)
+
+print(result)
+```
+
+## 15. `reduce()` — Product
+
+```python
+from functools import reduce
+
+numbers = [2, 3, 4, 5]
+
+a = lambda x, y: x * y
+
+result = reduce(a, numbers)
+
+print(result)
+```
+
+## 16. `reduce()` — Find Largest Number
+
+```python
+from functools import reduce
+
+numbers = [15, 42, 8, 67, 23]
+
+a = lambda x, y: x if x > y else y
+
+result = reduce(a, numbers)
+
+print(result)
+```
+
+---
+
+##  Practice Summary
+
+I practiced functional programming concepts by solving different logic problems instead of only learning the syntax.
+
+### Key patterns practiced:
+
+```text
+Function → Variable
+Function → Argument
+Function → Return Value
+
+lambda → Small operation
+
+map() → Transform
+filter() → Select
+reduce() → Combine
+```
+
+## Status
+
+**Advanced Python — Module 1: Functional Programming Completed 🎯**
