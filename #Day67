@@ -1,1 +1,168 @@
-..............
+# Day 67 — Advanced Python: Iterators 
+
+Today I started **Module 2: Iterators & Generators** in Advanced Python.
+
+##  Topics Covered
+
+* Iterables
+* Iterators
+* `iter()`
+* `next()`
+* `StopIteration`
+* How `for` loops internally work with iterators
+* Handling `StopIteration` using `try-except`
+
+##  What I Learned
+
+### Iterable
+
+An iterable is an object that can be traversed one element at a time.
+
+Examples:
+
+```python
+numbers = [10, 20, 30]
+name = "MANOJ"
+```
+
+### Iterator
+
+An iterator is an object that provides values one at a time using `next()`.
+
+```python
+numbers = [10, 20, 30]
+
+iterator = iter(numbers)
+
+print(next(iterator))
+print(next(iterator))
+print(next(iterator))
+```
+
+Output:
+
+```text
+10
+20
+30
+```
+
+### StopIteration
+
+When an iterator has no more elements, calling `next()` raises `StopIteration`.
+
+I practiced handling it using `try-except`:
+
+```python
+numbers = [10, 20]
+
+iterator = iter(numbers)
+
+try:
+    print(next(iterator))
+    print(next(iterator))
+    print(next(iterator))
+except StopIteration:
+    print("No more elements")
+```
+
+Output:
+
+```text
+10
+20
+No more elements
+```
+
+##  Practiced Logic
+
+### 1. Iterating Through a List
+
+```python
+numbers = [10, 20, 30, 40]
+
+for i in numbers:
+    print(i)
+```
+
+### 2. Iterating Through a String
+
+```python
+name = "MANOJ"
+
+for i in name:
+    print(i)
+```
+
+### 3. Creating an Iterator
+
+```python
+numbers = [10, 20, 30, 40]
+
+iterator = iter(numbers)
+
+print(next(iterator))
+print(next(iterator))
+print(next(iterator))
+```
+
+### 4. String Iterator
+
+```python
+name = "MANOJ"
+
+iterator = iter(name)
+
+print(next(iterator))
+print(next(iterator))
+print(next(iterator))
+```
+
+### 5. Handling StopIteration
+
+```python
+numbers = [5, 10]
+
+iterator = iter(numbers)
+
+try:
+    print(next(iterator))
+    print(next(iterator))
+    print(next(iterator))
+except StopIteration:
+    print("No more elements")
+```
+
+##  Understanding `for` Loop Internally
+
+I learned that a `for` loop internally works with an iterator.
+
+```text
+Iterable
+   ↓
+iter()
+   ↓
+Iterator
+   ↓
+next()
+   ↓
+Get value
+   ↓
+next()
+   ↓
+Get next value
+   ↓
+StopIteration
+   ↓
+Loop automatically stops
+```
+
+##  Key Learning
+
+```text
+Iterable → Can be looped over
+Iterator → Produces values one at a time
+iter()   → Creates an iterator
+next()   → Gets the next value
+StopIteration → No values remaining
+```
