@@ -1,1 +1,222 @@
-.........
+# Day 69 — Advanced Python: Decorators 🐍
+
+Today I continued **Module 3: Decorators** in Advanced Python.
+
+## 🔹 Topics Covered
+
+* What are Decorators?
+* Decorator functions
+* Wrapper functions
+* `@decorator` syntax
+* Higher-order functions in decorators
+* `*args`
+* `**kwargs`
+* Passing arguments through decorators
+* Before and after function execution
+* Decorators with functions that accept arguments
+* Understanding return values in decorated functions
+
+## 🧠 What I Learned
+
+A decorator allows us to **add extra behavior to an existing function without modifying its original code**.
+
+Basic flow:
+
+```text
+Original Function
+       ↓
+   Decorator
+       ↓
+    Wrapper
+       ↓
+Extra Logic + Original Function
+```
+
+The `@decorator` syntax is a shorter way of applying a decorator to a function.
+
+---
+
+# 💻 Practiced Logic Code
+
+## 1. Basic Decorator — Before Function
+
+```python
+def decorator(function):
+
+    def wraping():
+        print("Starting function")
+        function()
+
+    return wraping
+
+
+@decorator
+def hello():
+    print("Hello Manoj")
+
+
+hello()
+```
+
+## 2. Basic Decorator — After Function
+
+```python
+def decorator(function):
+
+    def wraping():
+        function()
+        print("Function completed")
+
+    return wraping
+
+
+@decorator
+def hello():
+    print("Hello Manoj")
+
+
+hello()
+```
+
+## 3. Before and After Logic
+
+```python
+def decorator(function):
+
+    def wraping():
+        print("--------START-------")
+        function()
+        print("--------END--------")
+
+    return wraping
+
+
+@decorator
+def hello():
+    print("Hello Manoj")
+
+
+hello()
+```
+
+## 4. Decorator with `*args` and `**kwargs`
+
+```python
+def decorator(function):
+
+    def wraping(*args, **kwargs):
+        print("Starting-------------")
+        function(*args, **kwargs)
+        print("Completed------------")
+
+    return wraping
+
+
+@decorator
+def add(a, b):
+    print(a + b)
+
+
+add(5, 10)
+```
+
+## 5. Decorator with a String Argument
+
+```python
+def decorator(function):
+
+    def wraping(*args, **kwargs):
+        print("Starting-------------")
+        function(*args, **kwargs)
+        print("Completed------------")
+
+    return wraping
+
+
+@decorator
+def greet(name):
+    print("Hello", name)
+
+
+greet("Manoj")
+```
+
+## 6. Decorator with Multiple Arguments
+
+```python
+def decorator(function):
+
+    def wraping(*args, **kwargs):
+        print("--------Function STARTED-------")
+        function(*args, **kwargs)
+        print("--------Function ENDED--------")
+
+    return wraping
+
+
+@decorator
+def show(*numbers):
+    print(numbers)
+
+
+show(5, 2, 3, 4, 5)
+```
+
+---
+
+# 🔑 Important Concepts
+
+### `*args`
+
+Used to receive multiple **positional arguments**.
+
+```text
+add(5, 10)
+     ↓
+   *args
+```
+
+### `**kwargs`
+
+Used to receive multiple **keyword arguments**.
+
+```text
+function(name="Manoj", age=20)
+              ↓
+           **kwargs
+```
+
+### Wrapper Function
+
+The wrapper contains the additional logic and calls the original function.
+
+```python
+def wrapper(*args, **kwargs):
+    # Extra logic
+    function(*args, **kwargs)
+```
+
+## 🧠 Key Learning
+
+```text
+@decorator
+     ↓
+decorator(function)
+     ↓
+wrapper
+     ↓
+wrapper(*args, **kwargs)
+     ↓
+function(*args, **kwargs)
+```
+
+## 🎯 Practice Result
+
+I practiced decorators by building the logic step by step:
+
+* Adding logic before a function
+* Adding logic after a function
+* Combining before and after logic
+* Passing arguments using `*args`
+* Passing keyword arguments using `**kwargs`
+* Creating decorators that work with different functions
