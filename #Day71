@@ -1,1 +1,345 @@
-............
+# Day 71 — Advanced Python: Real-World Decorators 🐍
+
+Today I continued learning **Advanced Python — Module 3: Decorators**.
+
+## 🔹 Topics Covered
+
+* Measuring function execution time
+* `time` module
+* `time.time()`
+* `time.sleep()`
+* Logging Decorators
+* `function.__name__`
+* Combining multiple decorator concepts
+* Return values with decorators
+
+---
+
+# ⏱️ 1. Execution Time Decorator
+
+A decorator can measure how long a function takes to execute.
+
+### Logic
+
+```text
+Start Time
+    ↓
+Run Function
+    ↓
+End Time
+    ↓
+Execution Time = End Time - Start Time
+```
+
+### Main Pattern
+
+```python
+start = time.time()
+
+result = function(*args, **kwargs)
+
+end = time.time()
+
+print("Execution Time:", end - start)
+
+return result
+```
+
+---
+
+# 💻 Practice 1 — Task Execution Time
+
+```python
+import time
+
+def decorator(function):
+
+    def wrapper(*args, **kwargs):
+
+        start = time.time()
+
+        result = function(*args, **kwargs)
+
+        end = time.time()
+
+        print("Execution Time:", end - start)
+
+        return result
+
+    return wrapper
+
+
+@decorator
+def task():
+
+    time.sleep(2)
+
+    print("Task Completed")
+
+
+task()
+```
+
+---
+
+# 💻 Practice 2 — Download Execution Time
+
+```python
+import time
+
+def decorator(function):
+
+    def wrapper(*args, **kwargs):
+
+        start = time.time()
+
+        result = function(*args, **kwargs)
+
+        end = time.time()
+
+        print("Execution Time:", end - start)
+
+        return result
+
+    return wrapper
+
+
+@decorator
+def download():
+
+    time.sleep(3)
+
+    print("Download Completed")
+
+
+download()
+```
+
+---
+
+# 💻 Practice 3 — Timing + Return Value
+
+```python
+import time
+
+def decorator(function):
+
+    def wrapper(*args, **kwargs):
+
+        start = time.time()
+
+        result = function(*args, **kwargs)
+
+        end = time.time()
+
+        print("Execution Time:", end - start)
+
+        return result
+
+    return wrapper
+
+
+@decorator
+def add(a, b):
+
+    time.sleep(2)
+
+    return a + b
+
+
+result = add(10, 20)
+
+print(result)
+```
+
+---
+
+# 📝 Logging Decorator
+
+A logging decorator can automatically show which function is running.
+
+## 🔑 New Concept
+
+```python
+function.__name__
+```
+
+It gives the name of the function.
+
+Example:
+
+```python
+def add():
+    pass
+
+print(add.__name__)
+```
+
+Output:
+
+```text
+add
+```
+
+---
+
+# 💻 Practice 4 — Function Logging
+
+```python
+import time
+
+def decorator(function):
+
+    def wrapper(*args, **kwargs):
+
+        start = time.time()
+
+        print("Function", function.__name__, "started")
+
+        result = function(*args, **kwargs)
+
+        end = time.time()
+
+        print("Function", function.__name__, "completed")
+
+        print("Execution Time:", end - start)
+
+        return result
+
+    return wrapper
+
+
+@decorator
+def add(a, b):
+
+    time.sleep(2)
+
+    return a + b
+
+
+result = add(10, 20)
+
+print(result)
+```
+
+---
+
+# 💻 Practice 5 — Automatic Function Name
+
+```python
+@decorator
+def multiply(a, b):
+
+    time.sleep(3)
+
+    return a * b
+```
+
+The decorator automatically detects:
+
+```text
+Function multiply started
+Function multiply completed
+```
+
+using:
+
+```python
+function.__name__
+```
+
+---
+
+# 💻 Practice 6 — Logging + Timing + Return Value
+
+```python
+import time
+
+def decorator(function):
+
+    def wrapper(*args, **kwargs):
+
+        start = time.time()
+
+        print("Function", function.__name__, "started")
+
+        result = function(*args, **kwargs)
+
+        end = time.time()
+
+        print("Function", function.__name__, "completed")
+
+        print("Execution Time:", end - start)
+
+        return result
+
+    return wrapper
+
+
+@decorator
+def greet(name):
+
+    time.sleep(2)
+
+    return "Hello " + name
+
+
+result = greet("Manoj")
+
+print(result)
+```
+
+---
+
+# 🧠 Key Learning
+
+Today I combined multiple concepts into one practical decorator:
+
+```text
+Function Name
+      +
+Before Function Logging
+      +
+Function Arguments
+      +
+Execution Time
+      +
+After Function Logging
+      +
+Return Value
+```
+
+## Decorator Flow
+
+```text
+Function Call
+      ↓
+Wrapper Starts
+      ↓
+Get Function Name
+      ↓
+Record Start Time
+      ↓
+Run Original Function
+      ↓
+Store Return Value
+      ↓
+Record End Time
+      ↓
+Calculate Execution Time
+      ↓
+Function Completed Message
+      ↓
+Return Original Result
+```
+
+## 🎯 Day 71 Status
+
+### Completed:
+
+* Execution Time Decorator ⏱️
+* `time.time()` ⏰
+* `time.sleep()` ⏳
+* Logging Decorator 📝
+* `function.__name__` 🏷️
+* Combining Logging + Timing + Return Values 🔥
