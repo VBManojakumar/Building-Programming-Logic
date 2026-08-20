@@ -1,1 +1,280 @@
-.............
+# Day 70 — Advanced Python: Advanced Decorators 🐍
+
+Today I continued learning **Module 3: Decorators** in Advanced Python.
+
+## 🔹 Topics Covered
+
+* Decorators with return values
+* Preserving function return values
+* Using `result`
+* Returning values from wrapper functions
+* Multiple decorators
+* Decorator execution order
+
+---
+
+# 🧠 What I Learned
+
+## 1. Decorators with Return Values
+
+When a decorated function returns a value, the wrapper function should also return that value.
+
+Important pattern:
+
+```python
+result = function(*args, **kwargs)
+return result
+```
+
+Logic:
+
+```text
+Original Function
+       ↓
+Returns a value
+       ↓
+Store in result
+       ↓
+Decorator adds extra logic
+       ↓
+Return result
+```
+
+---
+
+# 💻 Practiced Logic Code
+
+## Problem 1 — Addition
+
+```python
+def decorator(function):
+    def wraping(*args, **kwrags):
+        print("Starting-------------")
+        result = function(*args, **kwrags)
+        print("Completed------------")
+        return result
+    return wraping
+
+
+@decorator
+def add(a, b):
+    return a + b
+
+
+result = add(10, 20)
+print(result)
+```
+
+### Output
+
+```text
+Starting-------------
+Completed------------
+30
+```
+
+---
+
+## Problem 2 — Multiplication
+
+```python
+def decorator(function):
+    def wraping(*args, **kwrags):
+        print("Starting-------------")
+        result = function(*args, **kwrags)
+        print("Completed------------")
+        return result
+    return wraping
+
+
+@decorator
+def multiply(a, b):
+    return a * b
+
+
+result = multiply(5, 4)
+print(result)
+```
+
+### Output
+
+```text
+Starting-------------
+Completed------------
+20
+```
+
+---
+
+## Problem 3 — Square
+
+```python
+def decorator(function):
+    def wraping(*args, **kwrags):
+        print("--------Function STARTED-------")
+        result = function(*args, **kwrags)
+        print("--------Function ENDED--------")
+        return result
+    return wraping
+
+
+@decorator
+def square(n):
+    return n * n
+
+
+result = square(6)
+print(result)
+```
+
+### Output
+
+```text
+--------Function STARTED-------
+--------Function ENDED--------
+36
+```
+
+---
+
+# 🔹 Multiple Decorators
+
+A function can have more than one decorator.
+
+```python
+@decorator1
+@decorator2
+def function():
+```
+
+Conceptually, Python executes:
+
+```text
+function = decorator1(decorator2(function))
+```
+
+Execution order:
+
+```text
+Decorator 1 → Before
+       ↓
+Decorator 2 → Before
+       ↓
+Original Function
+       ↓
+Decorator 2 → After
+       ↓
+Decorator 1 → After
+```
+
+---
+
+## Problem 4 — Start and End Decorators
+
+```python
+def first(function):
+    def wrapper():
+        print("------------Start----------")
+        function()
+    return wrapper
+
+
+def second(function):
+    def wrapper():
+        function()
+        print("----------End-----------")
+    return wrapper
+
+
+@first
+@second
+def name():
+    print("Hello Manoj")
+
+
+name()
+```
+
+---
+
+## Problem 5 — Multiple Decorator Execution Order
+
+```python
+def decorator1(function):
+    def wrapper():
+        print("Before 1")
+        function()
+        print("After 1")
+    return wrapper
+
+
+def decorator2(function):
+    def wrapper():
+        print("Before 2")
+        function()
+        print("After 2")
+    return wrapper
+
+
+@decorator1
+@decorator2
+def learn():
+    print("Python Learning")
+
+
+learn()
+```
+
+### Output
+
+```text
+Before 1
+Before 2
+Python Learning
+After 2
+After 1
+```
+
+---
+
+# 🔑 Key Learning
+
+## Decorator with Return Value
+
+```text
+Before Logic
+      ↓
+Original Function
+      ↓
+Store Return Value
+      ↓
+After Logic
+      ↓
+Return Value
+```
+
+## Multiple Decorators
+
+```text
+@decorator1
+@decorator2
+     ↓
+decorator1
+     ↓
+decorator2
+     ↓
+Function
+     ↓
+decorator2
+     ↓
+decorator1
+```
+
+## 🎯 Status
+
+**Advanced Python — Module 3: Decorators**
+
+### Completed Today:
+
+* Decorators with Return Values ✅
+* Multiple Decorators ✅
