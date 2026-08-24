@@ -1,1 +1,210 @@
-............
+# Day 73 — Advanced Python: Context Managers 🐍
+
+Today I started learning **Context Managers** and the `with` statement in Advanced Python.
+
+## 🔹 Topics Covered
+
+* Context Managers
+* `with` statement
+* Automatic resource management
+* Automatic file closing
+* Errors inside a `with` block
+* `try-except` with Context Managers
+* `ZeroDivisionError`
+* `FileNotFoundError`
+
+---
+
+# 🧠 1. What is a Context Manager?
+
+A context manager helps manage resources automatically.
+
+For example, when working with files:
+
+```text
+Open File
+   ↓
+Use File
+   ↓
+Close File
+```
+
+Using the `with` statement:
+
+```python
+with open("filename.txt", "r") as file:
+    print(file.read())
+```
+
+When the `with` block ends, Python automatically closes the file.
+
+---
+
+# 💻 Practice 1 — Reading a File
+
+```python
+with open("hello.txt", "r") as file:
+    print(file.read())
+```
+
+This reads and prints the complete content of `hello.txt`.
+
+---
+
+# 💻 Practice 2 — Reading Another File
+
+```python
+with open("names.txt", "r") as file:
+    print(file.read())
+```
+
+Example file content:
+
+```text
+Manoj
+Python
+Developer
+```
+
+---
+
+# 💻 Practice 3 — Writing and Reading a File
+
+```python
+with open("message.txt", "w") as file:
+    file.write("Nammu I Love You le nayiiii")
+
+with open("message.txt", "r") as file:
+    print(file.read())
+```
+
+## 🧠 Important Learning
+
+```python
+file.write("Hello")
+```
+
+writes content into the file.
+
+`file.write()` returns the number of characters written, so normally we don't need to print it.
+
+---
+
+# ⚠️ Errors Inside a `with` Block
+
+A major benefit of Context Managers is that resources are properly closed even when an error occurs.
+
+## Practice 4 — Error Inside `with`
+
+```python
+with open("test.txt", "r") as file:
+    print(file.read())
+    print(10 / 0)
+```
+
+Here:
+
+```python
+10 / 0
+```
+
+causes:
+
+```text
+ZeroDivisionError
+```
+
+But the file is still automatically closed when the `with` block exits.
+
+### Flow
+
+```text
+Open File
+   ↓
+Read File
+   ↓
+Error Occurs
+   ↓
+Exit with Block
+   ↓
+File Automatically Closes
+```
+
+---
+
+# 💻 Practice 5 — Handling Errors
+
+```python
+try:
+    with open("test.txt", "r") as file:
+        print(file.read())
+        print(10 / 0)
+
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+```
+
+### Output
+
+```text
+Learning Python
+Cannot divide by zero
+```
+
+---
+
+# 💻 Practice 6 — File Not Found
+
+```python
+try:
+    with open("adc.txt", "r") as file:
+        print(file.read())
+
+except FileNotFoundError:
+    print("File not found")
+```
+
+If the file does not exist:
+
+```text
+File not found
+```
+
+---
+
+# 🎯 Key Learning
+
+The main Context Manager pattern:
+
+```python
+with open("filename.txt", "mode") as file:
+    # Work with the file
+```
+
+## Context Manager Flow
+
+```text
+with block starts
+      ↓
+Resource opens
+      ↓
+Use resource
+      ↓
+Error? ────── Yes/No
+      ↓
+with block ends
+      ↓
+Resource automatically closes
+```
+
+## 🏆 Day 73 Status
+
+### Completed:
+
+* Context Managers Basics ✅
+* `with` Statement ✅
+* Reading Files with `with` ✅
+* Writing Files with `with` ✅
+* Automatic File Closing ✅
+* Error Handling with `with` ✅
+
