@@ -1,1 +1,432 @@
-..........
+# Day 72 — Advanced Python: Decorators Completed 🐍🎉
+
+Today I completed the **Advanced Python Decorators Module** by learning the final important decorator concepts.
+
+## 🔹 Topics Covered
+
+* Access Control Decorator
+* Authentication logic using decorators
+* Age-based access checking
+* Decorators with Arguments
+* Three-level decorator structure
+* `functools.wraps`
+* Preserving original function information
+* `function.__name__`
+
+---
+
+# 🔐 1. Access Control Decorator
+
+A decorator can check a condition before allowing a function to execute.
+
+## Basic Logic
+
+```text
+Function Call
+     ↓
+Decorator
+     ↓
+Check Condition
+   ↙       ↘
+ True      False
+  ↓          ↓
+Run        Access
+Function   Denied
+```
+
+### Example
+
+```python
+def access_control(function):
+    def wrapper():
+        logged_in = True
+
+        if logged_in:
+            function()
+        else:
+            print("Access Denied")
+
+    return wrapper
+
+
+@access_control
+def profile():
+    print("Welcome to your profile")
+
+
+profile()
+```
+
+---
+
+# 💻 Practice 1 — Access Allowed
+
+```python
+def access_control(function):
+    def wrapper():
+        logged_in = True
+
+        if logged_in:
+            function()
+        else:
+            print("Access denied")
+
+    return wrapper
+
+
+@access_control
+def profile():
+    print("Welcome to our profile")
+
+
+profile()
+```
+
+---
+
+# 💻 Practice 2 — Access Denied
+
+```python
+def access_control(function):
+    def wrapper():
+        logged_in = False
+
+        if logged_in:
+            function()
+        else:
+            print("Access denied")
+
+    return wrapper
+
+
+@access_control
+def profile():
+    print("Welcome to our profile")
+
+
+profile()
+```
+
+---
+
+# 💻 Practice 3 — Age-Based Access
+
+```python
+def access_control(function):
+    def wrapper():
+        age = 20
+
+        if age >= 18:
+            function()
+        else:
+            print("You are not eligible")
+
+    return wrapper
+
+
+@access_control
+def profile():
+    print("Welcome, you can access the website")
+
+
+profile()
+```
+
+---
+
+# 🎯 2. Decorators with Arguments
+
+Normally, we use:
+
+```python
+@decorator
+```
+
+But a decorator can also receive its own argument:
+
+```python
+@access("admin")
+```
+
+## Three-Level Structure
+
+```python
+def access(role):
+
+    def decorator(function):
+
+        def wrapper():
+            function()
+
+        return wrapper
+
+    return decorator
+```
+
+### Flow
+
+```text
+Decorator Argument
+        ↓
+access(role)
+        ↓
+decorator(function)
+        ↓
+wrapper()
+        ↓
+Original Function
+```
+
+---
+
+# 💻 Practice 4 — Admin Access
+
+```python
+def access(role):
+
+    def decorator(function):
+
+        def wrapper():
+
+            if role == "admin":
+                function()
+            else:
+                print("Access denied")
+
+        return wrapper
+
+    return decorator
+
+
+@access("admin")
+def dashboard():
+    print("Welcome Admin")
+
+
+dashboard()
+```
+
+---
+
+# 💻 Practice 5 — User Access
+
+```python
+def access(role):
+
+    def decorator(function):
+
+        def wrapper():
+
+            if role == "user":
+                function()
+            else:
+                print("Access denied")
+
+        return wrapper
+
+    return decorator
+
+
+@access("user")
+def profile():
+    print("Welcome User")
+
+
+profile()
+```
+
+---
+
+# 🧠 3. `functools.wraps`
+
+When a function is decorated, Python may replace its original information with the wrapper function's information.
+
+Without `wraps`:
+
+```python
+print(hello.__name__)
+```
+
+may show:
+
+```text
+wrapper
+```
+
+To preserve the original function information:
+
+```python
+from functools import wraps
+```
+
+Then:
+
+```python
+@wraps(function)
+```
+
+---
+
+# 💻 Practice 6 — Preserving Function Name
+
+```python
+from functools import wraps
+
+
+def decorator(function):
+
+    @wraps(function)
+    def wrapper():
+        function()
+
+    return wrapper
+
+
+@decorator
+def hello():
+    print("Hello Manoj")
+
+
+print(hello.__name__)
+```
+
+### Output
+
+```text
+hello
+```
+
+---
+
+# 💻 Practice 7 — `wraps` with Add Function
+
+```python
+from functools import wraps
+
+
+def decorator(function):
+
+    @wraps(function)
+    def wrapper():
+        function()
+
+    return wrapper
+
+
+@decorator
+def add():
+    return 10 + 20
+
+
+print(add.__name__)
+```
+
+### Output
+
+```text
+add
+```
+
+---
+
+# 💻 Practice 8 — Complete Professional Decorator Pattern
+
+```python
+from functools import wraps
+
+
+def decorator(function):
+
+    @wraps(function)
+    def wrapper(*args, **kwargs):
+
+        result = function(*args, **kwargs)
+
+        return result
+
+    return wrapper
+
+
+@decorator
+def greet(name):
+    return "Hello " + name
+
+
+result = greet("Manoj")
+
+print(result)
+print(greet.__name__)
+```
+
+### Output
+
+```text
+Hello Manoj
+greet
+```
+
+---
+
+# 🏆 Complete Decorators Module
+
+Today I completed the following decorator concepts:
+
+* Basic Decorators
+* Wrapper Functions
+* `@decorator` Syntax
+* `*args` and `**kwargs`
+* Decorators with Return Values
+* Multiple Decorators
+* Decorator Execution Order
+* Execution Time Decorators
+* Logging Decorators
+* `function.__name__`
+* Access Control Decorators
+* Decorators with Arguments
+* `functools.wraps`
+
+---
+
+# 🧠 Final Professional Decorator Pattern
+
+```python
+from functools import wraps
+
+
+def decorator(function):
+
+    @wraps(function)
+    def wrapper(*args, **kwargs):
+
+        # Before logic
+
+        result = function(*args, **kwargs)
+
+        # After logic
+
+        return result
+
+    return wrapper
+```
+
+## 🎯 Decorator Flow
+
+```text
+Function
+   ↓
+Decorator
+   ↓
+Wrapper
+   ↓
+Before Logic
+   ↓
+Original Function
+   ↓
+Store Result
+   ↓
+After Logic
+   ↓
+Return Result
+   ↓
+@wraps Preserves Original Information
+```
