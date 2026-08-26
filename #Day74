@@ -1,1 +1,366 @@
-...........
+# Day 74 — Advanced Python: Custom Context Managers 🐍
+
+Today I learned how to create **Custom Context Managers** in Python.
+
+## 🔹 Topics Covered
+
+* Custom Context Managers
+* `__enter__()`
+* `__exit__()`
+* Error handling inside `__exit__()`
+* `exc_type`
+* `exc_value`
+* `contextlib`
+* `@contextmanager`
+* `yield` in Context Managers
+
+---
+
+# 🧠 1. Custom Context Manager Using a Class
+
+A custom context manager can be created using:
+
+```python
+__enter__()
+```
+
+and:
+
+```python
+__exit__()
+```
+
+## Basic Flow
+
+```text
+__enter__()
+    ↓
+with block
+    ↓
+__exit__()
+```
+
+### Example
+
+```python
+class Test:
+    def __enter__(self):
+        print("Starting")
+        return self
+
+    def __exit__(self, exc_type, exc_value, tb):
+        print("Ending")
+
+
+with Test() as obj:
+    print("Inside the block")
+```
+
+### Output
+
+```text
+Starting
+Inside the block
+Ending
+```
+
+---
+
+# 💻 Practice 1 — Custom Context Manager
+
+```python
+class Test:
+    def __enter__(self):
+        print("Starting")
+        return self
+
+    def __exit__(self, exc_type, exc_value, tb):
+        print("Ending")
+
+
+with Test() as obj:
+    print("Inside the block")
+```
+
+---
+
+# 💻 Practice 2 — Database Context Manager
+
+```python
+class Database:
+    def __enter__(self):
+        print("Database Connected")
+        return self
+
+    def __exit__(self, exc_type, exc_value, tb):
+        print("Database Disconnected")
+
+
+with Database() as db:
+    print("Using Database")
+```
+
+### Flow
+
+```text
+Database Connected
+Using Database
+Database Disconnected
+```
+
+---
+
+# 💻 Practice 3 — ATM Context Manager
+
+```python
+class ATM:
+    def __enter__(self):
+        print("ATM Session Started")
+        return self
+
+    def __exit__(self, exc_type, exc_value, tb):
+        print("ATM Session Ended")
+
+
+with ATM() as obj:
+    print("Checking Balance")
+```
+
+### Flow
+
+```text
+ATM Session Started
+Checking Balance
+ATM Session Ended
+```
+
+---
+
+# ⚠️ Error Handling Inside `__exit__()`
+
+When an error occurs inside a `with` block, Python passes error information to:
+
+```python
+def __exit__(self, exc_type, exc_value, tb):
+```
+
+## Error Information
+
+```text
+exc_type
+    ↓
+What type of error occurred?
+
+exc_value
+    ↓
+What is the error message?
+
+tb
+    ↓
+Traceback information
+```
+
+For:
+
+```python
+10 / 0
+```
+
+```text
+exc_type  → ZeroDivisionError
+exc_value → division by zero
+```
+
+---
+
+# 💻 Practice — Handling Errors
+
+```python
+class Test:
+    def __enter__(self):
+        print("Starting")
+        return self
+
+    def __exit__(self, exc_type, exc_value, tb):
+        if exc_type:
+            print("Error occurred")
+
+        print("Ending")
+
+
+try:
+    with Test() as obj:
+        print("Inside the block")
+        print(10 / 0)
+
+except ZeroDivisionError:
+    print("Error handled")
+```
+
+### Flow
+
+```text
+Starting
+Inside the block
+Error occurred
+Ending
+Error handled
+```
+
+---
+
+# 💻 Practice — Printing Error Type
+
+```python
+class Database:
+    def __enter__(self):
+        print("Database Connected")
+        return self
+
+    def __exit__(self, exc_type, exc_value, tb):
+        if exc_type:
+            print(exc_type)
+
+        print("Database Disconnected")
+
+
+try:
+    with Database() as db:
+        print("Using Database")
+        print(10 / 0)
+
+except ZeroDivisionError:
+    print("Error handled")
+```
+
+---
+
+# 🧠 `contextlib` and `@contextmanager`
+
+Python provides another way to create Context Managers using a function.
+
+First import:
+
+```python
+from contextlib import contextmanager
+```
+
+Then use:
+
+```python
+@contextmanager
+```
+
+This allows us to create a Context Manager using a **function instead of a class**.
+
+---
+
+# 🔑 Understanding `yield`
+
+```text
+Code before yield
+        ↓
+__enter__() behavior
+        ↓
+yield
+        ↓
+Code inside with block
+        ↓
+Code after yield
+        ↓
+__exit__() behavior
+```
+
+---
+
+# 💻 Practice 1 — Function Context Manager
+
+```python
+from contextlib import contextmanager
+
+
+@contextmanager
+def test():
+    print("Starting")
+
+    yield
+
+    print("Ending")
+
+
+with test():
+    print("Inside the block")
+```
+
+---
+
+# 💻 Practice 2 — Database
+
+```python
+@contextmanager
+def database():
+    print("Database Connected")
+
+    yield
+
+    print("Database Disconnected")
+
+
+with database():
+    print("Using Database")
+```
+
+---
+
+# 💻 Practice 3 — ATM
+
+```python
+@contextmanager
+def atm():
+    print("ATM Session Started")
+
+    yield
+
+    print("ATM Session Ended")
+
+
+with atm():
+    print("Checking Balance")
+```
+
+---
+
+# 🎯 Final Comparison
+
+```text
+CLASS CONTEXT MANAGER
+
+__enter__()
+    ↓
+with block
+    ↓
+__exit__()
+
+
+FUNCTION CONTEXT MANAGER
+
+Before yield
+    ↓
+yield
+    ↓
+with block
+    ↓
+After yield
+```
+
+## 🏆 Day 74 Status
+
+### Completed:
+
+* Custom Context Managers ✅
+* `__enter__()` and `__exit__()` ✅
+* Error handling in `__exit__()` ✅
+* `exc_type` and `exc_value` ✅
+* `contextlib` ✅
+* `@contextmanager` ✅
+* `yield` in Context Managers ✅
