@@ -1,1 +1,125 @@
-..........
+# Day 75 — Advanced Python: Pure & Impure Functions 🐍
+
+Today I revised an important concept from **Functional Programming**: Pure and Impure Functions.
+
+## 🔹 Topics Covered
+
+* Pure Functions
+* Impure Functions
+* Side Effects
+* External State
+* Functional Programming Logic
+
+Python's functional programming style encourages functions whose output depends only on their inputs and discourages unnecessary side effects.
+
+---
+
+## 🧠 1. Pure Function
+
+A pure function produces the same output for the same input and does not modify external state.
+
+### Practice 1
+
+```python
+def square(n):
+    return n * n
+
+print(square(5))
+```
+
+Output:
+
+```text
+25
+```
+
+### Practice 2
+
+```python
+def multiply(a, b):
+    return a * b
+
+print(multiply(4, 5))
+```
+
+Output:
+
+```text
+20
+```
+
+### Logic
+
+```text
+Input
+  ↓
+Function
+  ↓
+Output
+```
+
+The function only works with the values provided to it.
+
+---
+
+## 🧠 2. Impure Function
+
+An impure function can depend on or modify something outside the function.
+
+### Practice 3
+
+```python
+score = 10
+
+def add_score():
+    global score
+    score = score + 5
+
+add_score()
+
+print(score)
+```
+
+Output:
+
+```text
+15
+```
+
+Here, the function changes the external variable `score`.
+
+This is a **side effect**.
+
+---
+
+## 🔥 Pure vs Impure
+
+| Pure Function                  | Impure Function                         |
+| ------------------------------ | --------------------------------------- |
+| Depends on its inputs          | Can depend on external state            |
+| Same input → same output       | Output/state can be affected externally |
+| Does not modify external state | Can modify external state               |
+| Easier to test and debug       | Can be harder to reason about           |
+
+---
+
+## 🎯 Key Learning
+
+```text
+PURE
+Input → Function → Output
+
+IMPURE
+External State
+     ↓
+Function
+     ↓
+Output + Side Effect
+```
+
+## 🏆 Day 75 Status
+
+* Pure Functions ✅
+* Impure Functions ✅
+* Side Effects ✅
+* External State ✅
