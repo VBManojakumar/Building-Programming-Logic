@@ -1,1 +1,268 @@
-...........
+# Day 76 — Advanced Python: List Comprehensions 🐍
+
+Today I learned **List Comprehensions** in Python.
+
+A List Comprehension is a short and efficient way to create a new list.
+
+---
+
+# 🔹 Topics Covered
+
+* Basic List Comprehensions
+* List Comprehensions with `if`
+* List Comprehensions with `if-else`
+
+---
+
+# 🧠 1. Basic List Comprehension
+
+### Normal `for` loop:
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+result = []
+
+for i in numbers:
+    result.append(i * 2)
+
+print(result)
+```
+
+### Using List Comprehension:
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+result = [i * 2 for i in numbers]
+
+print(result)
+```
+
+### Main Structure:
+
+```python
+[expression for item in iterable]
+```
+
+Example:
+
+```python
+[i * 2 for i in numbers]
+```
+
+---
+
+# 💻 Practice 1 — Squares
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+result = [i ** 2 for i in numbers]
+
+print(result)
+```
+
+### Output:
+
+```text
+[1, 4, 9, 16, 25]
+```
+
+---
+
+# 💻 Practice 2 — Add 5
+
+```python
+numbers = [10, 20, 30, 40]
+
+result = [i + 5 for i in numbers]
+
+print(result)
+```
+
+### Output:
+
+```text
+[15, 25, 35, 45]
+```
+
+---
+
+# 💻 Practice 3 — Convert to Uppercase
+
+```python
+names = ["manoj", "python", "developer"]
+
+result = [i.upper() for i in names]
+
+print(result)
+```
+
+### Output:
+
+```text
+['MANOJ', 'PYTHON', 'DEVELOPER']
+```
+
+---
+
+# 🔹 2. List Comprehension with `if`
+
+### Structure:
+
+```python
+[expression for item in iterable if condition]
+```
+
+The condition filters the items.
+
+---
+
+# 💻 Practice 4 — Even Numbers
+
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+
+result = [i for i in numbers if i % 2 == 0]
+
+print(result)
+```
+
+### Output:
+
+```text
+[2, 4, 6, 8]
+```
+
+---
+
+# 💻 Practice 5 — Numbers Greater Than 20
+
+```python
+numbers = [10, 15, 20, 25, 30, 35]
+
+result = [i for i in numbers if i > 20]
+
+print(result)
+```
+
+### Output:
+
+```text
+[25, 30, 35]
+```
+
+---
+
+# 💻 Practice 6 — Words Longer Than 3 Characters
+
+```python
+words = ["cat", "python", "AI", "developer", "java"]
+
+result = [i for i in words if len(i) > 3]
+
+print(result)
+```
+
+### Output:
+
+```text
+['python', 'developer', 'java']
+```
+
+---
+
+# 🔹 3. List Comprehension with `if-else`
+
+### Structure:
+
+```python
+[value_if_true if condition else value_if_false for item in iterable]
+```
+
+---
+
+# 💻 Practice 7 — Even or Odd
+
+```python
+numbers = [1, 2, 3, 4, 5, 6]
+
+result = ["Even" if i % 2 == 0 else "Odd" for i in numbers]
+
+print(result)
+```
+
+### Output:
+
+```text
+['Odd', 'Even', 'Odd', 'Even', 'Odd', 'Even']
+```
+
+---
+
+# 💻 Practice 8 — Pass or Fail
+
+```python
+numbers = [10, 25, 30, 15, 50]
+
+result = ["Pass" if i >= 25 else "Fail" for i in numbers]
+
+print(result)
+```
+
+### Output:
+
+```text
+['Fail', 'Pass', 'Pass', 'Fail', 'Pass']
+```
+
+---
+
+# 💻 Practice 9 — Long or Short Word
+
+```python
+names = ["Manoj", "AI", "Python", "Code"]
+
+result = ["Long" if len(i) > 4 else "Short" for i in names]
+
+print(result)
+```
+
+### Output:
+
+```text
+['Long', 'Short', 'Long', 'Short']
+```
+
+---
+
+# 🎯 Key Learning
+
+## Basic
+
+```python
+[expression for item in iterable]
+```
+
+## With `if`
+
+```python
+[expression for item in iterable if condition]
+```
+
+## With `if-else`
+
+```python
+[value_if_true if condition else value_if_false for item in iterable]
+```
+
+---
+
+# 🏆 Day 76 Status
+
+### Completed:
+
+* Basic List Comprehensions ✅
+* List Comprehensions with `if` ✅
+* List Comprehensions with `if-else` ✅
