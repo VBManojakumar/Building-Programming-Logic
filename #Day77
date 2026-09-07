@@ -1,1 +1,158 @@
-...........
+# Day 77 — Advanced Python: Dictionary Comprehensions 🐍
+
+Today I learned **Dictionary Comprehensions** in Python.
+
+Dictionary Comprehension is a short and efficient way to create a dictionary using a single line of code.
+
+---
+
+## 🔹 Topic Covered
+
+* Basic Dictionary Comprehensions
+* Creating key-value pairs dynamically
+* Using lists as an iterable to create dictionaries
+
+---
+
+# 🧠 Basic Structure
+
+```python
+{key: value for item in iterable}
+```
+
+### Logic
+
+```text
+Key
+ ↓
+Value
+ ↓
+for item in iterable
+```
+
+Example:
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+result = {i: i * i for i in numbers}
+
+print(result)
+```
+
+### Output
+
+```text
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+```
+
+Here:
+
+```text
+i       → Key
+i * i   → Value
+numbers → Iterable
+```
+
+---
+
+# 💻 Practice Logic 1 — Number and Cube
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+result = {i: i ** 3 for i in numbers}
+
+print(result)
+```
+
+### Output
+
+```text
+{1: 1, 2: 8, 3: 27, 4: 64, 5: 125}
+```
+
+### Logic
+
+```text
+Take each number
+      ↓
+Use number as Key
+      ↓
+Calculate cube as Value
+      ↓
+Store in Dictionary
+```
+
+---
+
+# 💻 Practice Logic 2 — Name and Length
+
+```python
+names = ["Manoj", "Python", "Java"]
+
+result = {i: len(i) for i in names}
+
+print(result)
+```
+
+### Output
+
+```text
+{'Manoj': 5, 'Python': 6, 'Java': 4}
+```
+
+### Logic
+
+```text
+Name       → Key
+Length     → Value
+```
+
+---
+
+# 💻 Practice Logic 3 — Number and Number + 5
+
+```python
+numbers = [10, 20, 30, 40]
+
+result = {i: i + 5 for i in numbers}
+
+print(result)
+```
+
+### Output
+
+```text
+{10: 15, 20: 25, 30: 35, 40: 45}
+```
+
+---
+
+# 🎯 Main Pattern
+
+```python
+{key: value for item in iterable}
+```
+
+Example:
+
+```python
+{i: i ** 2 for i in numbers}
+```
+
+```text
+Key   → i
+Value → i²
+```
+
+---
+
+# 🏆 Day 77 Status
+
+### Completed:
+
+* Dictionary Comprehension Basics ✅
+* Creating Dynamic Keys ✅
+* Creating Dynamic Values ✅
+* Logic Practice with Dictionaries ✅
