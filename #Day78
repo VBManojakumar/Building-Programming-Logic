@@ -1,1 +1,170 @@
-...............
+# Day 78 — Advanced Python: Set Comprehensions 🐍
+
+Today I learned **Set Comprehensions** in Python.
+
+A Set Comprehension is a short and efficient way to create a set using a single line of code.
+
+---
+
+## 🔹 Topics Covered
+
+* Basic Set Comprehensions
+* Set Comprehensions with conditions
+* Automatically removing duplicate values
+
+---
+
+# 🧠 Basic Structure
+
+```python
+{expression for item in iterable}
+```
+
+Example:
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+result = {i * i for i in numbers}
+
+print(result)
+```
+
+### Output
+
+```text
+{1, 4, 9, 16, 25}
+```
+
+---
+
+# 🔑 Important Feature of Sets
+
+A **set automatically removes duplicate values**.
+
+Example:
+
+```python
+numbers = [1, 2, 2, 3, 3, 4]
+
+result = {i for i in numbers}
+
+print(result)
+```
+
+### Output
+
+```text
+{1, 2, 3, 4}
+```
+
+The duplicate values are automatically removed.
+
+> Note: Sets are unordered, so the display order may vary.
+
+---
+
+# 💻 Practice 1 — Squares
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+result = {i ** 2 for i in numbers}
+
+print(result)
+```
+
+### Output Values
+
+```text
+1, 4, 9, 16, 25
+```
+
+---
+
+# 💻 Practice 2 — Even Numbers
+
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+
+result = {i for i in numbers if i % 2 == 0}
+
+print(result)
+```
+
+### Output Values
+
+```text
+2, 4, 6, 8
+```
+
+### Logic
+
+```text
+Take each number
+      ↓
+Check if it is even
+      ↓
+Store it in the set
+```
+
+---
+
+# 💻 Practice 3 — Remove Duplicates
+
+```python
+numbers = [10, 20, 10, 30, 20, 40, 30]
+
+result = {i for i in numbers}
+
+print(result)
+```
+
+### Output Values
+
+```text
+10, 20, 30, 40
+```
+
+Duplicate values are automatically removed by the set.
+
+---
+
+# 🎯 Main Patterns
+
+## Basic Set Comprehension
+
+```python
+{expression for item in iterable}
+```
+
+## Set Comprehension with `if`
+
+```python
+{expression for item in iterable if condition}
+```
+
+---
+
+# 🧠 Comparison of Comprehensions
+
+```text
+List Comprehension
+[expression for item in iterable]
+
+Dictionary Comprehension
+{key: value for item in iterable}
+
+Set Comprehension
+{expression for item in iterable}
+```
+
+---
+
+# 🏆 Day 78 Status
+
+### Completed:
+
+* Set Comprehension Basics ✅
+* Set Comprehension with Conditions ✅
+* Removing Duplicates using Sets ✅
