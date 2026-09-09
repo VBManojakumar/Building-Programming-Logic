@@ -1,1 +1,194 @@
-................
+# Day 81 — Introduction to Object-Oriented Programming (OOP) 🐍
+
+Today I started learning **Object-Oriented Programming (OOP) in Python**.
+
+OOP is an important programming approach used to organize programs using **objects**.
+
+---
+
+# 🔹 What is OOP?
+
+**OOP stands for Object-Oriented Programming.**
+
+It is a way of writing programs by representing real-world entities as objects.
+
+Examples of real-world objects:
+
+```text
+Student
+Car
+Mobile
+Bank Account
+Employee
+ATM
+```
+
+---
+
+# 🧠 Main Idea of OOP
+
+An object contains:
+
+```text
+DATA + BEHAVIOR
+```
+
+### Example: Car 🚗
+
+A car has:
+
+### Data / Properties
+
+```text
+Brand
+Color
+Model
+Speed
+Price
+```
+
+### Behavior / Actions
+
+```text
+Start
+Stop
+Accelerate
+Brake
+```
+
+So, an object can contain both its information and its actions.
+
+---
+
+# 🔑 What is a Class?
+
+A **Class is a blueprint or design** used to create objects.
+
+For example:
+
+```text
+Class → Car
+```
+
+The Car class describes the common properties and behaviors that cars can have.
+
+```text
+Car
+│
+├── Brand
+├── Color
+├── Speed
+│
+├── Start()
+├── Stop()
+└── Accelerate()
+```
+
+A class is a blueprint, not the actual object.
+
+---
+
+# 🔑 What is an Object?
+
+An **Object is an actual instance created from a class**.
+
+Example:
+
+```text
+Class → Car
+
+Objects →
+Toyota
+BMW
+Tesla
+```
+
+All these objects can be created using the same Car blueprint.
+
+---
+
+# 🏠 Simple Student Example
+
+```text
+Class → Student
+```
+
+The Student class can describe:
+
+```text
+Name
+Age
+Course
+
+Study()
+Attend_Class()
+```
+
+Objects created from the Student class can be:
+
+```text
+Manoj
+Ravi
+Anil
+```
+
+---
+
+# 🎯 Important Formula
+
+```text
+Class → Blueprint
+
+Object → Actual thing created from the blueprint
+```
+
+---
+
+# 🧠 Why Do We Need OOP?
+
+OOP helps us:
+
+* Organize code properly
+* Reuse code
+* Manage large projects
+* Maintain programs easily
+* Represent real-world entities in programs
+
+---
+
+# 🚀 Major OOP Concepts
+
+In the upcoming lessons, I will learn:
+
+```text
+OOP
+│
+├── Classes
+├── Objects
+├── Constructors
+├── Instance Variables
+├── Instance Methods
+├── Class Variables
+├── Class Methods
+├── Static Methods
+├── Encapsulation
+├── Inheritance
+├── Polymorphism
+├── Abstraction
+├── Property Decorators
+└── Magic Methods
+```
+
+---
+
+# 🏆 Day 81 Key Learning
+
+```text
+OOP = Object-Oriented Programming
+
+Class = Blueprint / Design
+
+Object = Actual instance created from a class
+
+Object = Data + Behavior
+```
