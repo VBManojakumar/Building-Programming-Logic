@@ -1,1 +1,86 @@
-.................
+# 🐍 Day 82 – Classes & Objects in Python
+
+## 📌 Topic
+
+**Object-Oriented Programming (OOP) – Classes & Objects**
+
+Today I started learning the basics of **Object-Oriented Programming (OOP)** in Python.
+
+### 🔹 1. Class
+
+A **class** is a blueprint or design used to create objects.
+
+```python
+class Student:
+    pass
+```
+
+### 🔹 2. Object
+
+An **object** is an instance of a class.
+
+```python
+student1 = Student()
+```
+
+Here:
+
+* `Student` → Class
+* `student1` → Object
+* `Student()` → Creates an object
+
+### 🔹 3. Multiple Objects
+
+We can create multiple objects from the same class.
+
+```python
+class Student:
+    pass
+
+student1 = Student()
+student2 = Student()
+```
+
+### 🔹 4. Object Attributes
+
+We can assign data to an object using attributes.
+
+```python
+class Student:
+    pass
+
+student1 = Student()
+
+student1.name = "Manoj"
+student1.course = "BCA"
+
+print(student1.name)
+print(student1.course)
+```
+
+### 📤 Output
+
+```text
+Manoj
+BCA
+```
+
+## 🧠 Key Learning
+
+* **Class** → Blueprint
+* **Object** → Instance of a class
+* **`ClassName()`** → Creates an object
+* **Attribute** → Data belonging to an object
+* **`object.attribute`** → Accesses an attribute
+* One class can create multiple objects.
+
+## 🏆 Practice Completed
+
+✅ Created a `Car` class and object
+✅ Created multiple student objects
+✅ Added and accessed object attributes
+✅ Printed object data successfully
+
+## 📊 Progress
+
+**Day 82 – Classes & Objects: ✅ Completed**
