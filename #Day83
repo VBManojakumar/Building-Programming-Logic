@@ -1,1 +1,133 @@
-...................
+# 🐍 Day 83 – Constructors in Python
+
+## 📌 Topic
+
+**Object-Oriented Programming – Constructors (`__init__`)**
+
+Today I learned about **constructors in Python** and how they are used to automatically initialize object attributes when an object is created.
+
+## 🔹 1. Constructor
+
+A constructor is a special method that runs automatically when an object is created.
+
+In Python, the constructor is:
+
+```python
+__init__()
+```
+
+Example:
+
+```python
+class Student:
+    def __init__(self):
+        print("Student object created")
+
+student1 = Student()
+```
+
+## 🔹 2. Initializing Object Attributes
+
+The constructor can be used to initialize attributes automatically.
+
+```python
+class Student:
+    def __init__(self):
+        self.name = "Manoj"
+        self.course = "BCA"
+
+student1 = Student()
+
+print(student1.name)
+print(student1.course)
+```
+
+### Output
+
+```text
+Manoj
+BCA
+```
+
+## 🔹 3. Understanding `self`
+
+`self` refers to the **current object**.
+
+```python
+self.name = name
+```
+
+means that the value of `name` is stored in the current object's `name` attribute.
+
+For example:
+
+```python
+student1 = Student("Manoj")
+```
+
+Here, `self` refers to `student1`.
+
+## 🔹 4. Constructor with Parameters
+
+Different objects can receive different values through constructor parameters.
+
+```python
+class Student:
+    def __init__(self, name, course):
+        self.name = name
+        self.course = course
+
+student1 = Student("Manoj", "BCA")
+student2 = Student("Rahul", "BCA")
+
+print(student1.name)
+print(student2.name)
+```
+
+### Output
+
+```text
+Manoj
+Rahul
+```
+
+## 🔹 5. Multiple Attributes
+
+A constructor can initialize multiple attributes.
+
+```python
+class Student:
+    def __init__(self, name, age, course):
+        self.name = name
+        self.age = age
+        self.course = course
+
+student1 = Student("Manoja", 20, "BCA")
+student2 = Student("Sweety", 20, "BCA")
+
+print(student1.name)
+print(student1.age)
+print(student1.course)
+```
+
+## 🧠 Key Learning
+
+* `__init__()` → Constructor
+* Constructor runs automatically when an object is created.
+* `self` → Refers to the current object.
+* Constructor parameters allow different objects to have different values.
+* `self.name`, `self.age`, etc. are **object attributes**.
+* Constructors make object initialization cleaner and easier.
+
+## 🏆 Practice Completed
+
+✅ Basic constructor
+✅ Constructor with parameters
+✅ Used `self` correctly
+✅ Created multiple objects
+✅ Initialized multiple attributes
+✅ Successfully accessed object attributes
+
+## 📊 Progress
+
+**Day 83 – Constructors: ✅ Completed**
