@@ -1,1 +1,147 @@
-.............
+# 🐍 Day 85 – Instance Methods in Python
+
+## 📌 Topic
+
+**Object-Oriented Programming – Instance Methods**
+
+Today I learned about **Instance Methods** and how objects can perform actions using methods defined inside a class.
+
+## 🔹 1. What is an Instance Method?
+
+An instance method is a function defined inside a class that works with a particular object.
+
+```python
+class Student:
+    def show(self):
+        print("Student details")
+
+student1 = Student()
+
+student1.show()
+```
+
+### Output
+
+```text
+Student details
+```
+
+## 🔹 2. Using `self` in Instance Methods
+
+The `self` parameter refers to the **current object** that calls the method.
+
+```python
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+    def show_name(self):
+        print(self.name)
+
+student1 = Student("Manoj")
+student2 = Student("Sweety")
+
+student1.show_name()
+student2.show_name()
+```
+
+### Output
+
+```text
+Manoj
+Sweety
+```
+
+The same method works with different objects because `self` refers to the object that called the method.
+
+## 🔹 3. Instance Methods Using Instance Variables
+
+Instance methods can access instance variables through `self`.
+
+```python
+class Student:
+    def __init__(self, name, course):
+        self.name = name
+        self.course = course
+
+    def show_details(self):
+        print(self.name)
+        print(self.course)
+
+student1 = Student("Manoj", "BCA")
+
+student1.show_details()
+```
+
+### Output
+
+```text
+Manoj
+BCA
+```
+
+## 🔹 4. Instance Methods with Parameters
+
+An instance method can also accept additional parameters.
+
+```python
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self, message):
+        print(self.name, message)
+
+student1 = Student("Manoj")
+
+student1.greet("Good Morning")
+```
+
+### Output
+
+```text
+Manoj Good Morning
+```
+
+Here:
+
+* `self` → current object
+* `message` → additional parameter passed to the method
+
+## 🧠 Key Learning
+
+* **Instance Method** → A function defined inside a class that works with an object.
+* Instance methods use `self`.
+* `self` refers to the current object.
+* Instance methods can access instance variables using `self`.
+* The same method can work with multiple objects.
+* Instance methods can also accept additional parameters.
+
+## 🔗 Connection Between OOP Concepts
+
+```text
+Class
+  ↓
+Object
+  ↓
+Constructor (__init__)
+  ↓
+Instance Variables
+  ↓
+Instance Methods
+```
+
+So far, I have learned how to **create objects, store data in objects, and make objects perform actions**.
+
+## 🏆 Practice Completed
+
+✅ Created instance methods
+✅ Used `self` correctly
+✅ Accessed instance variables through methods
+✅ Used the same method with multiple objects
+✅ Passed additional parameters to methods
+✅ Practiced object behavior
+
+## 📊 Progress
+
+**Day 85 – Instance Methods: ✅ Completed**
