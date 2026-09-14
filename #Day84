@@ -1,1 +1,148 @@
-.................
+# 🐍 Day 84 – Instance Variables in Python
+
+## 📌 Topic
+
+**Object-Oriented Programming – Instance Variables**
+
+Today I learned about **Instance Variables** and how data can belong separately to each object.
+
+## 🔹 1. What is an Instance Variable?
+
+An instance variable is a variable that belongs to a **particular object**.
+
+Instance variables are usually created using `self`.
+
+```python
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+```
+
+Here:
+
+* `self.name` → Instance variable
+* `self.age` → Instance variable
+
+## 🔹 2. Different Objects Have Different Values
+
+```python
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+student1 = Student("Manoj", 20)
+student2 = Student("Rahul", 21)
+
+print(student1.name)
+print(student2.name)
+```
+
+### Output
+
+```text
+Manoj
+Rahul
+```
+
+Both objects are created from the same class, but each object has its **own instance variable values**.
+
+## 🔹 3. Understanding `self`
+
+```python
+self.name = name
+```
+
+Here:
+
+* `name` → Constructor parameter
+* `self.name` → Instance variable
+
+For:
+
+```python
+student1 = Student("Manoj", 20)
+```
+
+the values are stored in `student1`.
+
+For:
+
+```python
+student2 = Student("Rahul", 21)
+```
+
+the values are stored separately in `student2`.
+
+## 🔹 4. Changing an Instance Variable
+
+Instance variables can be changed after creating an object.
+
+```python
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+student1 = Student("Manoj")
+
+print(student1.name)
+
+student1.name = "Manoja"
+
+print(student1.name)
+```
+
+### Output
+
+```text
+Manoj
+Manoja
+```
+
+The change affects only `student1`.
+
+## 🔹 5. Instance Variables Belong to Individual Objects
+
+If we have:
+
+```python
+student1 = Student("Manoj")
+student2 = Student("Rahul")
+```
+
+and change:
+
+```python
+student1.name = "Manoja"
+```
+
+then:
+
+```text
+student1.name → Manoja
+student2.name → Rahul
+```
+
+Changing one object's instance variable does not automatically change another object's variable.
+
+## 🧠 Key Learning
+
+* **Instance variable** → Data belonging to an individual object.
+* Instance variables are generally created using `self`.
+* Different objects can have different values.
+* Changing one object's instance variable does not affect another object.
+* `self.name`, `self.age`, `self.course`, etc. are examples of instance variables.
+
+## 🏆 Practice Completed
+
+✅ Created instance variables
+✅ Used `self` correctly
+✅ Created multiple objects
+✅ Stored different values in different objects
+✅ Changed an instance variable
+✅ Understood that each object maintains its own data
+
+## 📊 Progress
+
+**Day 84 – Instance Variables: ✅ Completed**
