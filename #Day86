@@ -1,2 +1,141 @@
-..............
-#Day86
+# 🐍 Day 86 – Class Variables in Python
+
+## 📌 Topic
+
+**Object-Oriented Programming – Class Variables**
+
+Today I learned about **Class Variables** and the difference between **Class Variables and Instance Variables**.
+
+## 🔹 1. What is a Class Variable?
+
+A class variable is a variable defined directly inside a class and outside its methods.
+
+```python
+class Student:
+    college = "Kishkinda University"
+```
+
+Here, `college` is a **class variable**.
+
+It is common to the objects created from that class.
+
+## 🔹 2. Class Variable vs Instance Variable
+
+```python
+class Student:
+    college = "Kishkinda University"   # Class variable
+
+    def __init__(self, name):
+        self.name = name                # Instance variable
+```
+
+Here:
+
+* `college` → Class variable
+* `self.name` → Instance variable
+
+## 🔹 3. Accessing a Class Variable
+
+A class variable can be accessed using the class name.
+
+```python
+class Student:
+    college = "Kishkinda University"
+
+print(Student.college)
+```
+
+### Output
+
+```text
+Kishkinda University
+```
+
+## 🔹 4. Objects Can Also Access Class Variables
+
+```python
+class Student:
+    college = "Kishkinda University"
+
+student1 = Student()
+student2 = Student()
+
+print(student1.college)
+print(student2.college)
+```
+
+### Output
+
+```text
+Kishkinda University
+Kishkinda University
+```
+
+Both objects can access the same class variable.
+
+## 🔹 5. Combining Class and Instance Variables
+
+```python
+class Student:
+    college = "Kishkinda University"
+
+    def __init__(self, name):
+        self.name = name
+
+student1 = Student("Manoj")
+student2 = Student("Sweety")
+
+print(student1.name)
+print(student1.college)
+
+print(student2.name)
+print(student2.college)
+```
+
+### Output
+
+```text
+Manoj
+Kishkinda University
+Sweety
+Kishkinda University
+```
+
+Here:
+
+* `name` is different for each object.
+* `college` is common to both objects.
+
+## 🔹 6. Changing the Class Variable
+
+The class variable can be changed using the class name.
+
+```python
+Employee.company = "Infosys"
+```
+
+The updated class value can then be accessed by objects that do not have their own separate `company` attribute.
+
+## 🧠 Key Learning
+
+* **Class variable** → Common/shared data associated with the class.
+* **Instance variable** → Individual data belonging to a particular object.
+* Class variables are defined directly inside the class.
+* Instance variables are usually created using `self`.
+* Objects can access class variables.
+* A class variable is useful when the same value applies to many objects.
+
+### Easy Memory Trick
+
+```text
+Instance → Individual 👤
+Class    → Common 👥
+```
+
+## 🏆 Practice
+
+✅ Created class variables
+✅ Accessed class variables using the class name
+✅ Accessed class variables through objects
+✅ Combined class and instance variables
+✅ Understood the difference between shared and individual data
