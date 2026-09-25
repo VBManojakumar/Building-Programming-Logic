@@ -1,1 +1,147 @@
-,...........
+# 🐍 Day 87 – Class Methods in Python
+
+## 📌 Topic
+
+**Object-Oriented Programming – Class Methods**
+
+Today I learned about **Class Methods** and how they work with the class itself rather than a particular object.
+
+## 🔹 1. What is a Class Method?
+
+A class method is a method that works with the **class**.
+
+It is created using the `@classmethod` decorator.
+
+```python
+class Student:
+    college = "Kishkinda University"
+
+    @classmethod
+    def show_college(cls):
+        print(cls.college)
+```
+
+Here, `show_college()` is a class method.
+
+## 🔹 2. Understanding `cls`
+
+A class method uses `cls` instead of `self`.
+
+```text
+self → current object 👤
+cls  → current class  🏫
+```
+
+Example:
+
+```python
+@classmethod
+def show_college(cls):
+    print(cls.college)
+```
+
+`cls.college` refers to the class variable `college`.
+
+## 🔹 3. Calling a Class Method
+
+A class method can be called using the class name.
+
+```python
+class Student:
+    college = "Kishkinda University"
+
+    @classmethod
+    def show_college(cls):
+        print(cls.college)
+
+Student.show_college()
+```
+
+### Output
+
+```text
+Kishkinda University
+```
+
+An object is not required to call this method.
+
+## 🔹 4. Modifying a Class Variable
+
+A class method can also modify a class variable.
+
+```python
+class Student:
+    college = "Kishkinda University"
+
+    @classmethod
+    def change_college(cls, new_college):
+        cls.college = new_college
+
+Student.change_college("ABC University")
+
+print(Student.college)
+```
+
+### Output
+
+```text
+ABC University
+```
+
+The class method changes the shared class variable.
+
+## 🔹 5. Instance Method vs Class Method
+
+| Instance Method                  | Class Method                      |
+| -------------------------------- | --------------------------------- |
+| Uses `self`                      | Uses `cls`                        |
+| Works with an object             | Works with the class              |
+| Can access instance variables    | Mainly works with class variables |
+| Usually called through an object | Can be called through the class   |
+| `student1.show_name()`           | `Student.show_college()`          |
+
+### Easy Memory Trick
+
+```text
+self → object 👤
+cls  → class 🏫
+```
+
+## 🔗 OOP Concepts Learned So Far
+
+```text
+Class
+  ↓
+Object
+  ↓
+Constructor (__init__)
+  ↓
+Instance Variables
+  ↓
+Instance Methods
+  ↓
+Class Variables
+  ↓
+Class Methods
+```
+
+I can now understand the difference between **object-level behavior** and **class-level behavior**.
+
+## 🧠 Key Learning
+
+* `@classmethod` creates a class method.
+* Class methods use `cls`.
+* `cls` refers to the class.
+* Class methods can access class variables.
+* Class methods can modify class variables.
+* A class method can be called using the class name.
+* Instance methods use `self`, while class methods use `cls`.
+
+## 🏆 Practice Completed
+
+✅ Created class methods
+✅ Used `@classmethod`
+✅ Understood `cls`
+✅ Accessed class variables through class methods
+✅ Modified class variables
+✅ Understood instance methods vs class methods
