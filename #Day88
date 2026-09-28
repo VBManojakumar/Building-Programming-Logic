@@ -1,1 +1,66 @@
-..............
+# Day 88 — Static Methods in Python OOP 🚀
+
+## 📚 Topic
+
+**Static Methods — `@staticmethod`**
+
+Today I learned how to create and use static methods in Python classes.
+
+### 🔹 What is a Static Method?
+
+A static method is a method that belongs logically to a class but does **not need object-specific data or class-specific data**.
+
+It is created using the `@staticmethod` decorator.
+
+```python
+class Student:
+
+    @staticmethod
+    def welcome():
+        print("Welcome to Student Management System")
+
+Student.welcome()
+```
+
+### 🔹 Important Points
+
+* Static methods use `@staticmethod`.
+* They do not use `self`.
+* They do not use `cls`.
+* They can accept normal parameters.
+* They can be called using the class.
+* They are useful for utility/helper operations related to a class.
+
+### 🔹 Static Method with Parameters
+
+```python
+class Calculator:
+
+    @staticmethod
+    def multiply(a, b):
+        return a * b
+
+print(Calculator.multiply(7, 8))
+```
+
+Output:
+
+```text
+56
+```
+
+## 🔄 Three Types of Methods
+
+| Method          | Decorator       | First Parameter | Works With |
+| --------------- | --------------- | --------------- | ---------- |
+| Instance Method | —               | `self`          | Object     |
+| Class Method    | `@classmethod`  | `cls`           | Class      |
+| Static Method   | `@staticmethod` | None            | Neither    |
+
+### 🧠 Easy Memory Trick
+
+**Instance → `self` → Object**
+
+**Class → `cls` → Class**
+
+**Static → Nothing → Independent**
