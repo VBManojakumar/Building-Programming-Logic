@@ -1,1 +1,84 @@
-.........
+# Day 89 — Instance vs Class vs Static Methods 🚀
+
+## 📚 Topic
+
+Today I learned the differences between:
+
+* Instance Methods
+* Class Methods
+* Static Methods
+
+These three method types are important in Python OOP because each one is used for a different purpose.
+
+## 1. Instance Method
+
+An instance method works with **object-specific data**.
+
+It uses `self`.
+
+```python
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+    def show_name(self):
+        print(self.name)
+```
+
+**Instance Method → `self` → Object**
+
+---
+
+## 2. Class Method
+
+A class method works with **class-level data**.
+
+It uses `cls` and the `@classmethod` decorator.
+
+```python
+class Student:
+    college = "Kishkinda University"
+
+    @classmethod
+    def show_college(cls):
+        print(cls.college)
+```
+
+**Class Method → `cls` → Class**
+
+---
+
+## 3. Static Method
+
+A static method does not need object or class data.
+
+It uses the `@staticmethod` decorator and does not require `self` or `cls`.
+
+```python
+class Calculator:
+
+    @staticmethod
+    def add(a, b):
+        return a + b
+```
+
+**Static Method → No `self`/`cls` → Independent operation**
+
+## 📊 Comparison
+
+| Feature         | Instance Method            | Class Method           | Static Method                  |
+| --------------- | -------------------------- | ---------------------- | ------------------------------ |
+| Decorator       | None                       | `@classmethod`         | `@staticmethod`                |
+| First parameter | `self`                     | `cls`                  | None                           |
+| Works with      | Object                     | Class                  | Neither                        |
+| Instance data   | ✅                          | ❌                      | ❌                              |
+| Class data      | ✅                          | ✅                      | ❌ directly                     |
+| Main purpose    | Object-specific operations | Class-level operations | Utility/independent operations |
+
+## 🧠 Easy Memory Trick
+
+**Object → `self`**
+
+**Class → `cls`**
+
+**Neither → Static Method**
