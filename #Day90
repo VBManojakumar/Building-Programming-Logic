@@ -1,2 +1,96 @@
-..............
-#Day90
+# Day 90 — Encapsulation in Python OOP 🚀
+
+## 📚 Topic
+
+Today I learned **Encapsulation**, an important concept in Object-Oriented Programming.
+
+## 🔹 What is Encapsulation?
+
+Encapsulation means keeping **data and the methods that operate on that data together inside a class**, while controlling how the data is accessed or modified.
+
+For example, a bank account can contain:
+
+* Account holder name
+* Balance
+* Deposit method
+* Withdraw method
+
+All of these can be managed inside one `BankAccount` class.
+
+```python
+class BankAccount:
+
+    def __init__(self, name, balance):
+        self.name = name
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+```
+
+## 🔹 Why is Encapsulation Useful?
+
+Encapsulation helps us:
+
+* Organize related data and methods.
+* Protect important data from unwanted changes.
+* Control how data is accessed or modified.
+* Make classes easier to maintain.
+
+## 🔐 Access Levels in Python
+
+### 1. Public
+
+```python
+self.name
+```
+
+Public attributes can be accessed normally.
+
+### 2. Protected
+
+```python
+self._salary
+```
+
+A single underscore indicates that the attribute is intended for internal use.
+
+Python does not strictly prevent access to it.
+
+### 3. Private
+
+```python
+self.__balance
+```
+
+Two underscores indicate a private attribute.
+
+Direct access such as:
+
+```python
+account.__balance
+```
+
+does not normally work because Python applies **name mangling**.
+
+## 📊 Comparison
+
+| Type      | Example  | Meaning                 |
+| --------- | -------- | ----------------------- |
+| Public    | `name`   | Normal access           |
+| Protected | `_name`  | Internal-use convention |
+| Private   | `__name` | Name mangling           |
+
+## 🧠 Easy Memory Trick
+
+**No `_` → Public**
+
+**One `_` → Protected convention**
+
+**Two `__` → Private / name mangling**
+
+## 🎯 Practice
+
+1. Create a `Student` class using public attributes.
+2. Create an `Employee` class using a protected `_salary` attribute.
+3. Create a `BankAccount` class using a private `__balance` attribute and test direct access.
